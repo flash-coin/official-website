@@ -1,0 +1,309 @@
+*,*:before,*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,400italic);
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@font-face {
+    font-family: 'Sanspro-light';
+    src: url('../fonts/SOURCESANSPRO-LIGHT.OTF');
+}
+@font-face {
+    font-family: 'Sanspro-extralight';
+    src: url('../fonts/SOURCESANSPRO-EXTRALIGHTIT.OTF');
+}
+@font-face {
+    font-family: 'Sanspro-bold';
+    src: url('../fonts/SOURCESANSPRO-BOLD.OTF');
+}
+
+@font-face {
+    font-family: 'Sanspro-lightRegular';
+    src: url('../fonts/SOURCESANSPRO-REGULAR.OTF');
+}
+@font-face {
+    font-family: 'Roboto-condensed';
+    src: url('../fonts/ROBOTO-CONDENSED.TTF');
+}
+@font-face {
+    font-family: 'Roboto-condensedBold';
+    src: url('../fonts/ROBOTO-BOLDCONDENSED.TTF');
+}
+html {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    font-size: 100%;
+}
+.pad0{padding: 0}
+.flash-wallet header{
+    background: #55505a url(../images/bg-header.png) no-repeat center/cover;
+    mso-line-height-rule: exactly;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background-color: #55505a;
+    background-image: url(../images/bg-header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top: 5px solid #fad705;
+    border-bottom: 0;
+    padding-top: 45px;
+    padding-bottom: 100px;
+    color: #fff;
+}
+.slide-flash{
+    width: 60%;
+    float: right;
+}
+.social-icons i.fa img{
+    border: 1px solid #ffb629;
+    border-radius: 100%;
+    line-height: 120px;
+    width: 100%;
+    max-width: 50px;
+}
+.social-icons .slack img{
+    padding: 10px;
+}
+.social-icons i.fa-btc{
+    color: #FFB629;
+}
+.flash-wallet{
+    position: relative;
+    float: left;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+}
+.flash-wallet h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    font-family: 'Roboto-condensed', sans-serif;
+}
+.flash-wallet p{
+    font-size: 21px;
+    font-family: 'Sanspro-light', sans-serif;
+}
+.flash-wallet input{
+    font-size: 15px;
+    padding: 5px 12px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid;
+    border-radius: inherit;
+    text-align: center;
+    color: #b5b5b5;
+}
+.flash-wallet .input-group-addon{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.flash-wallet h4{
+    font-size: 22px;
+    margin-top: 25px;
+}
+/*Main content*/
+.flash-wallet .main-content{
+    padding: 1% 0 0%;
+}
+.flash-wallet .main-content .slide-1{
+    position: relative;
+    background: ghostwhite;
+}
+.flash-wallet .main-content .slide-1 .form-active{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+.flash-wallet .main-content .slide-1 #content-slide1{
+    float: right;
+}
+.flash-wallet .slide-1 .img-slide1{
+    width: 100%;
+}
+.flash-wallet .slide-1 h2{
+    font-size: 42pt;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: 'Roboto-condensedBold', sans-serif;
+}
+/*===========*/
+/*Slide 2*/
+.flash-wallet .slide-2{
+    position: relative;
+}
+.flash-wallet .slide-2 #img-slide-2{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.flash-wallet .slide-2 .set-center{
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+}
+.flash-wallet .slide-2 .col{
+    margin-bottom: 3%;
+    width: 19.5%;
+    float: left;
+}
+.flash-wallet .slide-2 h2 {margin: 0}
+.flash-wallet .slide-2 h2 a{
+    font-weight: normal;
+    color: #303030;
+    font-size: 20px;
+}
+/*============*/
+/*Slide 3*/
+.flash-wallet .slide-4 img{
+    width: 100%;
+    max-width: 250px;
+}
+/*============*/
+/* Slide 4 */
+.slide-4{
+}
+.slide-4 h3{
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    color: #737373;
+    margin: 0;
+    line-height: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.slide-4 .text{
+    text-align: justify;
+}
+.slide-4 .max-width-col{
+    width: 950px;
+    margin: 0 auto;
+    float: none;
+}
+.slide-4 ul li,
+.slide-4 .text p{
+    display: block;
+    color: #616060;
+    font-size: 23px;
+    font-weight: normal;
+    font-family: 'Sanspro-light', sans-serif;
+}
+.slide-4 .text p.spec{
+    margin-top: 100px;
+    width: 460px;
+    float: right;
+}
+/*============*/
+
+/*====================*/
+/* Slide 8 */
+.slide-8 .bg-white{
+    height: 170px;
+    background-color: #fff;
+}
+.slide-8 .bg-blue{
+    background-color: #718fe9;
+    padding-bottom: 125px;
+}
+.slide-8 .bg-blue .container{
+    width: 1441px;
+}
+.slide-8 ul {
+    padding: 0;
+}
+.slide-8 ul li{
+    display: block;
+    padding: 0 15px;
+}
+
+.slide-8 ul li img{
+    margin-top: -69px;
+}
+.slide-8 ul li p{
+    color: #303030;
+    font-size: 23px;
+    margin-top: 35px;
+}
+/*============*/
+
+/* Slide 10 */
+.slide-10{
+    background-color: #eaeaea;
+    padding: 2% 0 12%;
+}
+.slide-10 h2,
+.slide-11 h2{
+    font-size: 60px;
+    color: #303030;
+    padding: 20px 0;
+}
+.slide-10 button{
+    border-radius: 45px;
+    border: 2px solid #303030;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 20px 50px;
+    background-color: #fff;
+    font-family: 'Roboto';
+    outline: none;
+    margin-top: 40px;
+}
+.slide-10 button:hover{
+    background-color: #72c6ff;
+}
+.slide-10 .text-justify{
+    padding: 0 15px;
+}
+.download-flash{
+    padding: 30px 0 70px 0;
+    border-top: 1px solid #ddd;
+    background-color: #eaeaea;
+    margin-bottom: 4%;
+}
+.download-flash .col-box{
+    margin-top: 50px;
+}
+.download-flash .col-box a{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #0e76bc;
+    width: 85%;
+    text-align: left
+}
+.download-flash .col-box a img{
+    margin-right:10px;
+}
+.home-safecash .download-flash .container{
+    width: 1260px;
+}
+/*Footer site*/
+footer .container {
+    padding: 2% 0 1%;
+}
+footer{
+    border-top: 1px solid #ccc;
+    background: #555;
+    position: absolute !important;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+}
+footer p {
+    color: #fff;
+    padding: 0 15px;
+}
+/*===================*/
+@media all and (max-width: 415px) {
+    .flash-wallet .slide-2 .col {
+        width: 100%;
+    }
+
+    .flash-wallet a, .flash-wallet p, .flash-wallet h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+/*===================*/
