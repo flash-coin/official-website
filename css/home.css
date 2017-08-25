@@ -83,6 +83,7 @@ html {
 .flash-wallet p{
     font-size: 21px;
     font-family: 'Sanspro-light', sans-serif;
+    padding: 0;
 }
 .flash-wallet input{
     font-size: 15px;
@@ -262,18 +263,26 @@ html {
     background-color: #eaeaea;
     margin-bottom: 4%;
 }
+.download-flash .box-center{
+    margin: 0 auto;
+    float: none;
+}
+.download-flash h3{
+    font-weight: normal;
+    padding-top: 10%;
+    line-height: 32px;
+}
 .download-flash .col-box{
     margin-top: 50px;
 }
 .download-flash .col-box a{
-    font-size: 18px;
+    font-size: 23px;
     font-weight: bold;
-    background-color: #0e76bc;
-    width: 85%;
-    text-align: left
+    color: #2b2b2b;
 }
-.download-flash .col-box a img{
+.download-flash .col-box img{
     margin-right:10px;
+    width: 100px;
 }
 .home-safecash .download-flash .container{
     width: 1260px;
