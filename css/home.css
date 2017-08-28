@@ -77,6 +77,11 @@ html {
     font-family: 'Roboto', sans-serif;
     background: #fff;
 }
+.link-top{
+}
+.link-top a{
+    color: #7ac2ff;
+}
 .flash-wallet h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     font-family: 'Roboto-condensed', sans-serif;
 }
@@ -164,7 +169,11 @@ html {
 }
 /*============*/
 /* Slide 4 */
-.slide-4{
+.slide-4 h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #116bb6;
+    text-align: center;
 }
 .slide-4 h3{
     font-size: 25px;
@@ -185,7 +194,6 @@ html {
 }
 .slide-4 ul li,
 .slide-4 .text p{
-    display: block;
     color: #616060;
     font-size: 23px;
     font-weight: normal;
@@ -209,7 +217,6 @@ html {
     padding-bottom: 125px;
 }
 .slide-8 .bg-blue .container{
-    width: 1441px;
 }
 .slide-8 ul {
     padding: 0;
@@ -228,7 +235,13 @@ html {
     margin-top: 35px;
 }
 /*============*/
-
+.exchanges-section{
+    padding: 2% 0;
+    border-top: 1px solid #ddd;
+    color: #116bb6;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5%;
+}
 /* Slide 10 */
 .slide-10{
     background-color: #eaeaea;
@@ -261,7 +274,6 @@ html {
     padding: 30px 0 70px 0;
     border-top: 1px solid #ddd;
     background-color: #eaeaea;
-    margin-bottom: 4%;
 }
 .download-flash .box-center{
     margin: 0 auto;
@@ -273,7 +285,7 @@ html {
     line-height: 32px;
 }
 .download-flash .col-box{
-    margin-top: 50px;
+    margin-top: 1%;
 }
 .download-flash .col-box a{
     font-size: 23px;
@@ -282,10 +294,20 @@ html {
 }
 .download-flash .col-box img{
     margin-right:10px;
-    width: 100px;
+    width: 70px;
 }
 .home-safecash .download-flash .container{
     width: 1260px;
+}
+.road-map{
+    padding: 4% 0;
+}
+.road-map h2, .exchanges-section h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #116bb6;
+    text-align: center;
+    margin-bottom: 3%;
 }
 /*Footer site*/
 footer .container {
@@ -294,7 +316,6 @@ footer .container {
 footer{
     border-top: 1px solid #ccc;
     background: #555;
-    position: absolute !important;
     right: 0;
     bottom: 0;
     left: 0;
@@ -305,10 +326,29 @@ footer p {
     padding: 0 15px;
 }
 /*===================*/
-@media all and (max-width: 415px) {
-    .flash-wallet .slide-2 .col {
-        width: 100%;
+@media all and (max-width: 767px) {
+    .download-flash h2{text-align: center}
+    .download-flash h2.mobile{
+        margin-top: 6%;
     }
+    .download-flash h2.mobile img{
+        margin-top: -50px;
+    }
+    .download-flash .col-box{width: 50%;}
+    .download-flash .col-box:nth-child(2n+1){
+        clear: both;
+    }
+    .slide-8 ul li img{margin-top: 0}
+}
+@media all and (max-width: 480px) {
+    .download-flash .col-box{
+        width: 100%;
+        margin-top: 5%;
+    }
+    .flash-wallet .slide-2 .col {
+        width: 33.33333%;
+    }
+    .download-flash h2{font-size: 25px;}
 
     .flash-wallet a, .flash-wallet p, .flash-wallet h3 {
         font-size: 16px;
