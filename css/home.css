@@ -242,6 +242,11 @@ html {
     border-bottom: 1px solid #ddd;
     margin-bottom: 5%;
 }
+.exchanges-section img{
+    width: 100%;
+    max-width: 40%;
+    min-width: 270px;
+}
 /* Slide 10 */
 .slide-10{
     background-color: #eaeaea;
@@ -309,6 +314,12 @@ html {
     text-align: center;
     margin-bottom: 3%;
 }
+.road-map img{
+    width: 100%;
+    max-width: 80%;
+    min-width: 400px;
+}
+.road-map img.mobile{display: none}
 /*Footer site*/
 footer .container {
     padding: 2% 0 1%;
@@ -341,9 +352,20 @@ footer p {
     .download-flash .col-box:nth-child(2n+1){
         clear: both;
     }
+    .slide-8 .bg-white{display: none}
+    .slide-8 .bg-blue{
+        padding: 10% 0;
+        margin-top: 5%;
+    }
     .slide-8 ul li img{margin-top: 0}
 }
 @media all and (max-width: 480px) {
+    .road-map img{display: none}
+    .road-map img.mobile{
+        display: block;
+        max-width: 100%;
+        min-width: auto;
+    }
     #content-slide1 h2{
         font-size: 30px !important;
     }
@@ -357,8 +379,8 @@ footer p {
     .download-flash h2{font-size: 25px;}
 
     .flash-wallet a, .flash-wallet p, .flash-wallet h3 {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 16px !important;
+        line-height: 24px !important;
     }
 }
 @media all and (max-width: 425px) {
