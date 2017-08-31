@@ -244,8 +244,8 @@ html {
 }
 .exchanges-section img{
     width: 100%;
-    max-width: 40%;
-    min-width: 270px;
+    max-width: 300px;
+    min-width: 200px;
 }
 /* Slide 10 */
 .slide-10{
@@ -386,6 +386,9 @@ footer p {
 @media all and (max-width: 425px) {
     .flash-wallet .slide-2 .col {
         width: 50%;
+    }
+    .road-map h2, .exchanges-section h2{
+        font-size: 30px;
     }
 }
 /*===================*/
