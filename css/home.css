@@ -37,6 +37,23 @@ html {
     font-size: 100%;
 }
 .pad0{padding: 0}
+.link-flash{
+    position: fixed;
+    right: 0px;
+    top: 100px;
+}
+.link-flash a{
+    color: #fff;
+    background-color: #fab115;
+    padding: 6px 19px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 18px;
+}
+.link-flash a:hover{
+    color: #fff;
+    background-color: #fdbb2e;
+}
 .flash-wallet header{
     background: #55505a url(../images/bg-header.png) no-repeat center/cover;
     mso-line-height-rule: exactly;
@@ -81,6 +98,9 @@ html {
 }
 .link-top a{
     color: #7ac2ff;
+}
+.link-top a:hover{
+    color: #fff;
 }
 .flash-wallet h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     font-family: 'Roboto-condensed', sans-serif;
