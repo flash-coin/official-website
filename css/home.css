@@ -37,10 +37,12 @@ html {
     font-size: 100%;
 }
 .pad0{padding: 0}
+.pad5{padding: 0 5px}
 .link-flash{
     position: fixed;
     right: 0px;
     top: 100px;
+    z-index: 10;
 }
 .link-flash a{
     color: #fff;
@@ -110,7 +112,7 @@ html {
     font-family: 'Sanspro-light', sans-serif;
     padding: 0;
 }
-.flash-wallet input{
+#content-slide1 input{
     font-size: 15px;
     padding: 5px 12px;
     border: none;

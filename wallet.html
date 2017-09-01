@@ -6,9 +6,9 @@
         <title>FLASH Wallet</title>
         <link rel="shortcut icon" href="images/favicon.ico" title="Favicon">
         <link rel="dns-prefetch" href="//s.w.org">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
         <link rel="stylesheet" href="css/home.css" type="text/css" media="all">
         <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
         <script type="text/javascript" src="flashcoin.js"></script>
     </head>
@@ -17,12 +17,21 @@
             <div class="home-page flash-wallet">
                 <header class="header">
                     <div class="container" ng-controller="Flashcoin">
+                        <p class="link-top text-right"><a href="https://explorer.flashcoin.io/">Explorer</a> | <a href="https://charts.flashcoin.io/">Chart</a></p>
                         <div class="col-xs-12">
                             <div class="col-xs-6 logo">
-                                <a href="https://wallet.flashcoin.io/"><img src="images/flash-wallet.png" /></a>
+                                <a href="https://wallet.flashcoin.io/"><img style="margin-top: -42px;" src="images/flash-wallet.png" /></a>
                             </div>
-                            <div class="col-xs-6 text-right">
-                                <p class="link-top"><a href="https://explorer.flashcoin.io/">Explorer</a> | <a href="https://charts.flashcoin.io/">Chart</a></p>
+                            <div class="col-xs-6 pad0">
+                                <div class="col-xs-12 col-sm-5 pad5">
+                                    <input id="identifer" type="text" class="validate form-control" placeholder="e-mail address">
+                                </div>
+                                <div class="col-xs-12 col-sm-5 pad5">
+                                    <input id="loginpassword" type="password" class="form-control" placeholder="password">
+                                </div>
+                                <div class="btn-login form-group">
+                                    <button id="btn-dologin" class="btn btn-default">Login</button>
+                                </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-7 text-center pad0 pull-right" id="content-slide1">
@@ -162,6 +171,11 @@
                         </div>
                     </div>
                 </div>
+                <footer class="footer col-xs-12">
+                    <div class="container text-center">
+                        <p class="hidden-xs"><img src="assets/images/flag-footer.png" width="" class="m15r" />Flashcoin.io is provided by the Flashcoin Foundation, Liechtenstein. Supported by the FLASH community.</p>
+                    </div>
+                </footer>
                 <!--<a id="create-wallet-btn" class="btn create-wallet-btn">Get an Account Now with Free Coins</a>-->
             </div>
         </div>
