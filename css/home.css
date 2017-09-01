@@ -56,6 +56,13 @@ html {
     color: #fff;
     background-color: #fdbb2e;
 }
+.create-wallet{
+    font-size: 30px;
+    padding: 0px 20px;
+    background-color: #66B933;
+    font-weight: bold;
+    border-color: #458a1b;
+}
 .flash-wallet header{
     background: #55505a url(../images/bg-header.png) no-repeat center/cover;
     mso-line-height-rule: exactly;
