@@ -14,7 +14,7 @@ angular.module('flashcoin', [])
     }
 
     function get_transactions_stats(){
-        $http.get('https://explorer.flashcoin.io/api/blocks').success((data) => {
+        $http.get('https://explorer.flashcoin.io/api/blocks?limit=24000').success((data) => {
             blockData = data.blocks;
             var total_txns = 0;
             for (var i=0; i< data.blocks.length; i++) {
