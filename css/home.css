@@ -39,7 +39,7 @@ html {
 .pad0{padding: 0}
 .pad5{padding: 0 5px}
 .link-flash{
-    position: fixed;
+    position: absolute;
     right: 0px;
     top: 100px;
     z-index: 10;
@@ -330,9 +330,6 @@ html {
     margin-right:10px;
     width: 70px;
 }
-.home-safecash .download-flash .container{
-    width: 1260px;
-}
 .road-map{
     padding: 4% 0;
 }
@@ -367,6 +364,14 @@ footer p {
 }
 /*===================*/
 @media all and (max-width: 767px) {
+    .road-map img{display: none}
+    .road-map img.mobile{
+        display: block;
+        width: 100%;
+        min-width: auto;
+        max-width: 400px;
+        margin: 0 auto;
+    }
     .flash-wallet .slide-2 .col{
         width: 33.33333%;
     }
@@ -389,12 +394,7 @@ footer p {
     .slide-8 ul li img{margin-top: 0}
 }
 @media all and (max-width: 480px) {
-    .road-map img{display: none}
-    .road-map img.mobile{
-        display: block;
-        max-width: 100%;
-        min-width: auto;
-    }
+
     #content-slide1 h2{
         font-size: 30px !important;
     }
