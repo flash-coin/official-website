@@ -14,14 +14,31 @@ angular.module('flashcoin', [])
     }
 
     function get_transactions_stats(){
-        $http.get('https://explorer.flashcoin.io/api/blocks?limit=24000').success((data) => {
+        var currentTime = Math.round(+new Date()/1000);
+        var before24h = currentTime - 24*60*60;
+
+        var d = new Date();
+        d.setDate(d.getDate() - 1);
+        var curr_date = d.getDate();
+        var curr_month = d.getMonth() + 1;
+        var curr_year = d.getFullYear();
+        var yesterday = curr_year + "-" + curr_month + "-" + curr_date ;
+
+        var endTx = 0;
+
+        $http.get('https://explorer.flashcoin.io/api/blocks?startTimestamp='+currentTime+'&blockDate='+yesterday+'&limit=24000').success((data) => {
             blockData = data.blocks;
             var total_txns = 0;
             for (var i=0; i< data.blocks.length; i++) {
+              if(data.blocks[i].time > before24h){
                 total_txns += data.blocks[i].txlength - 1;
+                endTx = i;
+              } else {
+                break;
+              }
             }
             $scope.total_txns = 'Total 24h: ' + total_txns;
-            var ave_txn = (data.blocks[0].time - data.blocks[data.blocks.length-1].time)/data.blocks.length;
+            var ave_txn = (data.blocks[0].time - data.blocks[endTx].time)/endTx;
             $scope.ave_txn = 'Ave Txn Time: ' + ave_txn.toFixed(2);
         }).error((err) => {
             console.log(err);
