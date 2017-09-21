@@ -3,11 +3,25 @@ angular.module('flashcoin', [])
     $document.ready(function () {
         get_market_price();
         get_transactions_stats();
+        get_wallet_stats();
     })
     function get_market_price(){
         $http.get('https://api.coinmarketcap.com/v1/ticker/flash/').success((data) => {
             $scope.message = data[0].price_btc;
             $scope.market_price = 'Market Price: ' + data[0].price_btc * 100000000 + ' (' + data[0].percent_change_1h + '%)';
+        }).error((err) => {
+            console.log(err);
+        });
+    }
+
+    function get_wallet_stats(){
+        $http.get('https://keys.flashcoin.io/api/wallet-stats').success((data) => {
+            $scope.address_with_balance = 'Addresses with Balance: ' + data.stats.total_wallet_count.toFixed(0);
+        }).error((err) => {
+            console.log(err);
+        });
+        $http.get('https://keys.flashcoin.io/api/transaction-stats').success((data) => {
+            $scope.ave_txn = 'Ave Txn Time: ' + data.stats.average_processing_duration.toFixed(2);
         }).error((err) => {
             console.log(err);
         });
@@ -40,8 +54,6 @@ angular.module('flashcoin', [])
               }
             }
             $scope.total_txns = 'Total 24h: ' + total_txns;
-            var ave_txn = (data.blocks[0].time - data.blocks[endTx].time)/endTx;
-            $scope.ave_txn = 'Ave Txn Time: ' + ave_txn.toFixed(2);
         }).error((err) => {
             console.log(err);
         });
