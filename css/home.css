@@ -64,12 +64,12 @@ html {
     border-color: #458a1b;
 }
 .flash-wallet header{
-    background: #55505a url(../images/bg-header.png) no-repeat center/cover;
+    background: #55505a url(../images/bg-header.jpg) no-repeat center/cover;
     mso-line-height-rule: exactly;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     background-color: #55505a;
-    background-image: url(../images/bg-header.png);
+    background-image: url(../images/bg-header.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -367,8 +367,8 @@ footer p {
     .road-map img{display: none}
     .road-map img.mobile{
         display: block;
-        width: 100%;
         min-width: auto;
+        width: 100%;
         max-width: 400px;
         margin: 0 auto;
     }
