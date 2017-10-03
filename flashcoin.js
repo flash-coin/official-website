@@ -6,23 +6,23 @@ angular.module('flashcoin', [])
         get_wallet_stats();
     })
     function get_market_price(){
-        $http.get('https://api.coinmarketcap.com/v1/ticker/flash/').success((data) => {
+        $http.get('https://api.coinmarketcap.com/v1/ticker/flash/').success(function(data) {
             $scope.message = data[0].price_btc;
             $scope.market_price = 'Market Price: ' + data[0].price_btc * 100000000 + ' (' + data[0].percent_change_1h + '%)';
-        }).error((err) => {
+        }).error(function(err) {
             console.log(err);
         });
     }
 
     function get_wallet_stats(){
-        $http.get('https://keys.flashcoin.io/api/wallet-stats').success((data) => {
+        $http.get('https://keys.flashcoin.io/api/wallet-stats').success(function(data) {
             $scope.address_with_balance = 'Addresses with Balance: ' + data.stats.total_wallet_count.toFixed(0);
-        }).error((err) => {
+        }).error(function(err) {
             console.log(err);
         });
-        $http.get('https://keys.flashcoin.io/api/transaction-stats').success((data) => {
+        $http.get('https://keys.flashcoin.io/api/transaction-stats').success(function(data) {
             $scope.ave_txn = 'Ave Txn Time: ' + data.stats.average_processing_duration.toFixed(2);
-        }).error((err) => {
+        }).error(function(err) {
             console.log(err);
         });
     }
@@ -42,7 +42,7 @@ angular.module('flashcoin', [])
 
         var endTx = 0;
 
-        $http.get('https://explorer.flashcoin.io/api/blocks?startTimestamp='+currentTime+'&blockDate='+yesterday+'&limit=24000').success((data) => {
+        $http.get('https://explorer.flashcoin.io/api/blocks?startTimestamp='+currentTime+'&blockDate='+yesterday+'&limit=24000').success(function(data) {
             blockData = data.blocks;
             var total_txns = 0;
             for (var i=0; i< data.blocks.length; i++) {
@@ -54,7 +54,7 @@ angular.module('flashcoin', [])
               }
             }
             $scope.total_txns = 'Total 24h: ' + total_txns;
-        }).error((err) => {
+        }).error(function(err) {
             console.log(err);
         });
     }
