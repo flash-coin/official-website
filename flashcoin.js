@@ -34,9 +34,9 @@ angular.module('flashcoin', [])
         var d = new Date();
         d.setDate(d.getDate() - 1);
         var curr_date = d.getDate();
-        curr_date = curr_date.length==2?curr_date:"0"+curr_date;
+        curr_date = curr_date.toString().length==2?curr_date:"0"+curr_date;
         var curr_month = d.getMonth() + 1;
-        curr_month = curr_month.length==2?curr_month:"0"+curr_month;
+        curr_month = curr_month.toString().length==2?curr_month:"0"+curr_month;
         var curr_year = d.getFullYear();
         var yesterday = curr_year + "-" + curr_month + "-" + curr_date ;
 
