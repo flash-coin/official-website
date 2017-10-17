@@ -304,6 +304,9 @@ html {
 .slide-10 .text-justify{
     padding: 0 15px;
 }
+.slide-10 p.tu a{
+    margin: 0 10px;
+}
 .download-flash{
     padding: 30px 0 70px 0;
     border-top: 1px solid #ddd;
