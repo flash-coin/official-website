@@ -222,6 +222,7 @@ html {
     float: none;
 }
 .slide-4 ul li,
+.road-map ol li,
 .slide-4 .text p{
     color: #616060;
     font-size: 23px;
@@ -345,7 +346,7 @@ html {
 }
 .road-map img{
     width: 100%;
-    max-width: 80%;
+    max-width: 100%;
     min-width: 400px;
 }
 .road-map img.mobile{display: none}
@@ -433,5 +434,12 @@ footer p {
     .road-map h2, .exchanges-section h2{
         font-size: 30px;
     }
+}
+
+.road-map table{
+    color: #616060;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Sanspro-light', sans-serif;
 }
 /*===================*/
