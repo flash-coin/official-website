@@ -43,25 +43,25 @@ html {
     right: 0px;
     top: 100px;
     z-index: 10;
-	background-image: linear-gradient(bottom, rgb(250,177,21) 0%, rgb(253,187,46) 100%);
-    background-image: -o-linear-gradient(bottom, rgb(250,177,21) 0%, rgb(253,187,46) 100%);
-    background-image: -moz-linear-gradient(bottom, rgb(250,177,21) 0%, rgb(253,187,46) 100%);
-    background-image: -webkit-linear-gradient(bottom, rgb(250,177,21) 0%, rgb(253,187,46) 100%);
-    background-image: -ms-linear-gradient(bottom, rgb(250,177,21) 0%, rgb(253,187,46) 100%);
+	background-image: linear-gradient(bottom, rgb(250,177,21) 0%, rgb(236,195,106) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(250,177,21) 0%, rgb(236,195,106)) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(250,177,21) 0%, rgb(236,195,106)) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(250,177,21) 0%, rgb(236,195,106)) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(250,177,21) 0%, rgb(236,195,106)) 100%);
  
     background-image: -webkit-gradient(
         linear,
         left bottom,
         left top,
         color-stop(0, rgb(250,177,21)),
-        color-stop(1, rgb(253,187,46))
+        color-stop(1, rgb(236,195,106)))
     );
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    -webkit-box-shadow: -4px 6px 5px #353E57, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-    -moz-box-shadow: -4px 6px 5px #353E57, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-    box-shadow: -4px 6px 5px #353E57, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    -webkit-box-shadow: -2px 4px 5px #797962, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    -moz-box-shadow: -2px 4px 5px #797962, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    box-shadow: -2px 4px 5px #797962, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
 }
 .link-flash a{
     color: #fff;
