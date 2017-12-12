@@ -43,19 +43,38 @@ html {
     right: 0px;
     top: 100px;
     z-index: 10;
-	box-shadow: -4px 7px 8px 0 rgba(5, 55, 87, 0.6);
+	background-image: linear-gradient(bottom, rgb(250,177,21) 0%, rgb(253,187,46) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(250,177,21) 0%, rgb(253,187,46) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(250,177,21) 0%, rgb(253,187,46) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(250,177,21) 0%, rgb(253,187,46) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(250,177,21) 0%, rgb(253,187,46) 100%);
+ 
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(250,177,21)),
+        color-stop(1, rgb(253,187,46))
+    );
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: -4px 6px 5px #353E57, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    -moz-box-shadow: -4px 6px 5px #353E57, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    box-shadow: -4px 6px 5px #353E57, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
 }
 .link-flash a{
     color: #fff;
     background-color: #fab115;
     padding: 6px 19px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
     font-size: 18px;
 }
 .link-flash a:hover{
     color: #fff;
     background-color: #fdbb2e;
+	text-decoration: none;
 }
 .create-wallet{
     font-size: 30px;
@@ -108,7 +127,7 @@ html {
 }
 .link-top a{
     color: #7ac2ff;
-	padding-right: 10px;
+	padding: 0 5px;
 }
 .link-top a:hover{
     color: #fff;
@@ -362,7 +381,26 @@ html {
     font-size: 20px;
     font-weight: bold;
     color: white;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	background-image: linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+ 
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(116,197,67)),
+        color-stop(1, rgb(154,232,106))
+    );
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0px 2px 5px #74C543, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    -moz-box-shadow: 0px 2px 0px #74C543, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    box-shadow: 0px 2px 0px #74C543, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
 }
 /*Footer site*/
 footer .container {
