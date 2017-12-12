@@ -43,6 +43,7 @@ html {
     right: 0px;
     top: 100px;
     z-index: 10;
+	box-shadow: -4px 7px 8px 0 rgba(5, 55, 87, 0.6);
 }
 .link-flash a{
     color: #fff;
@@ -107,6 +108,7 @@ html {
 }
 .link-top a{
     color: #7ac2ff;
+	padding-right: 10px;
 }
 .link-top a:hover{
     color: #fff;
@@ -360,6 +362,7 @@ html {
     font-size: 20px;
     font-weight: bold;
     color: white;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 /*Footer site*/
 footer .container {

@@ -18,11 +18,11 @@
                 <header class="header">
                     <div class="container" ng-controller="Flashcoin">
                         <div class="col-xs-12">
-                            <div class="col-xs-3 col-sm-6 logo">
+                            <div class="col-xs-3 col-sm-3 logo">
                                 <a href="https://flashcoin.io/"><img src="images/flash-wallet.png" /></a>
                             </div>
-                            <div class="col-xs-9 col-sm-6 text-right">
-                                <p class="link-top"><a href="https://explorer.flashcoin.io/">Explorer</a> | <a href="https://charts.flashcoin.io/">Charts</a> | <a href="https://nodes.flashcoin.io/">Nodes</a></p>
+                            <div class="col-xs-9 col-sm-9 text-right">
+                                <p class="link-top"><a href="" ng-click="gotoAnchor('wallets')">Wallets</a> <a href="" ng-click="gotoAnchor('exchanges')">Exchanges</a> <a href="" ng-click="gotoAnchor('whitepaper')">Whitepaper</a> <a href="" ng-click="gotoAnchor('roadmap')">RoadMap</a> <a href="https://explorer.flashcoin.io/">Explorer</a> <a href="https://charts.flashcoin.io/">Charts</a> <a href="https://nodes.flashcoin.io/">Nodes</a></p>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-7 text-center pad0 pull-right" id="content-slide1">
@@ -107,7 +107,7 @@
                         </div>
                         <div class="slide-4">
                             <div class="container">
-                                <div class="group-content">
+                                <div id="wallets" class="group-content">
                                     <h2>Wallets</h2>
                                     <div class="text col-xs-12">
                                         <p>FLASH supports a number of online wallets including Coinomi, Coin Payments, QT (Window, Mac, Linux) and an easy to use online wallet designed for the mass consumer market. If you can make online payments, you already know how to use FLASH.</p>
@@ -170,7 +170,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="exchanges-section text-center">
+                        <div id="exchanges" class="exchanges-section text-center">
                             <h2>EXCHANGES</h2>
                             <p class="text-center"><a href="https://www.cryptopia.co.nz/" target="_blank"><img src="images/cryptopia.png" width="40%"></a></p>
                         </div>
@@ -218,13 +218,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slide-10" id="slide-10">
+                        <div class="slide-10" id="whitepaper">
                             <div class="container text-center">
                                 <h2 class="text-center">Whitepaper</h2>
                                 <p class="tu"><a href="docs/FLASHWhitepaper.pdf"><button>Download our Whitepaper</button></a><a href="docs/FLASHWhitepaper-en-Espanol.pdf"><button>Whitepaper en Español</button></a></p>
                             </div>
                         </div>
-                        <div class="road-map">
+                        <div class="road-map" id="roadmap">
                             <div class="container">
                                 <h2 class="text-center">Road Map</h2>
 								<div class="text col-xs-12">

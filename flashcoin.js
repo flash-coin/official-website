@@ -1,10 +1,24 @@
 angular.module('flashcoin', [])
-.controller('Flashcoin', function($scope, $http, $location, $window, $document) {
+.controller('Flashcoin', function($scope, $http, $location, $window, $document, $anchorScroll) {
     $document.ready(function () {
         get_market_price();
         get_transactions_stats();
         get_wallet_stats();
     })
+	
+	$scope.gotoAnchor = function(x) {
+	  var newHash = x;
+	  if ($location.hash() !== newHash) {
+		// set the $location.hash to `newHash` and
+		// $anchorScroll will automatically scroll to it
+		$location.hash(x);
+	  } else {
+		// call $anchorScroll() explicitly,
+		// since $location.hash hasn't changed
+		$anchorScroll();
+	  }
+	};
+	
     function get_market_price(){
         $http.get('https://api.coinmarketcap.com/v1/ticker/flash/').success(function(data) {
             $scope.message = data[0].price_btc;
