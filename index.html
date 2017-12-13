@@ -8,14 +8,16 @@
         <link rel="dns-prefetch" href="//s.w.org">
         <link rel="stylesheet" href="css/home.css" type="text/css" media="all">
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
-        <script type="text/javascript" src="flashcoin.js"></script>
+		<script type="text/javascript" src="js/angular-smooth-scroll.js"></script>
+        <script type="text/javascript" src="js/flashcoin.js"></script>
     </head>
     <body>
-        <div class="wrap">
+        <div class="wrap" id="top">
             <div class="home-page flash-wallet">
                 <p class="link-flash"><a target="_blank" href="https://wallet.flashcoin.io/">FLASH Web Wallet</a></p>
-                <header class="header">
+                <header class="header" >
                     <div class="container" ng-controller="Flashcoin">
                         <div class="col-xs-12">
                             <div class="col-xs-12 col-sm-3 logo">
@@ -54,6 +56,7 @@
                                 </div>
                             </div>
                         </div>
+						<a href="#" style="display:none;" class="back-to-top-btn" ng-click="gotoAnchor('top')" ><span class="glyphicon glyphicon-arrow-up"></span> <span class="back-to-top-text">Top</span> </a>
                     </div>
                 </header>
                 <div class="main-content">

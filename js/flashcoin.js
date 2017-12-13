@@ -1,22 +1,15 @@
-angular.module('flashcoin', [])
-.controller('Flashcoin', function($scope, $http, $location, $window, $document, $anchorScroll) {
+angular.module('flashcoin')
+.controller('Flashcoin', function($scope, $http, $location, $window, $document, $smoothScroll) {
     $document.ready(function () {
         get_market_price();
         get_transactions_stats();
         get_wallet_stats();
     })
 	
-	$scope.gotoAnchor = function(x) {
-	  var newHash = x;
-	  if ($location.hash() !== newHash) {
-		// set the $location.hash to `newHash` and
-		// $anchorScroll will automatically scroll to it
-		$location.hash(x);
-	  } else {
-		// call $anchorScroll() explicitly,
-		// since $location.hash hasn't changed
-		$anchorScroll();
-	  }
+	$scope.gotoAnchor = function(id) {
+	  var newHash = id;
+		//$location.hash()
+	  return $smoothScroll.slow("#"+id);
 	};
 	
     function get_market_price(){
@@ -72,4 +65,13 @@ angular.module('flashcoin', [])
             console.log(err);
         });
     }
+});
+
+
+$(window).scroll(function () {
+ if ($(this).scrollTop() > 100) {
+ $('.back-to-top-btn').addClass('display').fadeIn();
+ } else {
+ $('.back-to-top-btn').removeClass('display').fadeOut();
+ }
 });

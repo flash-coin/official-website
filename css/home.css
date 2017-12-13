@@ -403,6 +403,41 @@ html {
     -moz-box-shadow: 0px 2px 0px #74C543, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
     box-shadow: 0px 2px 0px #74C543, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
 }
+a.back-to-top-btn:hover, a.back-to-top-btn:active{
+	text-decoration: none;
+}
+.back-to-top-btn {
+	position: fixed;
+    bottom: 20px;
+    right: 5px;
+	z-index: 100;
+	background-color: #74c543;
+    padding: 7px 8px 4px;
+    border-color: #55A226;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+	background-image: linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+ 
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(116,197,67)),
+        color-stop(1, rgb(154,232,106))
+    );
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0px 2px 5px #74C543, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    -moz-box-shadow: 0px 2px 0px #74C543, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    box-shadow: 0px 2px 0px #74C543, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+}
 /*Footer site*/
 footer .container {
     padding: 2% 0 1%;
@@ -458,7 +493,9 @@ footer p {
     .slide-8 ul li img{margin-top: 0}
 }
 @media all and (max-width: 480px) {
-	
+	.back-to-top-text {
+		display: none;
+	}
     #content-slide1 h2{
         font-size: 30px !important;
     }
