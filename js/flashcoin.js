@@ -4,14 +4,15 @@ angular.module('flashcoin')
         get_market_price();
         get_transactions_stats();
         get_wallet_stats();
+        get_blockscan_stats();
     })
-	
+
 	$scope.gotoAnchor = function(id) {
 	  var newHash = id;
 		//$location.hash()
 	  return $smoothScroll.slow("#"+id);
 	};
-	
+
     function get_market_price(){
         $http.get('https://api.coinmarketcap.com/v1/ticker/flash/').success(function(data) {
             $scope.message = data[0].price_btc;
@@ -23,12 +24,20 @@ angular.module('flashcoin')
 
     function get_wallet_stats(){
         $http.get('https://keys.flashcoin.io/api/wallet-stats').success(function(data) {
-            $scope.address_with_balance = 'Addresses with Balance: ' + data.stats.total_wallet_count.toFixed(0);
+            $scope.total_signups = 'Total Signups: ' + data.stats.total_wallet_count.toFixed(0);
         }).error(function(err) {
             console.log(err);
         });
         $http.get('https://keys.flashcoin.io/api/transaction-stats').success(function(data) {
             $scope.ave_txn = 'Ave Txn Time: ' + data.stats.average_processing_duration.toFixed(2);
+        }).error(function(err) {
+            console.log(err);
+        });
+    }
+
+    function get_blockscan_stats(){
+        $http.get('https://blockinfo.flashcoin.io/api/report/block/general').success(function(data) {
+            $scope.address_with_balance = 'Addresses with Balance: ' + data.TotalAddress.toFixed(0);
         }).error(function(err) {
             console.log(err);
         });
