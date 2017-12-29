@@ -18,7 +18,7 @@ angular.module('flashcoin')
             btc_price_sat = data[0].price_btc * 100000000;
             price_usd = data[0].price_usd * 1;
             $scope.market_price_btc = 'Market Price: ' + btc_price_sat.toFixed(0) + ' sat [~' + price_usd.toFixed(4) +' usd]';
-            $scope.market_price_percent_sign = data[0].percent_change_1h > 0 ? '+':'-';
+            $scope.market_price_percent_sign = data[0].percent_change_1h > 0 ? '+':'';
             $scope.market_price_percent_str = '(' + $scope.market_price_percent_sign + data[0].percent_change_1h + '%)';
             $scope.market_price_percent = data[0].percent_change_1h;
         }).error(function(err) {
