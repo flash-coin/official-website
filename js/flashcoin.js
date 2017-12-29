@@ -15,8 +15,12 @@ angular.module('flashcoin')
 
     function get_market_price(){
         $http.get('https://api.coinmarketcap.com/v1/ticker/flash/').success(function(data) {
-            $scope.message = data[0].price_btc;
-            $scope.market_price = 'Market Price: ' + data[0].price_btc * 100000000 + ' (' + data[0].percent_change_1h + '%)';
+            btc_price_sat = data[0].price_btc * 100000000;
+            price_usd = data[0].price_usd * 1;
+            $scope.market_price_btc = 'Market Price: ' + btc_price_sat.toFixed(0) + ' sat [~' + price_usd.toFixed(4) +' usd]';
+            $scope.market_price_percent_sign = data[0].percent_change_1h > 0 ? '+':'-';
+            $scope.market_price_percent_str = '(' + $scope.market_price_percent_sign + data[0].percent_change_1h + '%)';
+            $scope.market_price_percent = data[0].percent_change_1h;
         }).error(function(err) {
             console.log(err);
         });
@@ -24,12 +28,12 @@ angular.module('flashcoin')
 
     function get_wallet_stats(){
         $http.get('https://keys.flashcoin.io/api/wallet-stats').success(function(data) {
-            $scope.total_signups = 'Total Signups: ' + data.stats.total_wallet_count.toFixed(0);
+            $scope.total_signups = 'Total Web-wallet Signups: ' + data.stats.total_wallet_count.toFixed(0);
         }).error(function(err) {
             console.log(err);
         });
         $http.get('https://keys.flashcoin.io/api/transaction-stats').success(function(data) {
-            $scope.ave_txn = 'Ave Txn Time: ' + data.stats.average_processing_duration.toFixed(2);
+            $scope.ave_txn = 'Ave Txn Time: ' + data.stats.average_processing_duration.toFixed(2) + ' sec';
         }).error(function(err) {
             console.log(err);
         });
@@ -38,6 +42,8 @@ angular.module('flashcoin')
     function get_blockscan_stats(){
         $http.get('https://blockinfo.flashcoin.io/api/report/block/general').success(function(data) {
             $scope.address_with_balance = 'Addresses with Balance: ' + data.TotalAddress.toFixed(0);
+            $scope.total_txns = 'Total Txs: ' + data.TotalTransaction.toFixed(0);
+            $scope.total_blocks = 'Total Blocks: ' + data.TotalBlock.toFixed(0);
         }).error(function(err) {
             console.log(err);
         });
@@ -69,7 +75,7 @@ angular.module('flashcoin')
                 break;
               }
             }
-            $scope.total_txns = 'Total 24h: ' + total_txns;
+            $scope.total_txns_24h = 'Total Txs 24h: ' + total_txns;
         }).error(function(err) {
             console.log(err);
         });

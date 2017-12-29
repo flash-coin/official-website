@@ -38,25 +38,34 @@
                                                 <span class="input-group-addon">&nbsp;</span>
                                             </div>
                                             <div class="input-group form-group col-xs-12 col-sm-6 pull-left">
-                                                <input class="form-control" type="text" placeholder="Total Signups" value="{{total_signups}}"/>
+                                                <input class="form-control" type="text" placeholder="Total Web-Wallet Signups" value="{{total_signups}}"/>
                                             </div>
                                         </div>
                                         <h4>Transactions 24h</h4>
                                         <div class="col-xs-12 form-group">
-                                            <div class="input-group form-group col-xs-12 col-sm-6 pull-left">
-                                                <input class="form-control" type="text" placeholder="Total 24h" value="{{total_txns}}"/>
-                                                <span class="input-group-addon">TXNS</span>
+                                          <div class="input-group form-group col-xs-12 col-sm-4 pull-left">
+                                              <input class="form-control" type="text" placeholder="Total Transactions" value="{{total_txns}}"/>
+                                          </div>
+                                            <div class="input-group form-group col-xs-12 col-sm-4 pull-left">
+                                                <input class="form-control" type="text" placeholder="Total 24h" value="{{total_txns_24h}}"/>
                                             </div>
-                                            <div class="input-group form-group col-xs-12 col-sm-6 pull-left">
+                                            <div class="input-group form-group col-xs-12 col-sm-4 pull-left">
                                                 <input class="form-control" type="text" placeholder="Ave Txn Time" value="{{ave_txn}}"/>
-                                                <span class="input-group-addon">sec</span>
                                             </div>
                                         </div>
 
                                         <h4>Circulating Supply:  900 million</h4>
-                                        <div class="input-group form-group">
-                                            <input class="form-control" type="text" placeholder="Market Price" value="{{market_price}}"/>
-                                            <span class="input-group-addon">satoshis</span>
+                                        <div class="col-xs-12 form-group">
+                                          <div class="input-group form-group col-xs-12 col-sm-4 pull-left">
+                                              <input class="form-control" type="text" placeholder="Total Blocks" value="{{total_blocks}}"/>
+                                              <span class="input-group-addon">&nbsp;</span>
+                                          </div>
+                                          <div class="input-group form-group col-xs-12 col-sm-6 pull-left">
+                                              <input class="form-control" type="text" placeholder="Market Price" value="{{market_price_btc}}"/>
+                                          </div>
+                                          <div class="input-group form-group col-xs-12 col-sm-2 pull-left">
+                                              <input class="form-control" style="color:{{market_price_percent>0?'#15de00':'red'}};" type="text" placeholder="" value="{{market_price_percent_str}}"/>
+                                          </div>
                                         </div>
                                     </form>
                                 </div>
