@@ -37,13 +37,59 @@ html {
     font-size: 100%;
 }
 .pad0{padding: 0}
+.pad5{padding: 0 5px}
+.link-flash{
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    z-index: 10;
+	background-image: linear-gradient(bottom, rgb(250,177,21) 0%, rgb(236,195,106) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(250,177,21) 0%, rgb(236,195,106)) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(250,177,21) 0%, rgb(236,195,106)) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(250,177,21) 0%, rgb(236,195,106)) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(250,177,21) 0%, rgb(236,195,106)) 100%);
+ 
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(250,177,21)),
+        color-stop(1, rgb(236,195,106)))
+    );
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: -2px 4px 5px #797962, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    -moz-box-shadow: -2px 4px 5px #797962, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    box-shadow: -2px 4px 5px #797962, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+}
+.link-flash a{
+    color: #fff;
+    background-color: #fab115;
+    padding: 6px 19px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    font-size: 18px;
+}
+.link-flash a:hover{
+    color: #fff;
+    background-color: #fdbb2e;
+	text-decoration: none;
+}
+.create-wallet{
+    font-size: 30px;
+    padding: 0px 20px;
+    background-color: #66B933;
+    font-weight: bold;
+    border-color: #458a1b;
+}
 .flash-wallet header{
-    background: #55505a url(../images/bg-header.png) no-repeat center/cover;
+    background: #55505a url(../images/bg-header.jpg) no-repeat center/cover;
     mso-line-height-rule: exactly;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     background-color: #55505a;
-    background-image: url(../images/bg-header.png);
+    background-image: url(../images/bg-header.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -77,14 +123,29 @@ html {
     font-family: 'Roboto', sans-serif;
     background: #fff;
 }
+.link-top-container{
+	text-align: right;
+}
+.link-top a{
+    color: #7ac2ff;
+	padding: 0 5px;
+}
+.link-top a:hover{
+    color: #fff;
+}
+.link-top a:focus{
+    color: #7ac2ff;
+	text-decoration: none;
+}
 .flash-wallet h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     font-family: 'Roboto-condensed', sans-serif;
 }
 .flash-wallet p{
     font-size: 21px;
     font-family: 'Sanspro-light', sans-serif;
+    padding: 0;
 }
-.flash-wallet input{
+#content-slide1 input{
     font-size: 15px;
     padding: 5px 12px;
     border: none;
@@ -146,7 +207,7 @@ html {
 }
 .flash-wallet .slide-2 .col{
     margin-bottom: 3%;
-    width: 19.5%;
+    width: 20%;
     float: left;
 }
 .flash-wallet .slide-2 h2 {margin: 0}
@@ -163,13 +224,17 @@ html {
 }
 /*============*/
 /* Slide 4 */
-.slide-4{
+.slide-4 h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #116bb6;
+    text-align: center;
 }
 .slide-4 h3{
     font-size: 25px;
     font-family: 'Open Sans', sans-serif;
     color: #737373;
-    margin: 0;
+    margin-top: 25px;
     line-height: 35px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -183,8 +248,8 @@ html {
     float: none;
 }
 .slide-4 ul li,
+.road-map ol li,
 .slide-4 .text p{
-    display: block;
     color: #616060;
     font-size: 23px;
     font-weight: normal;
@@ -208,7 +273,6 @@ html {
     padding-bottom: 125px;
 }
 .slide-8 .bg-blue .container{
-    width: 1441px;
 }
 .slide-8 ul {
     padding: 0;
@@ -227,11 +291,22 @@ html {
     margin-top: 35px;
 }
 /*============*/
-
+.exchanges-section{
+    padding: 2% 0;
+    border-top: 1px solid #ddd;
+    color: #116bb6;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2%;
+}
+.exchanges-section img{
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+}
 /* Slide 10 */
 .slide-10{
     background-color: #eaeaea;
-    padding: 2% 0 12%;
+    padding: 2% 0 5%;
 }
 .slide-10 h2,
 .slide-11 h2{
@@ -256,27 +331,116 @@ html {
 .slide-10 .text-justify{
     padding: 0 15px;
 }
+.slide-10 p.tu a{
+    margin: 0 10px;
+}
 .download-flash{
     padding: 30px 0 70px 0;
     border-top: 1px solid #ddd;
     background-color: #eaeaea;
-    margin-bottom: 4%;
+}
+.download-flash .box-center{
+    margin: 0 auto;
+    float: none;
+}
+.download-flash h3{
+    font-weight: normal;
+    padding-top: 10%;
+    line-height: 32px;
 }
 .download-flash .col-box{
-    margin-top: 50px;
+    margin-top: 1%;
 }
 .download-flash .col-box a{
-    font-size: 18px;
+    font-size: 23px;
     font-weight: bold;
-    background-color: #0e76bc;
-    width: 85%;
-    text-align: left
+    color: #2b2b2b;
 }
-.download-flash .col-box a img{
+.download-flash .col-box img{
     margin-right:10px;
+    width: 70px;
 }
-.home-safecash .download-flash .container{
-    width: 1260px;
+.road-map{
+    padding: 4% 0;
+}
+.road-map h2, .exchanges-section h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #116bb6;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.road-map img{
+    width: 100%;
+    max-width: 100%;
+    min-width: 400px;
+}
+.road-map img.mobile{display: none}
+#create-wallet-btn{
+    position: fixed;
+    bottom: 20px;
+    left: -3px;
+    background-color: #74c543;
+    padding: 5px 12px;
+    border-color: #55A226;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+	background-image: linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+ 
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(116,197,67)),
+        color-stop(1, rgb(154,232,106))
+    );
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0px 2px 5px #74C543, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    -moz-box-shadow: 0px 2px 0px #74C543, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    box-shadow: 0px 2px 0px #74C543, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+}
+a.back-to-top-btn:hover, a.back-to-top-btn:focus{
+	text-decoration: none;
+}
+.back-to-top-btn {
+	position: fixed;
+    bottom: 20px;
+    right: 5px;
+	z-index: 100;
+	background-color: #74c543;
+    padding: 7px 8px 4px;
+    border-color: #55A226;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+	background-image: linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(116,197,67) 0%, rgb(154,232,106) 100%);
+ 
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(116,197,67)),
+        color-stop(1, rgb(154,232,106))
+    );
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0px 2px 5px #74C543, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    -moz-box-shadow: 0px 2px 0px #74C543, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    box-shadow: 0px 2px 0px #74C543, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
 }
 /*Footer site*/
 footer .container {
@@ -285,7 +449,6 @@ footer .container {
 footer{
     border-top: 1px solid #ccc;
     background: #555;
-    position: absolute !important;
     right: 0;
     bottom: 0;
     left: 0;
@@ -296,14 +459,77 @@ footer p {
     padding: 0 15px;
 }
 /*===================*/
-@media all and (max-width: 415px) {
-    .flash-wallet .slide-2 .col {
+@media all and (max-width: 767px) {
+	.link-top-container{
+		text-align: center;
+		padding-top:15px;
+	}
+	.logo img {
+		max-width: 55%;
+	}
+    .road-map img{display: none}
+    .road-map img.mobile{
+        display: block;
+        min-width: auto;
         width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
     }
+    .flash-wallet .slide-2 .col{
+        width: 33.33333%;
+    }
+    .download-flash h2{text-align: center}
+    .download-flash h2.mobile{
+        margin-top: 6%;
+    }
+    .download-flash h2.mobile img{
+        margin-top: -50px;
+    }
+    .download-flash .col-box{width: 50%;}
+    .download-flash .col-box:nth-child(2n+1){
+        clear: both;
+    }
+    .slide-8 .bg-white{display: none}
+    .slide-8 .bg-blue{
+        padding: 10% 0;
+        margin-top: 5%;
+    }
+    .slide-8 ul li img{margin-top: 0}
+}
+@media all and (max-width: 480px) {
+	.back-to-top-text {
+		display: none;
+	}
+    #content-slide1 h2{
+        font-size: 30px !important;
+    }
+    .download-flash .col-box{
+        width: 100%;
+        margin-top: 5%;
+    }
+    .flash-wallet .slide-2 .col {
+        width: 33.33333%;
+    }
+    .download-flash h2{font-size: 25px;}
 
     .flash-wallet a, .flash-wallet p, .flash-wallet h3 {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 16px !important;
+        line-height: 24px !important;
     }
+}
+@media all and (max-width: 425px) {
+    .flash-wallet .slide-2 .col {
+        width: 50%;
+    }
+    .road-map h2, .exchanges-section h2{
+        font-size: 30px;
+    }
+}
+
+.road-map table{
+    color: #111111;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Sanspro-light', sans-serif;
 }
 /*===================*/

@@ -1,54 +1,77 @@
-<html>
+<!DOCTYPE html>
+<html ng-app="flashcoin">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Daily.online</title>
-        <link rel="shortcut icon" href="/assets/themes/inspired/favicon.png" title="Favicon">
+        <title>FLASH</title>
+        <link rel="shortcut icon" href="images/favicon.ico" title="Favicon">
         <link rel="dns-prefetch" href="//s.w.org">
         <link rel="stylesheet" href="css/home.css" type="text/css" media="all">
-        <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script type="text/javascript" src="js/angular-smooth-scroll.js"></script>
+        <script type="text/javascript" src="js/flashcoin.js"></script>
     </head>
     <body>
-        <div class="wrap">
+        <div class="wrap" id="top">
             <div class="home-page flash-wallet">
-                <header class="header">
-                    <div class="container">
-                        <div class="col-xs-12 col-sm-5 logo">
-                            <a href="/"><img src="images/logo-demo.png" /></a>
+                <p class="link-flash"><a target="_blank" href="https://wallet.flashcoin.io/">FLASH Web Wallet</a></p>
+                <header class="header" >
+                    <div class="container" ng-controller="Flashcoin">
+                        <div class="col-xs-12">
+                            <div class="col-xs-12 col-sm-3 logo">
+                                <a href="https://flashcoin.io/"><img src="images/flash-wallet.png" /></a>
+                            </div>
+                            <div class="col-xs-12 col-sm-9 link-top-container">
+                                <p class="link-top"><a href="" ng-click="gotoAnchor('wallets')">Wallets</a> | <a href="" ng-click="gotoAnchor('exchanges')">Exchanges</a> | <a href="" ng-click="gotoAnchor('govnodes')">GovNodes</a> | <a href="" ng-click="gotoAnchor('whitepaper')">Whitepaper</a> | <a href="" ng-click="gotoAnchor('roadmap')">RoadMap</a> | <a href="https://explorer.flashcoin.io/">Explorer</a> | <a href="https://charts.flashcoin.io/">Charts</a> | <a href="https://nodes.flashcoin.io/">Nodes</a></p>
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-sm-5 text-center pad0 pull-right" id="content-slide1">
+                        <div class="col-xs-12 col-sm-7 text-center pad0 pull-right" id="content-slide1">
                             <div class="performation">
                                 <h2 style="font-size: 35px;">Key Performance Indicators</h2>
                                 <div class="box-performation" id="box-performation">
                                     <form class="">
                                         <div class="form-group">
-                                            <input class="form-control" type="text" placeholder="Addresses with Balance" value=""/>
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" type="text" placeholder="Accounts with Balances" value=""/>
+                                            <div class="input-group form-group col-xs-12 col-sm-6 pull-left">
+                                                <input class="form-control" type="text" placeholder="Addresses with Balance" value="{{address_with_balance}}"/>
+                                                <span class="input-group-addon">&nbsp;</span>
+                                            </div>
+                                            <div class="input-group form-group col-xs-12 col-sm-6 pull-left">
+                                                <input class="form-control" type="text" placeholder="Total Web-Wallet Signups" value="{{total_signups}}"/>
+                                            </div>
                                         </div>
                                         <h4>Transactions 24h</h4>
                                         <div class="col-xs-12 form-group">
-                                            <div class="input-group form-group col-xs-12 col-sm-6 pull-left">
-                                                <input class="form-control" type="text" placeholder="Total Txn Value 24h" value=""/>
-                                                <span class="input-group-addon">FLASH</span>
+                                          <div class="input-group form-group col-xs-12 col-sm-4 pull-left">
+                                              <input class="form-control" type="text" placeholder="Total Transactions" value="{{total_txns}}"/>
+                                          </div>
+                                            <div class="input-group form-group col-xs-12 col-sm-4 pull-left">
+                                                <input class="form-control" type="text" placeholder="Total 24h" value="{{total_txns_24h}}"/>
                                             </div>
-                                            <div class="input-group form-group col-xs-12 col-sm-6 pull-left">
-                                                <input class="form-control" type="text" placeholder="Ave Txn Time" value=""/>
-                                                <span class="input-group-addon">sec</span>
+                                            <div class="input-group form-group col-xs-12 col-sm-4 pull-left">
+                                                <input class="form-control" type="text" placeholder="Ave Txn Time" value="{{ave_txn}}"/>
                                             </div>
                                         </div>
 
                                         <h4>Circulating Supply:  900 million</h4>
-                                        <div class="input-group form-group">
-                                            <input class="form-control" type="text" placeholder="Market Price" value=""/>
-                                            <span class="input-group-addon">satoshis</span>
+                                        <div class="col-xs-12 form-group">
+                                          <div class="input-group form-group col-xs-12 col-sm-4 pull-left">
+                                              <input class="form-control" type="text" placeholder="Total Blocks" value="{{total_blocks}}"/>
+                                              <span class="input-group-addon">&nbsp;</span>
+                                          </div>
+                                          <div class="input-group form-group col-xs-12 col-sm-6 pull-left">
+                                              <input class="form-control" type="text" placeholder="Market Price" value="{{market_price_btc}}"/>
+                                          </div>
+                                          <div class="input-group form-group col-xs-12 col-sm-2 pull-left">
+                                              <input class="form-control" style="color:{{market_price_percent>0?'#15de00':'red'}};" type="text" placeholder="" value="{{market_price_percent_str}}"/>
+                                          </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
+						<a href="#" style="display:none;" class="back-to-top-btn" ng-click="gotoAnchor('top')" ><span class="glyphicon glyphicon-arrow-up"></span> <span class="back-to-top-text">Top</span> </a>
                     </div>
                 </header>
                 <div class="main-content">
@@ -57,110 +80,135 @@
                             <div class="container content-slide2">
                                 <div class="content col-xs-12">
                                     <div class="col text-center">
-                                        <a title="Facebook" href="https://www.facebook.com/FlashCoin" target="_blank">
+                                        <a title="BTC" href="https://discord.gg/2nFmMqA" target="_blank"><i class="fa"><img src="images/discord_icon.png"></i></a>
+                                        <h2><a target="_blank" href="https://discord.gg/2nFmMqA">Discord</a></h2>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a title="Facebook" href="https://www.facebook.com/FlashCoin-1800026016723751" target="_blank">
                                             <i class="fa">
                                                 <img src="images/facebook.png">
                                             </i>
                                         </a>
-                                        <h2><a href="#slide-10">Facebook</a></h2>
+                                        <h2><a target="_blank" href="https://www.facebook.com/FlashCoin-1800026016723751">Facebook</a></h2>
                                     </div>
                                     <div class="col text-center">
                                         <a title="Twitter" href="https://twitter.com/FlashCoins" target="_blank"><i class="fa">
                                             <img src="images/twitter.png">
                                         </i></a>
-                                        <h2><a href="#slide-11">Twitter</a></h2>
+                                        <h2><a target="_blank" href="https://twitter.com/FlashCoins">Twitter</a></h2>
                                     </div>
                                     <div class="col text-center">
                                         <a title="Google Plus" href="https://plus.google.com/u/0/b/110236490072104998071/110236490072104998071" target="_blank">
                                             <i class="fa"><img src="images/google-plus.png"></i></a>
-                                        <h2><a href="#slide-11">Google Plus</a></h2>
+                                        <h2><a target="_blank" href="https://plus.google.com/u/0/b/110236490072104998071/110236490072104998071">Google Plus</a></h2>
                                     </div>
+									<!--
                                     <div class="col text-center">
-                                        <a class="slack" title="Slack" href="#" target="_blank"><i class="fa"><img src="images/slack_logo_240.png"></i></a>
-                                        <h2><a href="#slide-11">Slack</a></h2>
+                                        <a class="slack" title="Slack" href="https://flashcoin.slack.com/messages/@slackbot/" target="_blank"><i class="fa"><img src="images/slack_logo_240.png"></i></a>
+                                        <h2><a target="_blank" href="https://join.slack.com/t/flashcoin/shared_invite/MjI4NTAxNzQxODQ1LTE1MDMwMzM0MDMtMTA2OGJjY2Y5NA">Join FLASHcoin Slack</a></h2>
                                     </div>
+									-->
                                     <div class="col text-center">
-                                        <a title="BTC" href="#" target="_blank"><i class="fa"><img src="images/bitcoin.png"></i></a>
-                                        <h2><a href="#slide-11">Bitcointalk</a></h2>
+                                        <a title="BTC" href="https://bitcointalk.org/index.php?topic=1605453.0" target="_blank"><i class="fa"><img src="images/bitcoin.png"></i></a>
+                                        <h2><a target="_blank" href="https://bitcointalk.org/index.php?topic=1605453.0">Bitcointalk</a></h2>
                                     </div>
+                                </div>
+                                <div class="content col-xs-12"><p>FLASH is designed for small payments, due to its low transaction fees, high speed, and throughput, all while retaining its BTC/LTC heritage and functionality.  This makes FLASH ideal for loyalty, registration and messaging applications, and is perfect for customers and businesses using small payments.  We know efficiency is essential for most transactions, so we benchmarked FLASH up to 25,000 txn/sec on a $700 i7 computer consuming less than 80 watts of power.  Because of this, FLASH is eco-friendly and easy on your pocketbook.</p></div>
+                                <div class="col-xs-12">
+                                    <ul>
+                                        <li><p>The number of coins is fixed and completely issued.</p></li>
+                                        <li><p>There is zero inflation.</p></li>
+                                        <li><p>Processing is optimized and tested for efficiency and high volume.</p></li>
+                                        <li><p>There is no developer “slush fund”.</p></li>
+                                        <li><p>Projects can be developed by anyone and donations for the developers solicited from the community.</p></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="slide-4">
                             <div class="container">
-                                <div class="group-content col-xs-12">
+                                <div id="wallets" class="group-content">
+                                    <h2>Wallets</h2>
                                     <div class="text col-xs-12">
-                                        <h3>FLASH offers fast and very low cost crypto coin transactions for loyalty, registration, and messaging which makes it useful for many applications.
-                                        </h3>
-                                        <p>FLASH supports a number of online wallets including Coinomi, Coin Payments, QT (Win, Mac, Linux) and an easy to use online wallet designed for the mass consumer market. If you can make online payments, you already know how to use FLASH!</p>
+                                        <p>FLASH supports a number of online wallets including Coinomi, Coin Payments, QT (Window, Mac, Linux) and an easy to use online wallet designed for the mass consumer market. If you can make online payments, you already know how to use FLASH.</p>
                                     </div>
                                     <div>
                                         <div class="col-xs-6 text-center">
-                                            <img src="images/coinomi.jpg">
+                                            <a href="https://coinomi.com/"><img src="images/coinomi.jpg"></a>
                                         </div>
                                         <div class="col-xs-6 text-center">
-                                            <img src="images/ITEySazs.png">
+                                            <a href="https://www.coinpayments.net/"><img src="images/ITEySazs.png"></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="download-flash" id="download-flash">
-                            <div class="container">
-                                <h3 class="title text-center">Download FLASH QT wallets</h3>
-                                <div class="col-xs-12">
-                                    <div class="col-xs-12 col-sm-6 col-box"><p><a href="https://flashcoin.io/download/flashcoin-0.10.3.0-win64-setup.exe" target="_blank" class="btn btn-primary"><img src="assets/images/pages/coin.png">Download FLASH QT wallet for Windows 64 exe File</a></p></div>
-                                    <div class="col-xs-12 col-sm-6 col-box"><p><a href="https://flashcoin.io/download/Flashcoin-arm-linux-gnueabihf.tar.gz" target="_blank" class="btn btn-primary"><img src="assets/images/pages/coin.png">Download FLASH QT wallet for Linux Arm Zip File</a></p></div>
+                            <div class="container" style="padding: 0">
+                                <div class="col-xs-12 col-sm-4">
+                                    <a class="for-desktop hidden-xs" href="https://wallet.flashcoin.io/"><img src="images/flash-icon.png" width="170"/></a>
+                                    <h2 class="mobile"><a class="for-mobile hidden-sm hidden-md hidden-lg" href="/"><img src="images/flash-icon.png" width="170"/></a> Web Wallets</h2>
+                                    <p>With the web wallet, you can use an email address or your public address for sending and receiving coins.</p>
+                                    <p>The web wallet supports most browsers and mobile devices. There's nothing to download or install for maximum convenience.</p>
                                 </div>
-                                <div class="col-xs-12">
-                                    <div class="col-xs-12 col-sm-6 col-box"><p><a href="https://flashcoin.io/download/flashcoin-0.10.3.0-win32-setup.exe" target="_blank" class="btn btn-primary"><img src="assets/images/pages/coin.png">Download FLASH QT wallet for Windows 32 exe File</a></p></div>
-                                    <div class="col-xs-12 col-sm-6 col-box"><p><a href="https://flashcoin.io/download/Flashcoin-x86_64-unknown-linux-gnu.tar.gz" target="_blank" class="btn btn-primary"><img src="assets/images/pages/coin.png">Download FLASH QT wallet for Linux 64 Zip File</a></p></div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="col-xs-12 col-sm-6 col-box"><p><a href="https://flashcoin.io/download/Flashcoin-Qt.dmg" target="_blank" class="btn btn-primary"><img src="assets/images/pages/coin.png">Download FLASH QT wallet for Mac Zip File</a></p></div>
+                                <div class="col-xs-12 col-sm-8 text-center" style="border-left: 2px dotted #999;">
+                                    <h2 class="title text-center">Download FLASH QT wallets</h2>
+                                    <div class="box-center">
+                                        <div class="col-xs-12">
+                                            <div class="col-xs-12 col-sm-4 col-box">
+                                                <p><a href="https://flashcoin.io/download/flashcoin-0.10.3.0-win64-setup.exe" target="_blank"><img src="images/qt-wallet.png" ></a></p>
+                                                <p><a href="https://flashcoin.io/download/flashcoin-0.10.3.0-win64-setup.exe" target="_blank">Windows 64 exe File</a></p>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-box">
+                                                <p><a href="https://flashcoin.io/download/Flashcoin-arm-linux-gnueabihf.tar.gz" target="_blank"><img src="images/qt-wallet.png" ></a></p>
+                                                <p><a href="https://flashcoin.io/download/Flashcoin-arm-linux-gnueabihf.tar.gz" target="_blank">Linux Arm Zip File</a></p>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-box">
+                                                <p><a href="https://flashcoin.io/download/flashcoin-0.10.3.0-win32-setup.exe" target="_blank"><img src="images/qt-wallet.png" ></a></p>
+                                                <p><a href="https://flashcoin.io/download/flashcoin-0.10.3.0-win32-setup.exe" target="_blank">Windows 32 exe File</a></p>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-box">
+                                                <p><a href="https://flashcoin.io/download/Flashcoin-x86_64-unknown-linux-gnu.tar.gz" target="_blank"><img src="images/qt-wallet.png" ></a></p>
+                                                <p><a href="https://flashcoin.io/download/Flashcoin-x86_64-unknown-linux-gnu.tar.gz" target="_blank">Linux 64 Zip File</a></p></div>
+                                            <div class="col-xs-12 col-sm-4 col-box">
+                                                <p><a href="https://flashcoin.io/download/Flashcoin-Qt.dmg" target="_blank"><img src="images/qt-wallet.png" ></a></p>
+                                                <p><a href="https://flashcoin.io/download/Flashcoin-Qt.dmg" target="_blank">Mac Zip File</a></p>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-box">
+                                                <p><a href="https://flashcoin.io/download/Flashcoin-Qt-Ubuntu-12.04-amd64.deb" target="_blank"><img src="images/qt-wallet.png" ></a></p>
+                                                <p><a href="https://flashcoin.io/download/Flashcoin-Qt-Ubuntu-12.04-amd64.deb" target="_blank">Ubuntu 12.04 amd64 Deb File</a></p>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-box">
+                                                <p><a href="https://flashcoin.io/download/Flashcoin-Qt-Ubuntu-14.04-amd64.deb" target="_blank"><img src="images/qt-wallet.png" ></a></p>
+                                                <p><a href="https://flashcoin.io/download/Flashcoin-Qt-Ubuntu-14.04-amd64.deb" target="_blank">Ubuntu 14.04 amd64 Deb File</a></p></div>
+                                            <div class="col-xs-12 col-sm-4 col-box">
+                                                <p><a href="https://flashcoin.io/download/Flashcoin-Qt-Ubuntu-16.04-amd64.deb" target="_blank"><img src="images/qt-wallet.png" ></a></p>
+                                                <p><a href="https://flashcoin.io/download/Flashcoin-Qt-Ubuntu-16.04-amd64.deb" target="_blank">Ubuntu 16.04 amd64 Deb File</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="slide-4">
+                        <div id="exchanges" class="exchanges-section text-center">
+                            <h2>EXCHANGES</h2>
+                            <p class="text-center"><a href="https://www.cryptopia.co.nz/" target="_blank"><img src="images/cryptopia.png" width="40%"></a></p>
+                        </div>
+                        <div class="slide-4" id="govnodes">
                             <div class="container">
-                                    <div>
-                                        <h3 class="text col-xs-12"><strong>With the web wallet, you can use an email address for sending and receiving coins and your public address is supported, as well.</strong></h3>
-                                    </div>
-                                    <div class="text col-xs-12 m20t">
-                                        <p>
-                                            FLASH is designed for low cost transactions at a rapid rate, while retaining much of it’s BTC/LTC heritage to retain compatibility with third party services. We believe efficiency will be the key to enable many types of transactions including in app reward and accounting functions as well as small and tiny payments. It’s even more efficient than Litecoin; benchmarks on our blockchain have shown that up to 25,000 transactions per second can be processed by an inexpensive computer consuming less than 80 watts of power. That makes FLASH very eco-friendly.
-                                        </p>
-                                        <p>FLASH offers fast and very low cost crypto coin transactions for loyalty, registration, and messaging which makes it useful for many applications.
-                                        </p>
-                                    </div>
                                 <div class="group-content col-xs-12">
+									<h2>Governance Nodes</h2>
                                     <h3>The FLASH Governance Model</h3>
-                                    <p>FLASH GovNodes are another unique and streamlined feature of FLASH that we think will help keep FLASH as a “low tax” zone for crypto.</p>
-                                    <p>- There will be 101 FLASH GovNodes (Goverance Nodes) operated by FLASH Delegates.</p>
-                                    <p>- These govern the FLASH blockchain.</p>
-                                    <p>- GovNodes are digital assets and software that help administer the FLASH ecosystem</p></li>
-                                    <p>- GovNodes will be initially placed as a Counterparty digital asset secured by the Bitcoin blockchain.   This will be exchanged in the future for the keys to register your FLASH wallet as a GovNode.</p>
-                                    <p>- There will be a presale of up to 101 GovNodes for 1 btc each.  Participants will be issued a Counterparty asset (FLASHGOV) and after development, a QT wallet which can be used to digitally sign a vote that can be submitted via FLASH transaction to the blockchain.  With this QT wallet capability, all votes will be recorded in the FLASH blockchain.</p>
-                                    <p>- Proceeds from the presale of FLASHGOV will be used for development of the GovNodes QT wallet feature and the first version of an OTC trading app using the FLASH blockchain.</p>
-                                    <p>Because FLASH is a very simplified and high performance version of Bitcoin/Litecoin, there are relatively few governance matters</p>
-                                    <ul>
-                                        <li><p>The number of coins is fixed and completely issued</p></li>
-                                        <li><p>There is zero inflation</p></li>
-                                        <li><p>Processing is optimized and tested for efficiency and high volume</p></li>
-                                        <li><p>There is no developer “slush fund”, all </p></li>
-                                        <li><p>Projects can be developed by anyone and donations for the developers solicited from the community</p></li>
-                                    </ul>
-                                    <p>The remaining governance issues are determined via two requirements, depending on the governance task:  51% or 75%,  51/101 (Majority) or 76/101 (Supermajority)</p>
-                                    <ul>
-                                        <li><p>Changing the delegated PoW processor requires Majority</p></li>
-                                        <li><p>Changing the rate and distribution of transaction fees requires Supermajority</p></li>
-                                        <li><p>Major code changes requires Supermajority</p></li>
-                                        <li><p>Set the rate and distribute fees to insert data into the blockchain requires Majority</p></li>
-                                        <li><p>All other proposals require Majority</p></li>
-                                    </ul>
-                                    <p>New proposals can be submitted by any FLASH coin holder, but 10 GovNode votes are required  before posting on the flashcoin.io web site and GovNodes only vote in favor of a proposal, which will need to be proffered by at least 10 votes in favor.  Any proposals that don’t pass within 30 days will be removed.</p>
-                                    <p>A GovNode may be transferred to any other party at will and for any reason, however, it can only vote once on any issue.  It allows secure digital signing to prove ownership of the asset and will be used in the future to migrate to a FLASH wallet that integrates the GovNode.</p>
-                                    <p>For more information or to get a govnode, please email to:  govnode@flashcoin.io
+                                    <p> FLASH GovNodes are another unique and streamlined feature of FLASH that we think will help keep FLASH as a friendly and “low tax” zone for crypto.</p>
+                                    <p>- There will be 151 FLASH GovNodes (Governance Nodes) operated by FLASH Delegates.  These govern the FLASH blockchain and software.</p>
+                                    <p>- The GovNodes will be operated and administered by a subset of FLASH holders. In order to have the right to run a GovNode, a person will be required to acquire and maintain ownership of, or “stake”, 1,000,000 FLASH,which must remain “staked” for as long as he operates a GovNode.  In addition, a foundation based in Liechtenstein will be responsible for the ongoing development of the GovNodes and the maintenance of the FLASHcoin Software.</p></li>
+                                    <p>- FLASHcoin is a delegated proof of work protocol that enables quicker and more efficient processing of blockchain transactions than other proof of work protocols. The consensus of all the GovNodes randomly assigns the validation of FLASH transactions to a subset of several dozen mining nodes. This allows for quicker processing times than traditional proof of work based protocols, which require a much larger number of mining nodes to validate transactions. Any FLASH holder has the opportunity to operate a mining node and be eligible to participate in the validation of FLASH transactions by staking 10,000,000 FLASH.</p>
+                                    <p>- The GovNodes also assist in the governance of Flashcoin. FLASH holders can propose changes to the Software, governance or transaction fee structure of Flashcoin by posting proposals on the Flashcoin.io website. Proposals can then be nominated for an official vote by receiving at least ten affirmative votes from the GovNodes. If within 30 days of being posted on Flashcoin.io, a proposal receives ten GovNode votes in its favor, the proposal is eligible for a full vote of all the GovNodes. A proposal may then be adopted by an affirmative vote of either a majority or a supermajority of the GovNodes, depending on the nature of the proposal. Each GovNode is entitled to one vote, which is cast using a special encrypted key allowing for a digital signature that is unique to each GovNode.</p>
+                                    <!--<p>- The GovNodes will serve and be subject to the continuous support of the FLASH holder community. An operator of a GovNode may be removed by the FLASH holders at any time upon a vote of sixty seven percent
+                                        (67%) of all FLASH holders.</p>!-->
+
+                                    <p>- A GovNode may be transferred to any other party at will and for any reason, however, it can only vote once on any issue. It allows secure digital signing to prove ownership of the asset and will be used in the future to migrate to a FLASH wallet that integrates the GovNode.</p>
+                                    <p>For more information or to get a GovNode, please email to:  <a href="mailto:govnode@flashcoin.io">govnode@flashcoin.io.</a>
                                     </p>
                                 </div>
                             </div>
@@ -185,24 +233,60 @@
                                             <p>
                                                 We welcome developers to try out our system via our web API's to build powerful robust apps today.
                                             </p>
-                                            <p><a style="color:#F5F5F5" class="size-22" href="assets/docs/FLASHWhitepaper.pdf">Check out our Whitepaper with more information on our API.</a></p>
+                                            <p><a style="color:#F5F5F5" class="size-22" href="docs/FLASHWhitepaper.pdf">Check out our Whitepaper with more information on our API.</a></p>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="slide-10" id="slide-10">
+                        <div class="slide-10" id="whitepaper">
                             <div class="container text-center">
                                 <h2 class="text-center">Whitepaper</h2>
-                                <p class="tu"><a href="assets/docs/FLASHWhitepaper.pdf"><button>Download our Whitepaper</button></a></p>
+                                <p class="tu"><a href="docs/FLASHWhitepaper.pdf"><button>Download our Whitepaper</button></a><a href="docs/FLASHWhitepaper-en-Espanol.pdf"><button>Whitepaper en Español</button></a></p>
+                            </div>
+                        </div>
+                        <div class="road-map" id="roadmap">
+                            <div class="container">
+                                <h2 class="text-center">Road Map</h2>
+								<div class="text col-xs-12">
+                                        <p>FLASH is being optimized to support applications in the $1 Trillion remittance market. We have exchanges in UAE, India, Mexico and Liechtenstein that have agreed to participate.</p>
+								</div>
+								<div class="text col-xs-12">
+									<p><br>The features are broken into several categories:</p>
+									<p>
+										<ol>
+											<li>FLASH web wallet (FWW), which will have support for credit card purchase and in-wallet exchange for BTC, BCH, and local currency.  Many additional local languages will be added.</li>
+											<li>Blockchain upgrades to make FLASH more stable</li>
+											<li>Remittance applications including Human ATM and automatic conversion to local fiat.</li>
+											<li>FLASH Merchant services including consumer payment via FLASH with cash back feature.</li>
+										</ol>
+									</p>
+								</div>
+                                <p class="text-center form-group"><img src="images/flash-roadmap.jpg"><img class="mobile" src="images/flash-roadmap-mobile.jpg"></p>
+                                <div class="text col-xs-12">
+									<table class="table table-striped table-hover table-bordered">
+										<thead>
+											<tr> <th class="col-xs-11"><b>Feature</b></th> <th  class="col-xs-1"><b>Release date</b></th></tr>
+										</thead>
+										<tbody>
+											<tr> <td><b>Flash Web Wallet (FWW) features</b>: Add 2FA for Txn confirmation, Add QR code scanner, Txn email notifications, Browser notifications, Transact in Flash using cell phone as the identifier</td> <td>Q4, 2017</td></tr>
+											<tr> <td><b>BTC & BCH Support + Stability Improvement</b>: Testnet launch for DPOW & Governance Node, Addition of BTC & BCH to FWW, Add Exchange between FLASH/BTC and FLASH/BCH to FWW, Multiple address support for Flash, BTC, BCH in FWW</td> <td>Q1, 2018</td></tr>
+											<tr> <td><b>Support for Mammoth.li Exchange</b></td> <td>Q1, 2018</td></tr>
+											<tr><td><b>ETH & ERC20 Support + Performance Enhancement</b>: ETH and ERC20 tokens support in FWW, Export of private keys for Flash & others from FWW, Add 2FA for key export confirmation</td><td>Q1, 2018</td></tr>
+											<tr><td><b>Introducing Remittance</b>: Implementation of remittance application to FWW, Import of private keys for Flash & others in FWW</td><td>Q1, 2018</td></tr>
+											<tr><td><b>Merchant services + FWW Upgrade</b>: Mainnet launch for DPOW and Governance nodes, Credit card purchase of FLASH/BTC/BCH in FWW, Cold storage of private keys as a service, Add Roving ATM application to FWW, Add Merchant tools to FWW, Inclusion of more cryptocurrencies to FWW</td><td>Q2, 2018</td></tr>
+											<tr><td><b>FWW upgrade & Enhancements</b>: Integrate FWW with regional Exchanges and allow FIAT deposits and withdrawals, Hardware wallet integration to FWW, Integration of Flash proprietary USB container as cold storage to FWW</td><td>TBA</td></tr>
+										</tbody>
+									</table>
+								</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--<a id="create-wallet-btn" class="btn create-wallet-btn">Get an Account Now with Free Coins</a>-->
+                <a id="create-wallet-btn" class="btn create-wallet-btn" target="_blank" href="https://wallet.flashcoin.io/">Get a web wallet here</a>
                 <footer class="footer col-xs-12">
                     <div class="container text-center">
-                        <p class="hidden-xs"><img src="assets/images/flag-footer.png" width="" class="m15r" />Originally Made in Canada. Supported by the FLASH community</p>
+                        <p class="hidden-xs">Flashcoin.io is provided by the Third Millennium Foundation for Economics and Culture, Liechtenstein. Supported by the FLASH community.</p>
                     </div>
                 </footer>
             </div>
