@@ -303,6 +303,9 @@ html {
     max-width: 300px;
     min-width: 200px;
 }
+.exchanges-section img#coinexchange-logo{
+	padding-top: 52px;
+}
 /* Slide 10 */
 .slide-10{
     background-color: #eaeaea;
@@ -516,6 +519,11 @@ footer p {
         font-size: 16px !important;
         line-height: 24px !important;
     }
+	
+	.exchanges-section{
+		padding-top: 2%;
+		padding-bottom: 10%;
+	}
 }
 @media all and (max-width: 425px) {
     .flash-wallet .slide-2 .col {
