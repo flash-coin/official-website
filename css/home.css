@@ -38,6 +38,21 @@ html {
 }
 .pad0{padding: 0}
 .pad5{padding: 0 5px}
+.flash-news{
+    padding-top: 45px;
+}
+.flash-news a, .flash-news a:focus{
+    color: inherit;
+    font-size: 22px;
+    text-decoration: none;
+}
+.flash-news a:hover{
+    color: #b5b5b5;
+    text-decoration: none;
+}
+.flash-news #flash-news-new{
+    max-width: 60px;
+}
 .link-flash{
     position: absolute;
     right: 0px;
@@ -96,7 +111,7 @@ html {
     border-top: 5px solid #fad705;
     border-bottom: 0;
     padding-top: 45px;
-    padding-bottom: 100px;
+    padding-bottom: 55px;
     color: #fff;
 }
 .slide-flash{
@@ -207,7 +222,7 @@ html {
 }
 .flash-wallet .slide-2 .col{
     margin-bottom: 3%;
-    width: 16.66%;
+    width: 14%;
     float: left;
 }
 .flash-wallet .slide-2 h2 {margin: 0}
