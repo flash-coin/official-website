@@ -41,9 +41,10 @@ html {
 .flash-news{
     padding-top: 45px;
 }
-.flash-news a{
+.flash-news a, .flash-news a:focus{
     color: inherit;
     font-size: 22px;
+    text-decoration: none;
 }
 .flash-news a:hover{
     color: #b5b5b5;
