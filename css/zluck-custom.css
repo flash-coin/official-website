@@ -71,7 +71,7 @@ a.zl-button-style span:hover {
 .zl-image-hover:hover p a {
     color: #fbb215;
 }
-.news .section-title:after {left: 46%;}
+/*.news .section-title:after {left: 46%;}*/
 .header-expanded .header {
   background-color: #2A3263;
   opacity: 0.9;
@@ -99,7 +99,7 @@ a.navbar-brand.top img {
     width: 80%;
     padding-top: 5px;
 }
-#services {
+#about {
   background-size: cover;
   padding: 40px 0px 30px;
 }
@@ -109,7 +109,7 @@ a.navbar-brand.top img {
 #Wallet {
   padding: 30px 0 30px;
 }
-#animated-number {
+#web-wallet {
   padding: 40px 0 40px;
 }
 #portfolio {
@@ -120,12 +120,14 @@ a.navbar-brand.top img {
     padding: 40px 0 20px 0;
 }
 #team {
+  clear: both !important;
     padding: 30px 0 40px 0;
 }
-#pricing {
+#whitepaper {
     padding: 40px 0 50px 0px;
 }
 #roadmap {
+  clear: both !important;
     padding: 50px 0 20px;
 }
 #news {
@@ -139,6 +141,10 @@ a.navbar-brand.top img {
 }
 .nav li ul.sub-menu li {
   box-shadow: none;
+}
+.submenuhide {
+    visibility: hidden;
+    display: none;
 }
 #htm {
     background: #132125 url(../images/section-feature-bg.jpg) no-repeat 0 0;
@@ -187,7 +193,7 @@ a.navbar-brand.top img {
     background: /*#05c6d5*/ url(../images/section-four-bg.jpg) no-repeat 0 0;
     background-size: cover;
     color: #fff;
-    padding: 60px 0 60px 0;
+    padding: 38px 0 60px 0;
 }
 .zl-github-btn {
     text-align: center !important;
@@ -200,6 +206,44 @@ a.navbar-brand.top img {
     background-size: cover;
     color: #fff;
     padding: 140px 0 40px 0;
+}
+.zl-image-hover .title-icon {
+    padding-top: 10px;
+}
+.zl-image-hover a:hover .title-icon {
+    color: #fbb215;
+}
+#timeline ul:after {
+    z-index: 9999;
+    content: "";
+    height: 0px;
+    width: 5px;
+    position: absolute;
+    left: -5px;
+    top: -70px;
+    z-index: ;
+    /*border-left: 5px dashed #f2f2f1;*/
+    float: left;
+    background: -webkit-linear-gradient( top, #f2f2f1 0%, #7ab800 10%, #f2f2f1 0%, #7ab800 30%, #f2f2f1 5%, #7ab800 56%, #f2f2f1 0%, #7ab800 88%, #f2f2f1 5%, #7ab800 97%);
+    transition: all 0.5s ease-in-out;
+}
+#timeline ul.aos-animate:after {
+    height: 100px;
+    transition: all 1s ease-in-out;
+}
+#timeline ul.aos-animate:before {
+    height: 100%;
+    transition: all 4s ease-in-out;
+}
+#timeline ul:before {
+    content: "";
+    height: 0%;
+    width: 5px;
+    position: absolute;
+    left: -5px;
+    float: left;
+    background: -webkit-linear-gradient( top, #7ab800 0%, #0085c3 35%, #f2af00 50%, #ff4162 70%, #6e2585 91.5%, #f2f2f1 0%, #6e2585 93.8%, #f2f2f1 0%, #6e2585 95.5%, #f2f2f1 0%, #6e2585 96.9%, #f2f2f1 0%, #6e2585 97.9%, #f2f2f1 0%);
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -354,6 +398,24 @@ h4.transaction24h {
 #zl-back-top.show {
     opacity: 1;
 }
+
+.lasttweet {
+  border: none !important;
+}
+.zl-tweet-image img {
+    max-width: 90%;
+}
+
+/* scroll bar css */
+
+.twitter-timeline::-webkit-scrollbar, body::-webkit-scrollbar {
+	width: 3px;
+	background-color: transparent !important;
+}
+.twitter-timeline::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #FBB116;
+}
 /*.zl-get-wallet-sticky-btn-slider-sec-style {
   position: absolute;;
   top: 55%;
@@ -402,7 +464,7 @@ h4.transaction24h {
   .row.download-row .download-icon {width: 45%;display: inline-block;padding: 5px;}
   .col-sm-3.download-icon a img {width: 30%;}
   .zl-download-whitepaper-button-alignment-responsive {display: inline-block;}
-  #pricing .Download .color-white:before {margin-left: 0.0em;}
+  #whitepaper .Download .color-white:before {margin-left: 0.0em;}
   #timeline ul {margin: 0px 50%;}
   .zl-social-footer {width: 50% !important;display: inline-block !important;float: left !important;}
   .zl-tweet-img img {width: 100%;}
@@ -427,7 +489,7 @@ h4.transaction24h {
   .zl-merchant-img {text-align: center;}
   .zl-merchant-img img {width: auto;}
   .zl-key-performance {padding: 0px !important;width: 100% !important;}
-  
+
   /* horizontal scroll issue*/
   .zl-custom-trans {
     transform: translate(0) !important;
@@ -440,16 +502,16 @@ h4.transaction24h {
   .header-expanded .header {
     opacity: 1;
   }
-  .nav-toggle {
+  /*.nav-toggle {
     right: 0 !important;
-  }
+  }*/
   .nav {
     top: 95px;
     width: 100%;
     right: 0%;
     font-size: 13px;
     opacity: 1;
-   
+
   }
   .nav ul {
     padding: 2px !important
@@ -466,4 +528,13 @@ h4.transaction24h {
     max-width: 175px;
   }
 
+  #timeline ul li:nth-child(2n+1) .cont {
+      left: 48px;
+  }
+  section {
+    overflow-x: hidden;
+  }
+  .zl-tweet-image img {
+      max-width: 20%;
+  }
 }

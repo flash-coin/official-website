@@ -13,52 +13,19 @@
   <link href="css/animate.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/zluck-custom.css" rel="stylesheet">
-</head><!--/head-->
+  <script src="js/jquery.js"></script>
+  <script>
+  $(function(){
+    $("#header-content").load("header.html");
+    $("#footer-content").load("footer.html");
+  });
+  </script>
+  </head><!--/head-->
 
-<body id="home" class="homepage">
-  <header class="header cf our-team-header">
-     <div class="container">
-	      <a class="navbar-brand top" href="index.html"><img src="images/logo-header.png" alt="logo"></a>
-	      <a href="#" class="nav-toggle notext"><i class="ico-menu"></i></a>
-      	<nav class="nav">
-      		<ul class="cf">
-            <li class="parrent_li"><a href="index.html#services">About</a>
-                 <ul class="sub-menu">
-                    <li><a href="index.html#services">What is FLASH</a></li>
-                    <li><a href="index.html#team">Team</a></li>
-                    <li><a href="index.html#roadmap">Roadmap</a></li>
-                    <li><a href="index.html#news">News</a></li>
-                    <li><a href="index.html#exchanges">Exchanges</a></li>
-                    <li><a href="index.html#feature-flash">Upcoming Features</a></li>
-                </ul>
-            </li>
-            <li class="parrent_li"><a href="index.html#animated-number">Wallets</a>
-                 <ul class="sub-menu">
-                    <li><a href="index.html#Web-wallet">Web Wallet</a></li>
-                    <li><a href="index.html#qt-wallet">QT Wallet Downloads</a></li>
-                    <li><a href="index.html#wallet">Third Party Wallets</a></li>
-                </ul>
-            </li>
-            <li class="parrent_li"><a>Resources</a>
-                <ul class="sub-menu">
-                        <li><a href="index.html#pricing">Whitepaper</a></li>
-                        <li><a href="https://github.com/flash-coin" target="_blank">Github</a></li>
-                        <li><a href="https://explorer.flashcoin.io/" target="_blank">Explorer</a></li>
-                        <li><a href="https://charts.flashcoin.io/" target="_blank">Charts</a></li>
-                        <li><a href="https://nodes.flashcoin.io/" target="_blank">Nodes</a></li>
-                </ul>
-            </li>
-            <li class="parrent_li"><a>Community</a>
-                <ul class="sub-menu">
-                        <!-- <li><a href="https://blog.flashcoin.io/" target="_blank">Blog</a></li> -->
-                        <li><a href="index.html#social-forum">Social Forums</a></li>
-                </ul>
-            </li>
-			      <li class="divider-mobile"></li><!-- /.divider-mobile -->
-		      </ul>
-	     </nav><!-- /.nav -->
-  	 </div>
-   </header>
+  <body id="home" class="homepage">
+
+  <div id="header-content"></div>
+
 	 <section id="team" class="our-team-single">
         <div class="container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="3000">
             <div class="section-header our-team">
@@ -281,22 +248,6 @@
             </div>
         </div>
     </section><!--/#-team-->
-	<footer id="footer">
-        <div class="container text-center">
-          FLASH is supported by the Third Millennium Foundation for Economics and Culture, Liechtenstein, and the FLASH community worldwide.
-        </div>
-        
-    </footer>
-    <div class="zl-get-wallet-sticky-btn-style-btp">
-    <a href="#" id="zl-back-top" title="Back to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-  </div>
-    <div class="zl-get-wallet-sticky-btn-style">
-      <a href="https://wallet.flashcoin.io/" target="_blank">Get a web wallet here</a>
-    </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/zl-custom.js"></script>
+	<div id="footer-content"></div>
 </body>
 </html>

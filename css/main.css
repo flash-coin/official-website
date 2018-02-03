@@ -627,7 +627,7 @@ iframe {
 #features .media.service-box:first-child {
   margin-top: 80px;
 }
-#services {
+#about {
     background: url(../images/section-two-bg.jpg) no-repeat 0 0;
     padding: 66px 0 66px;
 }
@@ -1034,19 +1034,19 @@ h2.section-title.wow.fadeInDown.animated {
   background-size: cover;
   color: #fff;
 }
-#animated-number {
+#web-wallet {
   padding: 87px 0 87px;
   background: /*#132125*/ url(../images/section-four-bg.jpg) no-repeat 0 0;
   background-size: cover;
   color: #fff;
 }
-#animated-number h1,
-#animated-number h2,
-#animated-number h3,
-#animated-number h4 {
+#web-wallet h1,
+#web-wallet h2,
+#web-wallet h3,
+#web-wallet h4 {
   color: #fff;
 }
-#animated-number strong {
+#web-wallet strong {
   display: block;
   margin-bottom: 30px; font-size:22px; font-family: 'Roboto-light'; text-transform:capitalize;
 }
@@ -1088,12 +1088,12 @@ h2.section-title.wow.fadeInDown.animated {
     background: /*#ff4162*/ url(../images/section-four-bg.jpg) no-repeat 0 0;
   background-size: cover;
 }
-#pricing {
+#whitepaper {
   padding: 84px 0 70px 0px;
     background: /*#ff4162*/ url(../images/section-four-bg.jpg) no-repeat 0 0;
   background-size: cover;
 }
-#pricing ul.pricing {
+#whitepaper ul.pricing {
   list-style: none;
   padding: 0;
   margin: 10px 0 30px;
@@ -1102,20 +1102,20 @@ h2.section-title.wow.fadeInDown.animated {
   padding: 15px;
   text-align: center; background: #fff; box-shadow:1px 1px 1px rgba(0,0,0,0.1);
 }
-#pricing ul.pricing:hover{box-shadow:0px 4px 12px rgba(0, 0, 0, 0.2); transition:all 0.3s ease 0s;}
+#whitepaper ul.pricing:hover{box-shadow:0px 4px 12px rgba(0, 0, 0, 0.2); transition:all 0.3s ease 0s;}
 
-#pricing ul.pricing li {
+#whitepaper ul.pricing li {
   display: block; font-size:18px;
   padding: 5px 10px; background: #fff;
 }
-#pricing ul.pricing li.plan-header {
+#whitepaper ul.pricing li.plan-header {
 
   border-radius: 4px 4px 0 0;
   margin: -15px -15px 10px;
   padding: 15px 15px 30px;
   border: 0;
 }
-#pricing ul.pricing li.plan-header .price-duration {
+#whitepaper ul.pricing li.plan-header .price-duration {
   position: relative;
   margin-top: -63px;
   top: -10px;
@@ -1129,19 +1129,19 @@ h2.section-title.wow.fadeInDown.animated {
   border-radius: 100px;
   border: 5px solid #f6f6f6;
 }
-#pricing ul.pricing li.plan-header .price-duration > span {
+#whitepaper ul.pricing li.plan-header .price-duration > span {
   display: block;
   line-height: 1;
 }
-#pricing ul.pricing li.plan-header .price-duration > span.price {
+#whitepaper ul.pricing li.plan-header .price-duration > span.price {
   font-size: 24px;
   font-weight: 700;
   margin-top: 35px;
 }
-#pricing ul.pricing li.plan-header .price-duration > span.duration {
+#whitepaper ul.pricing li.plan-header .price-duration > span.duration {
   margin-top: 5px;
 }
-#pricing ul.pricing li.plan-header .plan-name {
+#whitepaper ul.pricing li.plan-header .plan-name {
   margin-top: 10px;
   font-size: 20px;font-family:'Roboto-medium';
   color: #272727;
@@ -1150,7 +1150,7 @@ h2.section-title.wow.fadeInDown.animated {
   text-transform: uppercase;
 }
 
-#pricing ul.pricing li.plan-header .plan-price {
+#whitepaper ul.pricing li.plan-header .plan-price {
   margin-top: 10px;
   font-size: 60px;
   color: #454545;
@@ -1159,21 +1159,21 @@ h2.section-title.wow.fadeInDown.animated {
   text-transform: uppercase;
 }
 
-#pricing ul.pricing li.plan-purchase .btn-primary { background:#ff641b; border-radius:30px; margin-top:25px; padding:15px 25px 10px; font-size:18px; font-family:'Roboto-medium';}
+#whitepaper ul.pricing li.plan-purchase .btn-primary { background:#ff641b; border-radius:30px; margin-top:25px; padding:15px 25px 10px; font-size:18px; font-family:'Roboto-medium';}
 
-#pricing ul.pricing li.plan-header .plan-price span{ font-size:18px; display:block; text-align: center; text-transform:lowercase; font-weight:normal;}
+#whitepaper ul.pricing li.plan-header .plan-price span{ font-size:18px; display:block; text-align: center; text-transform:lowercase; font-weight:normal;}
 
-#pricing ul.pricing.featured {
+#whitepaper ul.pricing.featured {
   background: #222534;
   color: #fff;
   border: 0;
 }
-#pricing ul.pricing.featured li.plan-header {
+#whitepaper ul.pricing.featured li.plan-header {
   background-image: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -ms-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
 }
-#pricing ul.pricing.featured li.plan-header .plan-name {
+#whitepaper ul.pricing.featured li.plan-header .plan-name {
   color: #fff;
 }
 #get-in-touch {
@@ -1379,7 +1379,7 @@ h2.section-title.wow.fadeInDown.animated {
 @media (max-width:500px){
 	#blog .blog-post.blog-large .entry-thumbnail img, .team-img img{ width:100%;}
 	.animated-number{ height:130px; width:130px; line-height:130px; font-size:22px;}
-	#animated-number strong{ font-size:17px;}
+	#web-wallet strong{ font-size:17px;}
 	#blog .blog-post.blog-large .entry-thumbnail{ padding-top:0px;}
 	}
 .download-icon img {
@@ -2465,7 +2465,7 @@ body .carousel-indicators-custom li {
   color: #fff;
 }
 .our-team-header {
-    background: #00000061;
+    background: #9E9E9E; /*#00000061;*/
 }
 .header-expanded .our-team-header {
     background-color: #00000061 !important;
