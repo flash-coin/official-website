@@ -350,7 +350,7 @@
     transition-delay:1.95s
 }
 [data-aos][data-aos][data-aos-duration='2000'],body[data-aos-duration='2000'] [data-aos]{
-    transition-duration:2ms
+    transition-duration:2s
 }
 [data-aos][data-aos][data-aos-delay='2000'],body[data-aos-delay='2000'] [data-aos]{
     transition-delay:0

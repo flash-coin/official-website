@@ -12,60 +12,20 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/zluck-custom.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
+    <link href="css/main.css?123" rel="stylesheet">
+    <link href="css/zluck-custom.css?123" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script>
+    $(function(){
+      $("#header-content").load("header.html");
+      $("#footer-content").load("footer.html");
+    });
+    </script>
 </head><!--/head-->
 
 <body id="home" class="homepage">
-     <header class="header cf">
-     <div class="container">
-	<a class="navbar-brand top" href="index.html"><img src="images/logo-header.png" alt="logo"></a>
 
-	<a href="javascript:void(0)" class="nav-toggle notext"><i class="ico-menu"></i></a>
-
-	<nav class="nav">
-		<ul class="cf">
-			<li class="parrent_li"><a href="#services">About</a>
-                 <ul class="sub-menu">
-                    <li><a href="#services">What is FLASH</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#roadmap">Roadmap</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#exchanges">Exchanges</a></li>
-                    <li><a href="#feature-flash">Upcoming Features</a></li>
-                </ul>
-            </li>
-			<li class="parrent_li"><a href="#animated-number">Wallets</a>
-                 <ul class="sub-menu">
-                    <li><a href="#Web-wallet">Web Wallet</a></li>
-                    <li><a href="#qt-wallet">QT Wallet Downloads</a></li>
-                    <li><a href="#wallet">Third Party Wallets</a></li>
-                </ul>
-            </li>
-			<li class="parrent_li"><a href="javascript:void(0)">Resources</a>
-                <ul class="sub-menu">
-                        <li><a href="#pricing">Whitepaper</a></li>
-                        <li><a href="https://github.com/flash-coin" target="_blank">Github</a></li>
-                        <li><a href="https://explorer.flashcoin.io/" target="_blank">Explorer</a></li>
-                        <li><a href="https://charts.flashcoin.io/" target="_blank">Charts</a></li>
-                        <li><a href="https://nodes.flashcoin.io/" target="_blank">Nodes</a></li>
-                </ul>
-            </li>
-            <li class="parrent_li"><a href="javascript:void(0)">Community</a>
-                <ul class="sub-menu">
-                        <!-- <li><a href="https://blog.flashcoin.io/" target="_blank">Blog</a></li> -->
-                        <li><a href="#social-forum">Social Forums</a></li>
-                </ul>
-            </li>
-			<li class="divider-mobile"></li><!-- /.divider-mobile -->
-		</ul>
-	</nav><!-- /.nav -->
-	</div>
-</header>
+    <div id="header-content"></div>
 
     <section id="main-slider">
         <!--<div class="owl-carousel">-->
@@ -88,7 +48,7 @@
                                              </div>
                                           </div>
                                       </div>
-                                      <div class="col-sm-4">
+                                      <div class="col-sm-4" style="padding-right:25px;">
                                         <div class="speed-meter-section zl-slider-title">
                                             <label><p>Transaction Fee?</p></label>
                                             <!-- <p><img src="images/penny-img.png" alt="img" width="20%"></p> -->
@@ -99,13 +59,13 @@
                                             </div>
                                         </div>
                                       </div>
-                                      <div class="col-sm-4" style="padding-right:0">
+                                      <div class="col-sm-4" style="padding-right:0; padding-left:0">
                                         <div class="speed-meter-section zl-slider-title">
                                              <label><p><b>Scalability?</b></p></label>
                                             <!-- <p style="margin:20px;"><img src="images/speed-meter.png" alt="img" width="50%"></p> -->
                                             <div class="wow slideInLeft" data-wow-offset="10" data-wow-duration="300ms" data-wow-delay="900ms">
                                                 <div class="speed-heading media service-box zl-slider-title">
-                                                  Upto 25k txns/sec!
+                                                  Up To 25K txns/sec!
                                                 </div>
                                             </div>
                                         </div>
@@ -174,7 +134,6 @@
                         <a href="https://wallet.flashcoin.io/" target="_blank">FLASH Web Wallet</a>
                       </div> -->
                     </section>
-<span class="zl-anchor" id="social-forum"></span>
   <section id="social-forum">
      <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="4000">
          <div class="row">
@@ -251,29 +210,28 @@
          </div>
      </div>
  </section>
- <span class="zl-anchor" id="services"></span>
-	<section id="services">
+	<section id="about">
         <div class="container">
         	<div class="row">
 				<div class="col-sm-6">
-		            <div class="flash section-header pull-left" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+		            <div class="flash section-header pull-left" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
 		                <h2 class="section-title wow fadeInDown">What is FLASH?</h2>
 		                <p class="wow fadeInDown">FLASH is not money, it’s a much bigger idea than money.  It’s a community supported blockchain designed for small and fast transactions. People can send and receive FLASH and use it for just about anything, limited only by their imaginations.There are only 900m coins and they were all distributed to the community.</p>
-                    <p class="wow fadeInDown">FLASH is based on Litecoin, but even lighter.  It’s very efficient and because the mining is minimal, performed by volunteers, and transaction fees are very low. Our goal is to create a safe and secure environment for community members to participate in FLASH and facilitate communications and commerce without friction.  Security is provided through our unique distributed node based governance model that we call GovNodes.</p>
+                    <p class="wow fadeInDown">FLASH is based on Litecoin, but even lighter. It’s very efficient and because the mining is minimal and done by volunteers, transaction fees are very low. Our goal is to create a safe and secure environment for community members to participate in FLASH and facilitate communications and commerce without friction.  Security is provided through our unique distributed node based governance model that we call GovNodes.</p>
                 </div>
 				</div>
 				<div class="col-sm-6">
-				    <div class="pull-right zl-image-responsive-style zl-custom-trans" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+				    <div class="pull-right zl-image-responsive-style zl-custom-trans" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
               <img src="images/laptop-img.png" alt="img">
             </div>
 				</div>
 			</div>
       <div class="col-sm-12"><h5 class="wow fadeInDown">The FLASH Advantage</h5>
-        <!-- <div class="flash section-header pull-left" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"> -->
+        <!-- <div class="flash section-header pull-left" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"> -->
                <ul class="wow fadeInDown">
                 <li>Public blockchain operated for the public good.</li>
                 <li>Zero Inflation. All coins were issued to the community.  No new coins will ever be issued.  If you want some FLASH you will need to trade with community members.</li>
-                <li>No Unfair Advantage, everyone donated something for their FLASH, except for less than 0.1% of the FLASH that was given to people who tested FLASH.  There is no developer slush fund, so don’t ask for any free coins.</li>
+                <li>No Unfair Advantage, everyone donated something for their FLASH, except for less than 0.1% of the FLASH that was given to people who tested FLASH.  There is no developer slush fund, please don’t ask for free coins.</li>
                 <li>Optimized and tested for efficiency and high volume.</li>
                 <li>Decentralized governance (GovNodes)</li>
                 <li>Community supported. Anyone can develop using the FLASH blockchain. Build a project, collect your fee for using your app directly into your own wallet. Projects can be developed by anyone.  Developers solicit donations from the community.</li>
@@ -284,13 +242,12 @@
 
         </div><!--/.container-->
     </section><!--/#services-->
-  <span class="zl-anchor" id="feature-flash"></span>
 	 <section id="feature-flash" >
         <div class="container">
         		<div class="row">
                 <div class="features">
                     <div class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
-                        <div class="media service-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <div class="media service-box" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
                             <div class="upcoming media-body">
                                 <h2 class="media-heading zl-heading" style="color: #fff">Upcoming Features of FLASH</h2>
                             </div>
@@ -318,15 +275,15 @@
                     <div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
                         <div class="media service-box" style="text-align: center; color: #fff" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                             <div class="media service-box icon-text zl-image-hover">
-								<a href="exchange-htm.html#exchange"><img src="images/icon-feature-flash-3.png" alt="img"></a>
-								<p style="text-align: center;"><a href="exchange-htm.html#exchange">Integrated Exchange</a></p>
+								<a href="exchange-htm.html#exchange" data-hash="exchange" class="pagelink"><img src="images/icon-feature-flash-3.png" alt="img"></a>
+								<p style="text-align: center;"><a class="pagelink" data-hash="exchange" href="exchange-htm.html#exchange">Integrated Exchange</a></p>
 							</div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
                         <div class="media service-box icon-text zl-image-hover" style="text-align: center; color: #fff" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-							<a href="exchange-htm.html#htm"><img src="images/icon-feature-flash-4.png" alt="img"></a>
-							<p style="text-align: center;"><a href="exchange-htm.html#htm">Human Teller Machine (HTM)</a></p>
+							<a href="exchange-htm.html#htm" data-hash="htm" class="pagelink"><img src="images/icon-feature-flash-4.png" alt="img"></a>
+							<p style="text-align: center;"><a class="pagelink" href="exchange-htm.html#htm" data-hash="htm">Human Teller Machine (HTM)</a></p>
 						</div>
                     </div>
                 </div>
@@ -334,21 +291,20 @@
         </div><!--/.container-->
     </section><!--/#featur flash-->
 
-    <section id="Wallet" >
+    <section id="wallet" >
         <div class="container">
             <div class="row">
-                <span class="zl-anchor" id="wallet"></span>
                 <div class="features">
                     <div class="col-md-6 col-sm-6 wow fadeInUp pull-left" data-wow-duration="300ms" data-wow-delay="100ms" id="wallet">
                         <div class="media service-box">
-                            <div class="media-body wallet" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="media-body wallet" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
                                 <h2 class="media-heading">Wallets</h2>
                                 <p style="color: #000">FLASH supports a number of online wallets including Coinomi, Coin Payments, QT (Window, Mac, Linux) and an easy to use online wallet designed for the mass consumer market. If you can make online payments, you already know how to use FLASH.</p>
                             </div>
                         </div>
                     </div><!--/.col-md-6-->
                     <div class="col-md-6 col-sm-6 wow fadeInUp pull-right zl-wallet-img-responsive-css" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <div class="media service-box zl-custom-trans" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <div class="media service-box zl-custom-trans" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
                                <div class="row">
                 									<div class="col-sm-6 zl-image-hover"><a href="https://coinomi.com/"><img src="images/about-flash-img-1.png" alt="img"></a></div>
                 									<div class="col-sm-6 zl-image-hover"><a href="https://www.coinpayments.net/"><img src="images/about-flash-img-2.png" alt="img"></a></div>
@@ -359,10 +315,9 @@
 
                 </div><!--/.row-->
                 <div class="row">
-                <span class="zl-anchor" id="exchanges"></span>
                 <div class="features">
                 	  <div class="col-md-6 col-sm-6 wow fadeInUp pull-left zl-wallet-img-responsive-css" data-wow-duration="300ms" data-wow-delay="400ms">
-                        <div class="media service-box zl-custom-trans" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <div class="media service-box zl-custom-trans" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
                                <div class="row">
                 									<div class="col-sm-6 zl-image-hover"><a href="https://www.cryptopia.co.nz/"><img src="images/about-flash-img-3.png" alt="img"></a></div>
                 									<div class="col-sm-6 zl-image-hover"><a href="https://crypto-bridge.org/"><img src="images/about-flash-img-4.png" alt="img"></a></div>
@@ -373,10 +328,10 @@
 
                     <div id="exchanges" class="col-md-6 col-sm-6 wow fadeInUp pull-right" data-wow-duration="300ms" data-wow-delay="300ms">
                         <div class="media service-box">
-                            <div class="media-body Exchanges zl-custom-trans" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="media-body Exchanges zl-custom-trans" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
                                <h2 class="media-heading">Exchanges</h2>
                                 <p style="color: #000">
-                                  FLASH supports any legal crypto currency exchange, including decentralized exchanges.  Our community occasionally contributes funds to get FLASH listed.   FLASH is ideal for exchanges, as the transfer speeds and transaction costs are very low and because it is based on LTC, integration .   If you operate an exchange and are interested in listing FLASH, please contact <a href="mailto:support@flashcoin.io" style="color: #fbb215;">support at flashcoin dot io</a> to receive a file with details on our source code repo for exchanges and a legal opinion regarding FLASH’s status as a security token (it’s a community coin, not a security)
+                                  FLASH supports any legal cryptocurrency exchange, including decentralized exchanges.  Our community occasionally contributes funds to get FLASH listed.   FLASH is ideal for exchanges, as the transfer speeds and transaction costs are very low and because it is based on LTC, integration. If you operate an exchange and are interested in listing FLASH, please contact <a href="mailto:support@flashcoin.io" style="color: #fbb215;">support at FLASHCOIN dot io</a> to receive a file with details on our source code repo for exchanges and a legal opinion regarding FLASH’s status as a security token (it’s a community coin, not a security)
                                 </p>
 
                             </div>
@@ -387,12 +342,11 @@
         </div><!--/.container-->
     </section><!--/#wallet-->
 
-    <section id="animated-number">
-        <div class="container">
+    <section id="web-wallet">
+        <div class="container" id="web-wallet">
         	<div class="row">
-          <span class="zl-anchor" id="Web-wallet"></span>
-        	<div class="col-sm-6" id="Web-wallet">
-	            <div class="section-header flash-web" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        	<div class="col-sm-6">
+	            <div class="section-header flash-web" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
 	                <h2 class="section-title wow fadeInDown">Flash Web Wallets</h2>
 	                <p class="wow fadeInDown">With the web wallet, you can use an email address or your public address for sending and receiving coins.</p>
 					<p class="wow fadeInDown">The web wallet supports most browsers and mobile devices. There's nothing to download or install for maximum convenience.</p>
@@ -403,7 +357,7 @@
 
 			<div class="col-sm-6">
 	            <div class="row text-center">
-	                <div class="col-sm-6 col-xs-12 zl-custom-trans" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+	                <div class="col-sm-6 col-xs-12 zl-custom-trans" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
 	                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
 	                       <div class="col-sm-6 zl-web-flash-wallet-responsive-css"><img src="images/section-three-img.png" alt="img"></div>
 	                    </div>
@@ -411,40 +365,40 @@
 	            </div>
 	        </div>
 	      </div>
-          <span class="zl-anchor" id="qt-wallet"></span>
-	        <div class="row flash-web">
-          <div class="col-sm-6 section-header flash-qt zl-custom-trans" id="qt-wallet" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+	        <div class="row flash-web" id="qt-wallet">
+            <br>
+          <div class="col-sm-6 section-header flash-qt zl-custom-trans" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
 	            <h2 class="section-title wow fadeInDown">Flash QT Wallets</h2>
 	            <div class="section-header text-center wow fadeInDown zl-flash-qt-wallet-responsive-css" data-wow-duration="400ms" data-wow-delay="0ms">
 	               <img src="images/section-img.png" alt="img">
 	            </div>
 			</div>
 
-			<div class="col-sm-6 zl-custom-trans" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+			<div class="col-sm-6 zl-custom-trans" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
 	            <div class="row text-center wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
 	                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
 	                       <div class="row download-row">
 		                       	<div class="col-sm-3 download-icon zl-image-hover">
                               <a href="https://flashcoin.io/download/flashcoin-0.10.3.0-win64-setup.exe">
-                                <img src="images/download.png" alt="img">
+                                <img src="images/windows.png" alt="img">
                                 <div class="title-icon">Windows 64 exe File</div>
                               </a>
                             </div>
 		                       	<div class="col-sm-3 download-icon zl-image-hover">
                               <a href="https://flashcoin.io/download/Flashcoin-arm-linux-gnueabihf.tar.gz">
-                                <img src="images/download.png" alt="img">
+                                <img src="images/linux.png" alt="img">
                                 <div class="title-icon">Linux Arm Zip File</div>
                               </a>
                             </div>
 		                       	<div class="col-sm-3 download-icon zl-image-hover">
                               <a href="https://flashcoin.io/download/flashcoin-0.10.3.0-win32-setup.exe">
-                                <img src="images/download.png" alt="img">
+                                <img src="images/windows.png" alt="img">
                                 <div class="title-icon">Windows 32 exe File</div>
                             </a>
                             </div>
 		                       	<div class="col-sm-3 download-icon zl-image-hover">
                               <a href="https://flashcoin.io/download/Flashcoin-x86_64-unknown-linux-gnu.tar.gz">
-                                <img src="images/download.png" alt="img">
+                                <img src="images/linux.png" alt="img">
                                 <div class="title-icon">Linux 64 Zip File</div>
                             </a>
                             </div>
@@ -456,25 +410,25 @@
 	                       <div class="row download-row">
                            <div class="col-sm-3 download-icon zl-image-hover">
                              <a href="https://flashcoin.io/download/Flashcoin-Qt.dmg">
-                               <img src="images/download.png" alt="img">
+                               <img src="images/mac.png" alt="img">
                                <div class="title-icon">Mac Zip File</div>
                              </a>
                            </div>
                            <div class="col-sm-3 download-icon zl-image-hover">
                              <a href="https://flashcoin.io/download/Flashcoin-Qt-Ubuntu-12.04-amd64.deb">
-                               <img src="images/download.png" alt="img">
+                               <img src="images/ubuntu.png" alt="img">
                                <div class="title-icon">Ubuntu 12.04 amd64 Deb File</div>
                              </a>
                            </div>
                            <div class="col-sm-3 download-icon zl-image-hover">
                              <a href="https://flashcoin.io/download/Flashcoin-Qt-Ubuntu-14.04-amd64.deb">
-                               <img src="images/download.png" alt="img">
+                               <img src="images/ubuntu.png" alt="img">
                                <div class="title-icon">Ubuntu 14.04 amd64 Deb File</div>
                            </a>
                            </div>
                            <div class="col-sm-3 download-icon zl-image-hover">
                              <a href="https://flashcoin.io/download/Flashcoin-Qt-Ubuntu-16.04-amd64.deb">
-                               <img src="images/download.png" alt="img">
+                               <img src="images/ubuntu.png" alt="img">
                                <div class="title-icon">Ubuntu 16.04 amd64 Deb File</div>
                            </a>
                            </div>
@@ -505,7 +459,7 @@
 					<p class="wow fadeInDown">- The GovNodes will be operated and administered by a subset of FLASH holders. In order to have the right to run a GovNode, a person</p>
 				</div>
 				<div class="col-sm-4 section-header">
-					<p class="wow fadeInDown">will be required to acquire and maintain ownership of, or “stake”, 1,000,000 FLASH,which must remain “staked” for as long as he operates a GovNode. In addition, a foundation based in Liechtenstein will be responsible for the ongoing development of the GovNodes and the maintenance of the FLASHcoin Software.</p>
+					<p class="wow fadeInDown">will be required to acquire and maintain ownership of, or “stake”, 1,000,000 FLASH, which must remain “staked” for as long as he operates a GovNode. In addition, a foundation based in Liechtenstein will be responsible for the ongoing development of the GovNodes and the maintenance of the FLASHcoin Software.</p>
 
 					<p class="wow fadeInDown">FLASHcoin is a delegated proof of work protocol that enables quicker and more efficient processing of blockchain transactions than other proof of work protocols. The consensus of all the GovNodes randomly assigns the validation of FLASH transactions to a subset of several dozen mining nodes. This allows for quicker processing times than traditional proof of work based protocols, which require a much larger number of mining nodes to validate transactions. Any FLASH holder has the opportunity to operate a mining node and be eligible to participate in the validation of FLASH transactions by staking 10,000,000 FLASH.
 					</p>
@@ -540,8 +494,7 @@
 
 
 
-    <span class="zl-anchor" id="pricing"></span>
-    <section id="pricing">
+    <section id="whitepaper">
         <div class="container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="3000">
             <div class="section-header Download">
                 <h2 class="section-title text-center wow fadeInDown color-white">Download Whitepaper</h2>
@@ -564,7 +517,6 @@
         </div>
     </section>
 
-  <span class="zl-anchor" id="team"></span>
 	 <section id="team">
         <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000">
             <div class="section-header our-team">
@@ -640,8 +592,6 @@
             </div>
         </div>
     </section>
-
-    <span class="zl-anchor" id="roadmap"></span>
     <section id="roadmap">
         <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000">
             <div class="section-header roadmap">
@@ -663,7 +613,7 @@
                 </p>
             </div></div>
             </div>
-            <div class="row"><div class="col-xs-12 text-center">Please Note : Roadmap will be updated on regular basis as we make progress.</div></div>
+            <div class="row"><div class="col-xs-12 text-center">Please Note: Roadmap will be updated on regular basis as we make progress.</div></div>
         </div>
     </section>
     <!--/#blog-->
@@ -764,7 +714,7 @@
          <li>
            <div class="cont wow fadeInDown zl-timeline-style4" data-wow-duration="400ms" data-wow-delay="0ms">
              <p>
-		- FLASH Web Wallet 3.0 - Decentralized
+		             - FLASH Web Wallet 3.0 - Decentralized
              </p>
              <time>FLASH Web Wallet</time>
            </div>
@@ -772,45 +722,24 @@
        </ul>
      </section>
 		<!-- End Timeline -->
-    <span class="zl-anchor" id="news"></span>
 		<section id="news">
         <div class="container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="4000">
             <div class="section-header news">
-                <h2 class="section-title wow fadeInDown" style="color: #fff;text-align: center;">News</h2>
-                <!-- <p class="tweet" style="margin-bottom: 0em;">Tweet <span>by @Flash</span></p> -->
+                <h2 class="section-title wow fadeInDown" style="color: #fff;">News</h2>
+                <h2 class="text-left" style="color: #fff;"><b>Tweet </b><span style="font-size:15px"> <a target="_blank" href="https://twitter.com/FlashCoins"> by @FlashCoins</a></span></h2>
             </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="wow zoomIn zl-tweet-img" data-wow-duration="400ms" data-wow-delay="0ms" style="text-align:center">
-                      <a class="twitter-timeline" href="https://twitter.com/FlashCoins" data-width="800" data-height="450" data-theme="dark" data-dnt = "true" data-chrome="nofooter noheader transparent noscrollbar noborders" data-border-color="#2A3165">Tweets by @FlashCoins</a>
-                    </div>
+            <div class="row twitter-timeline" style="max-height:448px; overflow:auto; ">
+                <div class="wow zoomIn zl-tweet-img" data-wow-duration="400ms" data-wow-delay="0ms" style="text-align:center;" id="zl-twitts">
+                  <!-- <a class="twitter-timeline" href="https://twitter.com/FlashCoins" data-width="800" data-height="450" data-theme="dark" data-dnt = "true" data-chrome="nofooter noheader transparent noscrollbar noborders" data-border-color="#2A3165">Tweets by @FlashCoins</a> -->
+                </div>
+                <div class="zl-github-btn" style="padding:20px;">
+                  <a target="_blank" href="https://twitter.com/FlashCoins" class="zl-button-style" data-scribe="element:load_more"><span>Follow @Flashcoins</span></a>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-	<footer id="footer">
-        <div class="container text-center">
-          <!-- All rights reserved © 2016 | <a href="http://www.pfind.com/goodies/bizexpress/">BizExpress Template</a> from <a href="http://www.pfind.com/goodies/">pFind.com</a> -->
-          FLASH is supported by the Third Millennium Foundation for Economics and Culture, Liechtenstein, and the FLASH community worldwide.
-        </div>
-        
-  </footer>
-  <div class="zl-get-wallet-sticky-btn-style-btp">
-    <a href="#" id="zl-back-top" title="Back to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-  </div>
-  <div class="zl-get-wallet-sticky-btn-style">
-    <a href="https://wallet.flashcoin.io/" target="_blank">Get a web wallet here</a>
-  </div>
-
-    <script src="js/jquery.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/zl-custom.js"></script>
-    <script src="js/key-indicator.js"></script>
-    <script src="js/aos.js"></script>
+    <div id="footer-content"></div>
+    <script type="text/javascript" src="js/twitterFetcher_min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

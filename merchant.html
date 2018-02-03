@@ -13,54 +13,17 @@
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/zluck-custom.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script>
+    $(function(){
+      $("#header-content").load("header.html");
+      $("#footer-content").load("footer.html");
+    });
+    </script>
 </head><!--/head-->
 
 <body id="home" class="homepage">
-     <header class="header cf our-team-header">
-     <div class="container">
-    <a class="navbar-brand top" href="index.html"><img src="images/logo-header.png" alt="logo"></a>
-
-    <a href="#" class="nav-toggle notext"><i class="ico-menu"></i></a>
-
-    <nav class="nav">
-        <ul class="cf">
-          <li class="parrent_li"><a href="index.html#services">About</a>
-                     <ul class="sub-menu">
-                        <li><a href="index.html#services">What is FLASH</a></li>
-                        <li><a href="index.html#team">Team</a></li>
-                        <li><a href="index.html#roadmap">Roadmap</a></li>
-                        <li><a href="index.html#news">News</a></li>
-                        <li><a href="index.html#exchanges">Exchanges</a></li>
-                        <li><a href="index.html#feature-flash">Upcoming Features</a></li>
-                    </ul>
-                </li>
-          <li class="parrent_li"><a href="index.html#animated-number">Wallets</a>
-                     <ul class="sub-menu">
-                        <li><a href="index.html#Web-wallet">Web Wallet</a></li>
-                        <li><a href="index.html#qt-wallet">QT Wallet Downloads</a></li>
-                        <li><a href="index.html#wallet">Third Party Wallets</a></li>
-                    </ul>
-                </li>
-          <li class="parrent_li"><a>Resources</a>
-                    <ul class="sub-menu">
-                            <li><a href="index.html#pricing">Whitepaper</a></li>
-                            <li><a href="https://github.com/flash-coin" target="_blank">Github</a></li>
-                            <li><a href="https://explorer.flashcoin.io/" target="_blank">Explorer</a></li>
-                            <li><a href="https://charts.flashcoin.io/" target="_blank">Charts</a></li>
-                            <li><a href="https://nodes.flashcoin.io/" target="_blank">Nodes</a></li>
-                    </ul>
-                </li>
-                <li class="parrent_li"><a>Community</a>
-                    <ul class="sub-menu">
-                            <!-- <li><a href="https://blog.flashcoin.io/" target="_blank">Blog</a></li> -->
-                            <li><a href="index.html#social-forum">Social Forums</a></li>
-                    </ul>
-                </li>
-            <li class="divider-mobile"></li><!-- /.divider-mobile -->
-        </ul>
-    </nav><!-- /.nav -->
-    </div>
-</header>
+     <div id="header-content"></div>
      <section id="merchant">
         <div class="container">
             <div class="row">
@@ -75,15 +38,15 @@
                   <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
                     <div class="section-header our-team">
                         <h3 class="section-title wow fadeInDown">Merchant Services</h3>
-                        <p class="wow fadeInDown" style="color: #414141">FLASH is designed to be SPENT.  It’s ideal for merchants, providing very fast processing time to speed customer checkout and very low fees.  Credit cards cost merchants billions a year in transaction fees, while FLASH is the true person to person community coin providing transaction processing for under a penny per transaction and no chargebacks or merchant holdback accounts.  When you accept a FLASH transaction, it goes right into your wallet and it’s 100% yours to immediately spend.</p>
-                        <p class="wow fadeInDown" style="color: #414141">If a merchant pays 2% transaction fees with credit cards, and they have a 10% pretax income on their business, credit card fees are like a 20% tax on their business.  FLASH savings add up quickly and go right to the bottom line.</p>
+                        <p class="wow fadeInDown" style="color: #414141">FLASH is designed to be SPENT. It’s ideal for merchants, providing very fast processing time to speed customer checkout and very low fees. Credit cards cost merchants billions a year in transaction fees, while FLASH is the true person to person community coin providing transaction processing for under a penny per transaction and no chargebacks or merchant holdback accounts. When you accept a FLASH transaction, it goes right into your wallet and it’s 100% yours to immediately spend.</p>
+                        <p class="wow fadeInDown" style="color: #414141">If a merchant pays 2% transaction fees with credit cards and they have a 10% pretax income on their business, credit card fees are like a 20% tax on their business.  FLASH savings add up quickly and go right to the bottom line.</p>
                         <p class="wow fadeInDown" style="color: #414141">FLASH merchant services will include:</p>
                         <ul class="wow fadeInDown" style="color: #414141">
                           <li>Powerful and easy to use FLASH web wallet can turn any consumer into a merchant</li>
                           <li>Using the FLASH web wallet, any employee can accept FLASH payments, only the manager can access the FLASH in the wallet.</li>
                           <li>Merchant signage can be printed on any inkjet printer in all supported FLASH languages (future feature)</li>
                           <li>Reporting to track sales (future feature)</li>
-                          <li>Cash back in local currency calculator (based on FLASH exchange prices) (future feature)</li>
+                          <li>Cashback in local currency calculator (based on FLASH exchange prices) (future feature)</li>
                           <li>Point of Sale terminal integration (future feature)</li>
                           <li>NFC capability like Apple Pay (future feature)</li>
                         </ul>
@@ -93,21 +56,6 @@
             </div>
         </div>
     </section><!--/#-team-->
-    <footer id="footer">
-        <div class="container text-center">
-          FLASH is supported by the Third Millennium Foundation for Economics and Culture, Liechtenstein, and the FLASH community worldwide.
-        </div>
-        
-    </footer>
-    <div class="zl-get-wallet-sticky-btn-style-btp">
-    <a href="#" id="zl-back-top" title="Back to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-  </div>
-    <div class="zl-get-wallet-sticky-btn-style">
-      <a href="https://wallet.flashcoin.io/" target="_blank">Get a web wallet here</a>
-    </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/zl-custom.js"></script>
+    <div id="footer-content"></div>
 </body>
 </html>
