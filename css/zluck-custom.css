@@ -1,8 +1,8 @@
-.col-sm-12.coinexchange img {
-    padding-top: 20px;
+.col-sm-6.coinexchange img {
+    padding-top: 30px;
     vertical-align: middle;
 }
-.col-sm-12.coinexchange {
+.col-sm-6.coinexchange {
     text-align: center;
 }
 .team-info h3 a {
