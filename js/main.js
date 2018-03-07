@@ -74,6 +74,9 @@ $(window).scroll(function() {
     }
 });
 
-$('.notext').click(function(){
-	$("body").toggleClass("header-expanded");
-});
+// $('.notext').click(function(){
+// 	$("body").toggleClass("header-expanded");
+// });
+$(document).on("click", ".notext", function(event) {
+        $("body").toggleClass("header-expanded");
+})
