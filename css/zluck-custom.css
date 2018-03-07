@@ -406,8 +406,17 @@ h4.transaction24h {
     max-width: 90%;
 }
 
-/* scroll bar css */
+/*Flashcoin snapshot page - 6-3-18 */
+.zl-fc-snapshot-read-more-btn span {
+    background-color: #fbb215;
+    padding: 10px 40px;
+}
+.zl-fc-snapshot-read-more-btn {
+    padding-top: 30px;
+    text-align: left;
+}
 
+/* scroll bar css */
 .twitter-timeline::-webkit-scrollbar, body::-webkit-scrollbar {
 	width: 3px;
 	background-color: transparent !important;
