@@ -93,8 +93,8 @@ a.zl-button-style span:hover {
 }
 .wallet .media-heading:after {left: 1%;}
 .wallet .media-heading:before {left: 1%;}
-.Exchanges .media-heading:before {left: 1%;}
-.Exchanges .media-heading:after {left: 1%;}
+.Exchanges .media-heading:before {left: 0%;}
+.Exchanges .media-heading:after {left: 0%;}
 a.navbar-brand.top img {
     width: 80%;
     padding-top: 5px;
@@ -452,6 +452,19 @@ h4.transaction24h {
     background-color: #F17022;
 }*/
 
+
+/*crex24 style 10-3-18*/
+.zl-set-column-3 {
+    width: 12.5%;
+}
+.zl-set-column-2 {
+    width: 25%;
+}
+/*.zl-crex24-img {
+    text-align: center;
+    margin-top: 0%;
+}*/
+
 /*Media query*/
 @media screen and (max-width: 767px) {
   a.navbar-brand.top img {width: 50%;padding-top: 15px;}
@@ -546,4 +559,9 @@ h4.transaction24h {
   .zl-tweet-image img {
       max-width: 20%;
   }
+
+ /*10-3-18*/
+ .zl-set-column-3 {width: auto;}
+ .zl-set-column-2 {width: auto;}
+
 }
