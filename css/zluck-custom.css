@@ -466,6 +466,11 @@ h4.transaction24h {
 }*/
 
 /*Media query*/
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .zl-set-column-3 {width: auto;}
+  .zl-set-column-2 {width: auto;display: contents;}
+  .zl-exchanges-res {width: auto;}
+}
 @media screen and (max-width: 767px) {
   a.navbar-brand.top img {width: 50%;padding-top: 15px;}
   .speed-meter-section {margin: 55px 0px 0px;}
