@@ -1,0 +1,188 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Hanlding Updates
+-----------------------------------------------------------------*/
+
+#slider	{background: url('../images/_newsite/bg_hero.jpg') no-repeat center right; background-size: cover;}
+
+#about {
+	background: url('../images/_newsite/bg_section-about.jpg') scroll no-repeat top/cover;
+	padding-top: 80px;
+	min-height: 700px;
+}
+
+#wallet {
+	background: url('../images/_newsite/bg_section-wallet.jpg') scroll no-repeat bottom/cover;
+	min-height: 900px;
+}
+
+#whitepaper {background: url('../images/_newsite/bg_hero.jpg') no-repeat center right; background-size: cover;}
+
+
+/*Header background color*/
+.dark .fancy-title h1, .dark .fancy-title h2, .dark .fancy-title h3, .dark .fancy-title h4, .dark .fancy-title h5, .dark .fancy-title h6 {background:transparent;}
+
+
+#wallet .col-lg-3 {border-left: 1px solid white;}
+
+/*ul.icon-social {display: inline;}
+ul.icon-social li {display: inline;}
+ul.icon-social .fab, .svg-inline--fa {
+    color: #fff;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 4.5em;
+	margin: 1em;
+}*/
+
+ul.icon-social {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #333333;*/
+	margin: 0 auto;
+    width: -webkit-fit-content;
+       width: -moz-fit-content;
+            width: fit-content;
+}
+
+ul.icon-social li {float: left;}
+
+ul.icon-social li a {
+    display: block;
+    color: #E0AE27;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+	font-size: 4.5em;
+}
+
+ul.icon-social li a span {
+	display: block;
+	font-size: 0.2em;
+}
+
+ul.icon-social li a:hover {color:#DA8B22;}
+
+footer ul.icon-social li a {font-size: 1.5em;padding: 8px;}
+
+#feature-flash a {text-align:center;}
+#feature-flash a span {margin-top:20px;display:block;}
+
+ .dark .form-control:not(.not-dark)[readonly] {background-color: rgba(255, 255, 255, 0);}
+ .dark .form-control:not(.not-dark) {border-color: rgba(0, 0, 0, 0);}
+
+ /*.entry:hover {background-color: rgba(255, 255, 255, 0.08);}*/
+ .entry ul {list-style-type: none;}
+
+
+.entry {
+    padding: 20px !important;
+    background-color: rgba(255, 255, 255, 0.02);
+    -o-transition:color .2s ease-out, background 3s ease-in;
+    -ms-transition:color .2s ease-out, background 3s ease-in;
+    -moz-transition:color .2s ease-out, background 3s ease-in;
+    -webkit-transition:color .2s ease-out, background 3s ease-in;
+    /* ...and now override with proper CSS property */
+    transition:color .2s ease-out, background .3s ease-in;
+}
+.entry:hover { background:rgba(255, 255, 255, 0.08) }
+.entry.entry-date-section:hover {background: transparent !important;}
+
+
+.fancy-title h2 {padding-right:0;}
+.post-timeline .entry{padding-right:20px !important;}
+a.button.button-rounded.button-reveal.button-large.button-yellow.button-light.tright {color: #fff;}
+.anchor {padding-top: 100px;}
+
+/*team*/
+.team img {
+  display: block;
+  margin: 50px auto;
+  border-radius: 100%;
+  -webkit-transition: all .3s ease;
+}
+.team img:hover {
+  -webkit-transform:scale(1.20);  -moz-transform:scale(1.20); -ms-transform:scale(1.20);  -o-transform:scale(1.20);  transform:scale(1.20);
+}
+
+.team-overlay:before { background: none; }
+.team-social-icons  {padding-top: 90%;}
+
+#data-pulled .form-control   {padding: 0.175rem 0.1rem;
+font-size: 1rem;
+line-height: 0.5;}
+
+#data-pulled h4 {margin: 20px 0 0 0;}
+
+.col-lg-7 a {margin-left:0;}
+
+/*.fancy-title {margin-top:30px;margin-bottom:0;}*/
+
+/*#header-wrap {background:transparent !important;}*/
+
+#logo { display: none; }
+#primary-menu ul > li.hide-this { display: none; }
+
+.fancy-title.title-border.title-center h1 span,
+.fancy-title.title-border.title-center h2 span,
+.dark .fancy-title h1, .dark .fancy-title h2, .dark .fancy-title h3, .dark .fancy-title h4, .dark .fancy-title h5, .dark .fancy-title h6 {
+    background: #000 !important;
+}
+
+.fancy-title {margin: 30px 0 10px 0;}
+
+#slider .col-lg-5 {padding-left: 60px;}
+
+.zl-tweet-area p {margin-bottom: 0;}
+
+
+@media (max-width: 991px) {
+    a.button {
+        white-space: normal;
+        height: auto !important;
+        text-align: center;
+    }
+
+    #about {padding-top: 0 !important;}
+    .vertical-middle {padding-bottom: 0 !important;}
+    .topmargin-lg   {margin-top: 0 !important;}
+
+    .fancy-title {margin: 20px 0;}
+
+    .heading-block {margin: 40px 0 0 0;}
+    #slider .col-lg-5 {padding-left: 0;}
+
+    #news .col-sm-1 {display: none;}
+
+    /*#primary-menu-trigger {right:0 !important;left: auto !important;}
+    #header-wrap {display: none;}*/
+}
+
+@media (max-width: 414px) {
+    #wallet .col-lg-3 {
+     border-left: 0;
+    width: 180px;
+    }
+    .col-padding {
+    padding: 20px 60px;
+    }
+
+    #footer .footer-widgets-wrap {
+    padding: 20px 0;
+    }
+
+
+    #team .col-md-4.col-sm-4 {
+        width: 98px;
+    }
+    .fancy-title {
+        margin-bottom: 30px;
+    }
+
+   .primary-menu ul li.hide-this, #logo.hide-this {
+    display: block !important;
+    }
+}

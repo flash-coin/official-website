@@ -1,87 +1,377 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en-US">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Flashcoin | FLASH Blockchain Snapshot</title>
-    <link rel="shortcut icon" href="images/favicon.ico" title="Favicon">
-    <!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/zluck-custom.css" rel="stylesheet">
-    <script src="js/jquery.js"></script>
-    <script>
-    $(function(){
-      $("#header-content").load("header.html");
-      $("#footer-content").load("footer.html");
-    });
-    </script>
-    </head><!--/head-->
 
-    <body id="home" class="homepage">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
 
-    <div id="header-content"></div>
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600|Open+Sans|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="css/04.style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/et-line.css" type="text/css" />
+	<link rel="stylesheet" href="css/04.custom.css" type="text/css" />
 
-     <section id="remittances">
-        <div class="container">
-            <div class="row">
-                <!-- <div class="col-sm-4 col-md-4 our-team-single section-header" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <div class="remitance">
-                            <img src="images/remitance-img.png" alt="">
-                        </div>
-                    </div>
-                </div> -->
-                <div class="col-sm-12 col-md-12" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                    <div class="section-header our-team">
-                        <h3 class="section-title wow fadeInDown">DOWNLOAD FLASH BLOCKCHAIN SNAPSHOT</h3>
-                        <p class="wow fadeInDown" style="color: #414141">In which cases you need to download Flashcoin blockchain?</p>
-                        <ul style="color: #414141;">
-                          <li>When you need to get full Flashcoin node</li>
-                          <li>When you installing wallet like Flashcoin Core to new device</li>
-                          <li>If your blockchain was crashed and you need get it back to normal fast</li>
-                        </ul>
-                        <h4 class="wow fadeInDown" style="color: #000;margin-top: 2em;font-size:20px;">Step 1: Download flashcoin_blockchain_snapshot file:</h4>
-                        <a href="https://flashcoin.io/download/flashcoin_blockchain_snapshot_23jan2018.tar.gz" style="color: #fff;cursor: pointer;"><div class="zl-fc-snapshot-read-more-btn"><span>Download</span></div></a><br>
-                        <p class="wow fadeInDown" style="color: #000;">(<a href="https://flashcoin.io/download/flashcoin_blockchain_snapshot_29mar2018.tar.gz">https://flashcoin.io/download/flashcoin_blockchain_snapshot_29mar2018.tar.gz)</a><br>
-                          (SHA1: 1b897b2ecbbefdfa8d5411d9bc46e9971602c370)</p>
-                          <p class="wow fadeInDown" style="color: #000;">The blockchain file has size 578Mb.</p>
-                        <h4 class="wow fadeInDown" style="color: #000;margin-top: 2em;font-size:20px;">Step 2: Unzip the flashcoin_blockchain_snapshot_*.tar.gz contain:</h4>
-                        <p class="wow fadeInDown" style="color: #000;">The file contain:<br>
-                          <code>.\blocks</code><br>
-                          <code>.\chainstate</code><br>
-                          <code>.\databases</code><br>
-                          <code>.\peer.dat</code>
-                        </p>
-                      <h4 class="wow fadeInDown" style="color: #000;margin-top: 2em;margin-bottom: 1em;font-size:20px;">Step 3: Copy all the content to the Flashcoin data folder on your local machine. The default location:</h4>
-                      <p class="wow fadeInDown" style="color: #000;font-weight: bold;margin-bottom: 0.2em;">1) Windows OS:</p>
-                      <p class="wow fadeInDown" style="color: #000;">By default Flashcoin will put its data here:<br>
-                      <code>C:\Documents and Settings\YourUserName\Application data\Flashcoin (XP)</code><br>
-                      <code>C:\Users\YourUserName\Appdata\Roaming\Flashcoin (Vista and 7)</code></p>
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<!-- Social Tags
+	============================================= -->
+	<meta name="description" content="FLASH is ideal for exchanges, as the transfer speeds and transaction costs are very low and because it is based on LTC, integration." />
+	<link rel="canonical" href="ttps://www.flashcoin.io/index.html" />
+	<meta itemprop="name" content="#GoFaster | FlashCoin.  CONNECTING THE WORLD IN A FLASH.">
+	<meta itemprop="description" content="CONNECTING THE WORLD IN A FLASH via @FlashCoins #FlashCoin #GoFaster">
+	<meta itemprop="image" content="ttps://www.flashcoin.io/images/social-fb-plate-flashcoin.jpg">
+	<meta property="og:site_name" content="#GoFaster | FlashCoin.  CONNECTING THE WORLD IN A FLASH." />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="#GoFaster | FlashCoin.  CONNECTING THE WORLD IN A FLASH." />
+	<meta property="og:url" content="ttps://www.flashcoin.io/index.html" />
+	<meta property="og:description" content="CONNECTING THE WORLD IN A FLASH via @FlashCoins #FlashCoin #GoFaster" />
+	<meta property="og:image" content="ttps://www.flashcoin.io/images/social-fb-plate-flashcoin.jpg" />
+	<meta name="twitter:title" content="#GoFaster | FlashCoin.  CONNECTING THE WORLD IN A FLASH." />
+	<meta name="twitter:description" content="CONNECTING THE WORLD IN A FLASH. via @FlashCoins #FlashCoin #GoFaster" />
+	<meta name="twitter:image:src" content="ttps://www.flashcoin.io/images/social-fb-plate-flashcoin.jpg" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Flashcoin | Flash Snapshot</title>
+
+<style>
+@media (min-width: 992px) {
+	#header .button {
+		margin: 30px 10px;
+		-webkit-transition: all .4s ease;
+		-o-transition: all .4s ease;
+		transition: all .4s ease;
+	}
+
+	body.top-search-open #header .button { opacity: 0; }
+
+	#header.sticky-header:not(.static-sticky) .button {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 991px) {
+	#header .button {
+		display: none;
+		margin: 10px 5px 20px;
+	}
+
+	#header .button.d-block { display: inline-block !important; }
+}
+</style>
+
+</head>
+
+<body class="stretched dark">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="transparent-header dark responsive-sticky-header" data-sticky-offset="100">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo" style="display: inline;">
+						<a href="index.html" class="standard-logo retina-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Flashcoin Logo"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu" class="one-page-menu">
+
+						<ul>
+							<li><a href="index.html"><div>HOME</div></a></li>
+							<li><a href="index.html#about"><div>ABOUT</div></a>
+								<ul>
+									<li><a href="index.html#about"><div>WHAT IS FLASH</div></a></li>
+									<li><a href="index.html#flash-advantage"><div>FLASH ADVANTAGES</div></a></li>
+									<li><a href="index.html#team"><div>TEAM</div></a></li>
+									<li><a href="index.html#roadmap"><div>ROADMAP</div></a></li>
+									<li><a href="index.html#news"><div>NEWS</div></a></li>
+									<li><a href="index.html#exchanges"><div>EXCHANGES</div></a></li>
+									<li><a href="index.html#feature-flash"><div>UPCOMING FEATURES</div></a></li>
+								</ul>
+							</li>
+							<li><a href="index.html#wallet"><div>WALLET</div></a>
+								<ul>
+									<li><a href="index.html#wallet"><div>WEB WALLET</div></a></li>
+									<li><a href="https://play.google.com/store/apps/details?id=com.flash.wallet.android" target="_blank"><div>ANDROID WALLET</div></a></li>
+									<li><a href="index.html#wallet"><div>QT WALLET DOWNLOADS</div></a></li>
+									<li><a href="flash-snapshot.html"><div>FLASH SNAPSHOT</div></a></li>
+									<li><a href="index.html#wallet"><div>THIRD PARTY WALLETS</div></a></li>
+								</ul>
+							</li>
+							<li><a href="index.html#section-resources"><div>RESOURCES</div></a>
+								<ul>
+									<li><a href="index.html#whitepaper"><div>WHITEPAPER</div></a></li>
+									<li><a href="https://github.com/flash-coin/" target="_blank"><div>GITHUB</div></a></li>
+									<li><a href="https://explorer.flashcoin.io/" target="_blank"><div>EXPLORER</div></a></li>
+									<li><a href="https://charts.flashcoin.io/" target="_blank"><div>CHARTS</div></a></li>
+									<li><a href="https://nodes.flashcoin.io/" target="_blank"><div>NODES</div></a></li>
+								</ul>
+							</li>
+							<li><a href="index.html#social-forum"><div>COMMUNITIES</div></a>
+								<ul>
+									<li><a href="index.html#social-forum"><div>SOCIAL FORUMS</div></a></li>
+									<li><a href="https://blog.flashcoin.io/" target="_blank"><div>BLOG</div></a></li>
+								</ul>
+							</li>
+
+						</ul>
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content" style="margin-bottom: 0px;">
+
+			<div class="content-wrap nopadding">
+
+				<!-- Upcoming Features
+				============================================= -->
+				<div id="roadmap" class="page-section topmargin-lg">
+
+					<div class="heading-block center">
+						<div class="fancy-title title-border title-center">
+							<h1><span>DOWNLOAD FLASH BLOCKCHAIN SNAPSHOT</span></h1>
+						</div>
+					</div>
+
+					<div class="container clearfix">
+
+						<!-- Remittances
+						============================================= -->
+						<div id="upcoming-emittances" class="row">
+							<div class="col-md-8">
+								<p>In which cases you need to download Flashcoin blockchain?</p>
+								<ul class="iconlist">
+									<li><i class="icon-play"></i> When you need to get full Flashcoin node</li>
+									<li><i class="icon-play"></i> When you installing wallet like Flashcoin Core to new device</li>
+									<li><i class="icon-play"></i> If your blockchain was crashed and you need get it back to normal fast</li>
+								</ul>
+								<h2>Step 1: Download flashcoin_blockchain_snapshot file:</h2>
+								<a href="download/flashcoin_blockchain_snapshot_29mar2018.tar.gz" class="button button-3d bottommargin-sm">Download</a>
+								<p>(<a href="download/flashcoin_blockchain_snapshot_29mar2018.tar.gz">https://flashcoin.io/download/flashcoin_blockchain_snapshot_29mar2018.tar.gz</a>)<br>
+                          		(SHA1: 1b897b2ecbbefdfa8d5411d9bc46e9971602c370)</p>
+								<p>The blockchain file has size 578Mb.</p>
+
+								<h2>Step 2: Unzip the flashcoin_blockchain_snapshot_*.tar.gz contain:</h2>
+								<p>The file contain:<br>
+									<code>.\blocks</code><br>
+									<code>.\chainstate</code><br>
+									<code>.\databases</code><br>
+									<code>.\peer.dat</code>
+								</p>
+
+								<h2>Step 3: Copy all the content to the Flashcoin data folder on your local machine. The default location:</h2>
+								<p>1) Windows OS:</p>
+								<p>By default Flashcoin will put its data here:<br>
+								<code>C:\Documents and Settings\YourUserName\Application data\Flashcoin (XP)</code><br>
+								<code>C:\Users\YourUserName\Appdata\Roaming\Flashcoin (Vista and 7)</code></p>
 
 
-                      <p class="wow fadeInDown" style="color: #000;font-weight: bold;margin-bottom: 0.2em;">2) Mac OSX:</p>
-                      <p class="wow fadeInDown" style="color: #000;">By default Flashcoin will put its data here:<br>
-                      <code>~/Library/Application Support/flashcoin/</code><br></p>
+								<p>2) Mac OSX:</p>
+								<p>By default Flashcoin will put its data here:<br>
+								<code>~/Library/Application Support/flashcoin/</code><br></p>
 
-                      <p class="wow fadeInDown" style="color: #000;font-weight: bold;margin-bottom: 0.2em;">3) Unix*:</p>
-                      <p class="wow fadeInDown" style="color: #000;">By default Flashcoin will put its data here:<br>
-                      <code>~/.flashcoin/</code><br></p>
+								<p>3) Unix*:</p>
+								<p>By default Flashcoin will put its data here:<br>
+								<code>~/.flashcoin/</code><br></p>
 
 
-                      <h4 class="wow fadeInDown" style="color: #000;margin-top: 2em;margin-bottom: 1em;font-size:20px;">Step 4: Start your Flashcoin QT-Wallet</h4>
-                      <p class="wow fadeInDown" style="color: #000;">It can take some time to rescan (reindex) all the blockchain data.</p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!--/#-team-->
-    <div id="footer-content"></div>
+								<h2>Step 4: Start your Flashcoin QT-Wallet</h2>
+								<p>It can take some time to rescan (reindex) all the blockchain data.</p>
+							</div>
+							<div class="col-md-4"></div>
+							<div class="clear"></div><div class="line"></div>
+						</div><!--Remittances end-->
+					</div>
+				</div><!-- #section-resources end -->
+
+			</div><!-- .content-wrap end -->
+		</section><!-- #content end -->
+
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap clearfix">
+
+					<div class="col_two_third">
+
+						<div class="col_one_third">
+
+							<div class="widget clearfix">
+
+								<img src="images/footer-logo.png" alt="" class="footer-logo">
+
+								<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+									<address>
+										<strong>Headquarters:</strong><br>
+										Lichtenstein<br>
+									</address>
+									<abbr title="Email Address"><strong>Email:</strong></abbr> <a href="mailto:info@flashcoin.io" target="_top">info@flashcoin.io</a>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="col_one_third">
+
+							<div class="widget widget_links clearfix">
+
+								<h4>Menu</h4>
+
+								<ul>
+									<li><a href="index.html#wrapper"><div>HOME</div></a></li>
+									<li><a href="index.html#about"><div>ABOUT</div></a></li>
+									<li><a href="index.html#wallet"><div>WALLET</div></a></li>
+									<li><a href="index.html#section-resources"><div>RESOURCES</div></a></li>
+									<li><a href="index.html#social-forum"><div>COMMUNITIES</div></a></li>
+								</ul>
+
+							</div>
+
+						</div>
+
+						<div class="col_one_third col_last">
+
+							<!--CONTENT HERE-->
+
+						</div>
+
+					</div>
+
+					<div class="col_one_third col_last">
+
+						<div class="widget clearfix" style="margin-bottom: -20px;">
+
+							<div class="row">
+
+								<!--CONTENT HERE-->
+
+							</div>
+
+						</div>
+
+						<div class="widget clearfix" style="margin-bottom: -20px;">
+
+							<div class="row">
+
+								<!--CONTENT HERE-->
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div><!-- .footer-widgets-wrap end -->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container clearfix">
+
+					<div class="col_half">
+						<!-- <div>Copyrights &copy; 2018 All Rights Reserved by Flashcoin.io
+						Flashcoin.io is provided by the Flashcoin Foundation,Liechtenstein.Supported by the FLASH community.</div> -->
+						<!--<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>-->
+						FLASH is supported by the Third Millennium Foundation for Economics and Culture, Liechtenstein, and the FLASH community worldwide.
+					</div>
+
+					<div class="col_half col_last tright">
+						<div class="fright clearfix">
+							<ul class="icon-social">
+								<li><a href="https://discord.gg/2nFmMqA" target="_blank"><i class="fab fa-discord"></i></a></li>
+								<li><a href="https://t.me/joinchat/C5go9ExsGGNeVvForEgb6w" target="_blank"><i class="fab fa-telegram"></i></a></li>
+								<li><a href="https://www.facebook.com/FlashCoin-1800026016723751" target="_blank"><i class="fab fa-facebook"></i></a></li>
+								<li><a href="https://www.instagram.com/flashcoin.io/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="https://twitter.com/FlashCoins" target="_blank"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="https://plus.google.com/u/0/b/110236490072104998071/110236490072104998071" target="_blank"><i class="fab fa-google-plus"></i></a></li>
+								<li><a href="https://github.com/flash-coin" target="_blank"><i class="fab fa-github"></i></a></li>
+								<li><a href="https://bitcointalk.org/index.php?topic=1605453.0" target="_blank"><i class="fab fa-bitcoin"></i></a></li>
+								<li><a href="https://www.reddit.com/r/FlashCoins/" target="_blank"><i class="fab fa-reddit"></i></a></li>
+								<li><a href="https://medium.com/@FlashCoin" target="_blank"><i class="fab fa-medium"></i></a></li>
+								<li><a href="https://steemit.com/@flash.coin" target="_blank"><i class="fas fa-stop"></i></a></li>
+							</ul>
+						</div>
+
+						<div class="clear"></div>
+
+						<a href="mailto:info@flashcoin.io" target="_top"><i class="icon-envelope2"></i> info@flashcoin.io</a> <span class="middot">&middot;</span> <a href="https://discord.gg/2nFmMqA" target="_blank"><i class="fab fa-discord"></i> FlashcoinOnDiscord</a>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/key-indicator.js"></script>
+	<script src="js/twitterFetcher_min.js"></script>
+	<script src="js/plugins.js"></script>
+	<!--<script src="js/aos.js"></script>-->
+	<script defer src="js/fontawesome5.0.8.all.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<script>
+		jQuery(document).ready(function(){
+			jQuery('#primary-menu-trigger').click(function() {
+				jQuery( '#header .button' ).toggleClass("d-block");
+			});
+		});
+	</script>
+
 </body>
 </html>
