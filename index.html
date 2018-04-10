@@ -1,332 +1,437 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
-<head>
 
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<head>
 
-	<!-- Stylesheets
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+		<!-- Stylesheets
 	============================================= -->
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600|Open+Sans|Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="css/04.style.css" type="text/css" />
-	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
-	<link rel="stylesheet" href="css/dark.css" type="text/css" />
-	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="css/et-line.css" type="text/css" />
-	<link rel="stylesheet" href="css/04.custom.css" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600|Open+Sans|Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" href="css/04.style.css" type="text/css" />
+		<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+		<link rel="stylesheet" href="css/dark.css" type="text/css" />
+		<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+		<link rel="stylesheet" href="css/animate.css" type="text/css" />
+		<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+		<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+		<link rel="stylesheet" href="css/et-line.css" type="text/css" />
+		<link rel="stylesheet" href="css/04.custom.css" type="text/css" />
 
-	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
-	<link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+		<link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lt IE 9]>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
 
-	<!-- Social Tags
+		<!-- Social Tags
 	============================================= -->
-	<meta name="description" content="FLASH is ideal for exchanges, as the transfer speeds and transaction costs are very low and because it is based on LTC, integration." />
-	<link rel="canonical" href="https://www.flashcoin.io/clients/flashcoin/index.html" />
-	<meta itemprop="name" content="#GoFaster | FlashCoin.  CONNECTING THE WORLD IN A FLASH.">
-	<meta itemprop="description" content="CONNECTING THE WORLD IN A FLASH via @FlashCoins #FlashCoin #GoFaster">
-	<meta itemprop="image" content="https://www.flashcoin.io/clients/flashcoin/images/social-fb-plate-flashcoin.jpg">
-	<meta property="og:site_name" content="#GoFaster | FlashCoin.  CONNECTING THE WORLD IN A FLASH." />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="#GoFaster | FlashCoin.  CONNECTING THE WORLD IN A FLASH." />
-	<meta property="og:url" content="https://www.flashcoin.io/clients/flashcoin/index.html" />
-	<meta property="og:description" content="CONNECTING THE WORLD IN A FLASH via @FlashCoins #FlashCoin #GoFaster" />
-	<meta property="og:image" content="https://www.flashcoin.io/clients/flashcoin/images/social-fb-plate-flashcoin.jpg" />
-	<meta name="twitter:title" content="#GoFaster | FlashCoin.  CONNECTING THE WORLD IN A FLASH." />
-	<meta name="twitter:description" content="CONNECTING THE WORLD IN A FLASH. via @FlashCoins #FlashCoin #GoFaster" />
-	<meta name="twitter:image:src" content="https://www.flashcoin.io/clients/flashcoin/images/social-fb-plate-flashcoin.jpg" />
+		<meta name="description" content="FLASH is ideal for exchanges, as the transfer speeds and transaction costs are very low and because it is based on LTC, integration." />
+		<link rel="canonical" href="https://www.flashcoin.io/clients/flashcoin/index.html" />
+		<meta itemprop="name" content="#GoFaster | FlashCoin.  CONNECTING THE WORLD IN A FLASH.">
+		<meta itemprop="description" content="CONNECTING THE WORLD IN A FLASH via @FlashCoins #FlashCoin #GoFaster">
+		<meta itemprop="image" content="https://www.flashcoin.io/clients/flashcoin/images/social-fb-plate-flashcoin.jpg">
+		<meta property="og:site_name" content="#GoFaster | FlashCoin.  CONNECTING THE WORLD IN A FLASH." />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="#GoFaster | FlashCoin.  CONNECTING THE WORLD IN A FLASH." />
+		<meta property="og:url" content="https://www.flashcoin.io/clients/flashcoin/index.html" />
+		<meta property="og:description" content="CONNECTING THE WORLD IN A FLASH via @FlashCoins #FlashCoin #GoFaster" />
+		<meta property="og:image" content="https://www.flashcoin.io/clients/flashcoin/images/social-fb-plate-flashcoin.jpg" />
+		<meta name="twitter:title" content="#GoFaster | FlashCoin.  CONNECTING THE WORLD IN A FLASH." />
+		<meta name="twitter:description" content="CONNECTING THE WORLD IN A FLASH. via @FlashCoins #FlashCoin #GoFaster" />
+		<meta name="twitter:image:src" content="https://www.flashcoin.io/clients/flashcoin/images/social-fb-plate-flashcoin.jpg" />
 
-	<!-- Document Title
+		<!-- Document Title
 	============================================= -->
-	<title>Flashcoin | Home</title>
+		<title>Flashcoin | Home</title>
 
-	<style>
-	@media (min-width: 992px) {
-		#header .button {
-			margin: 30px 10px;
-			-webkit-transition: all .4s ease;
-			-o-transition: all .4s ease;
-			transition: all .4s ease;
-		}
+		<style>
+			@media (min-width: 992px) {
+				#header .button {
+					margin: 30px 10px;
+					-webkit-transition: all .4s ease;
+					-o-transition: all .4s ease;
+					transition: all .4s ease;
+				}
 
-		body.top-search-open #header .button { opacity: 0; }
+				body.top-search-open #header .button {
+					opacity: 0;
+				}
 
-		#header.sticky-header:not(.static-sticky) .button {
-			margin-top: 10px;
-			margin-bottom: 10px;
-		}
-	}
+				#header.sticky-header:not(.static-sticky) .button {
+					margin-top: 10px;
+					margin-bottom: 10px;
+				}
+			}
 
-	@media (max-width: 991px) {
-		#header .button {
-			display: none;
-			margin: 10px 5px 20px;
-		}
+			@media (max-width: 991px) {
+				#header .button {
+					display: none;
+					margin: 10px 5px 20px;
+				}
 
-		#header .button.d-block { display: inline-block !important; }
+				#header .button.d-block {
+					display: inline-block !important;
+				}
 
-		#header.dark.transparent-header, #header.dark.semi-transparent { background-color: transparent; min-height: auto !important;}
-	}
-	</style>
+				#header.dark.transparent-header,
+				#header.dark.semi-transparent {
+					background-color: transparent;
+					min-height: auto !important;
+				}
+			}
+		</style>
 
-</head>
+	</head>
 
-<body class="stretched dark">
+	<body class="stretched dark">
 
-	<!-- Document Wrapper
+		<!-- Document Wrapper
 	============================================= -->
-	<div id="wrapper" class="clearfix">
+		<div id="wrapper" class="clearfix">
 
-		<!-- Header
+			<!-- Header
 		============================================= -->
-		<header id="header" class="transparent-header dark static-sticky responsive-sticky" data-sticky-offset="100">
+			<header id="header" class="transparent-header dark static-sticky responsive-sticky" data-sticky-offset="100">
 
-			<div id="header-wrap">
+				<div id="header-wrap">
 
-				<div class="container clearfix">
+					<div class="container clearfix">
 
-					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+						<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-					<!-- Logo
+						<!-- Logo
 					============================================= -->
-					<div id="logo" class="hide-this">
-						<a href="index.html" class="standard-logo retina-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Flashcoin Logo"></a>
-					</div><!-- #logo end -->
-
-					<!-- Primary Navigation
-					============================================= -->
-					<nav id="primary-menu" class="one-page-menu">
-
-						<ul>
-							<li class="hide-this"><a href="#" data-scrollto="#wrapper"><div>HOME</div></a></li>
-							<li><a href="#" data-href=""><div>ABOUT</div></a>
-								<ul>
-									<li><a href="#" data-href="#about"><div>WHAT IS FLASH</div></a></li>
-									<li><a href="#" data-href="#flash-advantage"><div>FLASH ADVANTAGES</div></a></li>
-									<li><a href="#" data-href="#team"><div>TEAM</div></a></li>
-									<li><a href="#" data-href="#roadmap"><div>ROADMAP</div></a></li>
-									<li><a href="#" data-href="#news"><div>NEWS</div></a></li>
-									<li><a href="#" data-href="#exchanges"><div>EXCHANGES</div></a></li>
-									<li><a href="#" data-href="#feature-flash"><div>UPCOMING FEATURES</div></a></li>
-								</ul>
-							</li>
-							<li><a href="#" data-href=""><div>WALLET</div></a>
-								<ul>
-									<li><a href="#" data-href="#wallet"><div>WEB WALLET</div></a></li>
-									<li><a href="https://play.google.com/store/apps/details?id=com.flash.wallet.android" target="_blank"><div>ANDROID WALLET</div></a></li>
-									<li><a href="#" data-href="#wallet"><div>QT WALLET DOWNLOADS</div></a></li>
-									<li><a href="flash-snapshot.html"><div>FLASH SNAPSHOT</div></a></li>
-									<li><a href="#" data-href="#wallet"><div>THIRD PARTY WALLETS</div></a></li>
-								</ul>
-							</li>
-							<li><a href="#" data-href=""><div>RESOURCES</div></a>
-								<ul>
-									<li><a href="#" data-href="#whitepaper"><div>WHITEPAPER</div></a></li>
-									<li><a href="https://github.com/flash-coin/" target="_blank"><div>GITHUB</div></a></li>
-									<li><a href="https://explorer.flashcoin.io/" target="_blank"><div>EXPLORER</div></a></li>
-									<li><a href="https://charts.flashcoin.io/" target="_blank"><div>CHARTS</div></a></li>
-									<li><a href="https://nodes.flashcoin.io/" target="_blank"><div>NODES</div></a></li>
-								</ul>
-							</li>
-							<li><a href="#" data-href=""><div>Communities</div></a>
-								<ul>
-									<li><a href="#" data-href="#social-forum"><div>SOCIAL FORUMS</div></a></li>
-									<li><a href="https://blog.flashcoin.io/" target="_blank"><div>BLOG</div></a></li>
-								</ul>
-							</li>
-
-						</ul>
-
-					</nav><!-- #primary-menu end -->
-
-				</div>
-
-			</div>
-
-		</header><!-- #header end -->
-
-		<!-- Slider
-		============================================= -->
-		<section id="slider" class="full-screen slider-element clearfix">
-
-			<div class="vertical-middle ignore-header clearfix" style="z-index: 2;">
-				<div class="container">
-					<div class="row clearfix">
-						<div class="col-lg-7">
-							<img class="bottommargin-sm" src="images/logo@2x.png" style="width:180px;" />
-							<h3 class="t300" style="font-size: 18px;">CONNECTING THE WORLD IN A FLASH<br />#GOFASTER</h3>
-							<a href="#" data-scrollto="#about" class="button button-rounded button-reveal button-large button-yellow button-light tright"><i class="icon-line-arrow-down"></i><span>Get Started</span></a>
+						<div id="logo" class="hide-this">
+							<a href="index.html" class="standard-logo retina-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Flashcoin Logo"></a>
 						</div>
-						<div class="col-lg-5" id="data-pulled">
-							<div class="fancy-title title-border">
-								<h2>Key <span>Performance</span> Indicators</h2>
-							</div>
+						<!-- #logo end -->
 
-							<!--DATA PULLED-->
-							<form>
-								<input class="form-control" type="text" id="AddressesBalance" placeholder="Addresses with Balance" value="Addresses with Balance" readonly="readonly">
-								<input class="form-control" type="text" id="total_web_wallet" placeholder="Total Web-Wallet Signups" value="Total Web-wallet Signups" readonly="readonly">
+						<!-- Primary Navigation
+					============================================= -->
+						<nav id="primary-menu" class="one-page-menu">
 
-								<h4 class="transaction24h">Transactions 24h</h4>
+							<ul>
+								<li class="hide-this">
+									<a href="#" data-scrollto="#wrapper">
+										<div>HOME</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" data-href="">
+										<div>ABOUT</div>
+									</a>
+									<ul>
+										<li>
+											<a href="#" data-href="#about">
+												<div>WHAT IS FLASH</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-href="#flash-advantage">
+												<div>FLASH ADVANTAGES</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-href="#team">
+												<div>TEAM</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-href="#roadmap">
+												<div>ROADMAP</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-href="#news">
+												<div>NEWS</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-href="#exchanges">
+												<div>EXCHANGES</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-href="#partners">
+												<div>PARTNERS</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-href="#feature-flash">
+												<div>UPCOMING FEATURES</div>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" data-href="">
+										<div>WALLET</div>
+									</a>
+									<ul>
+										<li>
+											<a href="#" data-href="#wallet">
+												<div>WEB WALLET</div>
+											</a>
+										</li>
+										<li>
+											<a href="https://play.google.com/store/apps/details?id=com.flash.wallet.android" target="_blank">
+												<div>ANDROID WALLET</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-href="#wallet">
+												<div>QT WALLET DOWNLOADS</div>
+											</a>
+										</li>
+										<li>
+											<a href="flash-snapshot.html">
+												<div>FLASH SNAPSHOT</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-href="#wallet">
+												<div>THIRD PARTY WALLETS</div>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" data-href="">
+										<div>RESOURCES</div>
+									</a>
+									<ul>
+										<li>
+											<a href="#" data-href="#whitepaper">
+												<div>WHITEPAPER</div>
+											</a>
+										</li>
+										<li>
+											<a href="https://github.com/flash-coin/" target="_blank">
+												<div>GITHUB</div>
+											</a>
+										</li>
+										<li>
+											<a href="https://explorer.flashcoin.io/" target="_blank">
+												<div>EXPLORER</div>
+											</a>
+										</li>
+										<li>
+											<a href="https://charts.flashcoin.io/" target="_blank">
+												<div>CHARTS</div>
+											</a>
+										</li>
+										<li>
+											<a href="https://nodes.flashcoin.io/" target="_blank">
+												<div>NODES</div>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" data-href="#social-forum">
+										<div>COMMUNITIES</div>
+									</a>
+								</li>
 
-								<input class="form-control" type="text" id="TotalTxs" placeholder="Total Transactions" value="Total Txs" readonly="readonly">
-								<input class="form-control" type="text" id="total_txns_24h" placeholder="Total 24h" value="Total Txs 24h" readonly="readonly">
-								<input class="form-control" type="text" id="ave_txn_time" placeholder="Ave Txn Time" value="Ave Txn Time" readonly="readonly">
+							</ul>
 
+						</nav>
+						<!-- #primary-menu end -->
 
-								<h4>Circulating Supply:  900 million</h4>
-
-								<input class="form-control" type="text" id="TotalBlocks" placeholder="Total Blocks" value="Total Blocks" readonly="readonly">
-								<input class="form-control" type="text" id="current_rate" placeholder="Rank" value="Rank" readonly="readonly">
-								<input class="form-control" type="text" id="market_price" placeholder="Market Price" value="Market Price" readonly="readonly">
-								<input class="form-control" style="color:red;" id="market_price_percentage" type="text" placeholder="" value="Market Price (%)" readonly="readonly">
-							</form>
 					</div>
+
 				</div>
-			</div>
 
-		</section><!-- #slider end -->
+			</header>
+			<!-- #header end -->
 
-		<!-- Content
+			<!-- Slider
 		============================================= -->
-		<section id="content" style="margin-bottom: 0px;">
+			<section id="slider" class="full-screen slider-element clearfix">
 
-			<div class="content-wrap nopadding">
-
-				<!-- About
-				============================================= -->
-				<div id="about" class="page-section">
-					<div class="container clearfix">
-						<div class="row">
-							<div class="col-sm-8 col-xs-12">
-								<div class="topmargin-lg">
-									<h2>What is FLASH?</h2>
-									<p>FLASH is not money, it’s a much bigger idea than money.  It’s a community supported blockchain designed for small and fast transactions. People can send and receive FLASH and use it for just about anything, limited only by their imaginations.There are only 900m coins and they were all distributed to the community.</p>
-									<p>FLASH is based on Litecoin, but even lighter. It’s very efficient and because the mining is minimal and done by volunteers, transaction fees are very low. Our goal is to create a safe and secure environment for community members to participate in FLASH and facilitate communications and commerce without friction.  Security is provided through our unique distributed node based governance model that we call GovNodes.</p>
-									<a href="#" data-scrollto="#flash-advantage" class="button button-rounded button-reveal button-large button-yellow button-light tright"><i class="icon-line-arrow-down"></i><span>The FLASH Advantage</span></a>
-								</div>
+				<div class="vertical-middle ignore-header clearfix" style="z-index: 2;">
+					<div class="container">
+						<div class="row clearfix">
+							<div class="col-lg-7">
+								<img class="bottommargin-sm" src="images/logo@2x.png" style="width:180px;" />
+								<h3 class="t300" style="font-size: 18px;">CONNECTING THE WORLD IN A FLASH<br />#GOFASTER</h3>
+								<a href="#" data-scrollto="#about" class="button button-rounded button-reveal button-large button-yellow button-light tright"><i class="icon-line-arrow-down"></i><span>Get Started</span></a>
 							</div>
-							<div class="col-sm-4 col-xs-12 topmargin-sm">
-								<h2>Download Whitepaper</h2>
-
-								<a href="docs/FLASHWhitepaper.pdf" target="_blank" class="button button-border button-rounded button-light button-large">English</a>
-								<a href="docs/FLASHWhitepaper-en-Espanol.pdf" target="_blank" class="button button-border button-rounded button-light button-large">Español</a>
-							</div>
-						</div><!-- .row end -->
-					</div><!-- .container end -->
-				</div><!-- #section-about end -->
-
-				<!-- The FLASH Advantage
-				============================================= -->
-				<div id="flash-advantage" class="page-section topmargin-sm">
-
-					<div class="fancy-title title-border title-center">
-						<h1><span>The FLASH Advantage</span></h1>
-					</div>
-
-					<div class="container clearfix">
-
-						<div class="row">
-							<div class="col_one_third">
-								<div class="feature-box fbox-effect">
-									<div class="fbox-icon">
-										<i class="icon-line2-bulb i-alt"></i>
-									</div>
-									<h3>No Unfair Advantage</h3>
-									<p>No Unfair Advantage, everyone donated something for their FLASH, except for less than 0.1% of the FLASH that was given to people who tested FLASH.  There is no developer slush fund, please don’t ask for free coins.</p>
+							<div class="col-lg-5" id="data-pulled">
+								<div class="fancy-title title-border">
+									<h2>Key <span>Performance</span> Indicators</h2>
 								</div>
-							</div>
 
-							<div class="col_one_third">
-								<div class="feature-box fbox-effect">
-									<div class="fbox-icon">
-										<i class="icon-bar-chart i-alt"></i>
-									</div>
-									<h3>Zero Inflation</h3>
-									<p>Zero Inflation. All coins were issued to the community.  No new coins will ever be issued.  If you want some FLASH you will need to trade with community members.</p>
-								</div>
-							</div>
+								<!--DATA PULLED-->
+								<form>
+									<input class="form-control" type="text" id="AddressesBalance" placeholder="Addresses with Balance" value="Addresses with Balance" readonly="readonly">
+									<input class="form-control" type="text" id="total_web_wallet" placeholder="Total Web-Wallet Signups" value="Total Web-wallet Signups" readonly="readonly">
 
-							<div class="col_one_third col_last">
-								<div class="feature-box fbox-effect">
-									<div class="fbox-icon">
-										<i class="icon-users2 i-alt"></i>
-									</div>
-									<h3>Public blockchain</h3>
-									<p>Public blockchain operated for the public good.</p>
-								</div>
-							</div>
+									<h4 class="transaction24h">Transactions 24h</h4>
 
-							<div class="clear"></div>
+									<input class="form-control" type="text" id="TotalTxs" placeholder="Total Transactions" value="Total Txs" readonly="readonly">
+									<input class="form-control" type="text" id="total_txns_24h" placeholder="Total 24h" value="Total Txs 24h" readonly="readonly">
+									<input class="form-control" type="text" id="ave_txn_time" placeholder="Ave Txn Time" value="Ave Txn Time" readonly="readonly">
 
-							<div class="col_one_third nobottommargin">
-								<div class="feature-box fbox-effect">
-									<div class="fbox-icon">
-										<i class="icon-users i-alt"></i>
-									</div>
-									<h3>Community supported</h3>
-									<p>Community supported. Anyone can develop using the FLASH blockchain. Build a project, collect your fee for using your app directly into your own wallet. Projects can be developed by anyone. Developers solicit donations from the community.</p>
-								</div>
-							</div>
 
-							<div class="col_one_third nobottommargin">
-								<div class="feature-box fbox-effect">
-									<div class="fbox-icon">
-										<i class="icon-leaf i-alt"></i>
-									</div>
-									<h3>Eco-Friendly</h3>
-									<p>Eco-Friendly. We’ve benchmarked 25k transactions per second using 80 watts of power.</p>
-								</div>
-							</div>
+									<h4>Circulating Supply:  900 million</h4>
 
-							<div class="col_one_third nobottommargin col_last">
-								<div class="feature-box fbox-effect">
-									<div class="fbox-icon">
-										<i class="icon-line2-bar-chart i-alt"></i>
-									</div>
-									<h3>High volume</h3>
-									<p>Optimized and tested for efficiency and high volume.</p>
-								</div>
+									<input class="form-control" type="text" id="TotalBlocks" placeholder="Total Blocks" value="Total Blocks" readonly="readonly">
+									<input class="form-control" type="text" id="current_rate" placeholder="Rank" value="Rank" readonly="readonly">
+									<input class="form-control" type="text" id="market_price" placeholder="Market Price" value="Market Price" readonly="readonly">
+									<input class="form-control" style="color:red;" id="market_price_percentage" type="text" placeholder="" value="Market Price (%)" readonly="readonly">
+								</form>
 							</div>
 						</div>
 					</div>
 
-				</div><!-- #section-about-flash-advantage end -->
+			</section>
+			<!-- #slider end -->
 
-				<!-- Call to action
+			<!-- Content
+		============================================= -->
+			<section id="content" style="margin-bottom: 0px;">
+
+				<div class="content-wrap nopadding">
+
+					<!-- About
 				============================================= -->
-				<a href="#" data-scrollto="#wallet" class="button button-full center tright topmargin">
-					<div class="container clearfix">
-						Get your wallet. <strong>Start here</strong> <i class="icon-caret-right" style="top:4px;"></i>
+					<div id="about" class="page-section">
+						<div class="container clearfix">
+							<div class="row">
+								<div class="col-sm-8 col-xs-12">
+									<div class="topmargin-lg">
+										<h2>What is FLASH?</h2>
+										<p>FLASH is not money, it’s a much bigger idea than money. It’s a community supported blockchain designed for small and fast transactions. People can send and receive FLASH and use it for just about anything, limited only by their imaginations.There
+											are only 900m coins and they were all distributed to the community.</p>
+										<p>FLASH is based on Litecoin, but even lighter. It’s very efficient and because the mining is minimal and done by volunteers, transaction fees are very low. Our goal is to create a safe and secure environment for community members to participate
+											in FLASH and facilitate communications and commerce without friction. Security is provided through our unique distributed node based governance model that we call GovNodes.</p>
+										<a href="#" data-scrollto="#flash-advantage" class="button button-rounded button-reveal button-large button-yellow button-light tright"><i class="icon-line-arrow-down"></i><span>The FLASH Advantage</span></a>
+									</div>
+								</div>
+								<div class="col-sm-4 col-xs-12 topmargin-sm">
+									<h2>Download Whitepaper</h2>
+
+									<a href="docs/FLASHWhitepaper.pdf" target="_blank" class="button button-border button-rounded button-light button-large">English</a>
+									<a href="docs/FLASHWhitepaper-en-Espanol.pdf" target="_blank" class="button button-border button-rounded button-light button-large">Español</a>
+								</div>
+							</div>
+							<!-- .row end -->
+						</div>
+						<!-- .container end -->
 					</div>
-				</a><!-- call to action end -->
+					<!-- #section-about end -->
 
-				<!-- Team
+					<!-- The FLASH Advantage
 				============================================= -->
-				<div id="team" class="page-section topmargin-lg">
+					<div id="flash-advantage" class="page-section topmargin-sm">
 
-					<div class="heading-block center">
 						<div class="fancy-title title-border title-center">
-							<h1><span>Core Team</span></h1>
+							<h1><span>The FLASH Advantage</span></h1>
 						</div>
+
+						<div class="container clearfix">
+
+							<div class="row">
+								<div class="col_one_third">
+									<div class="feature-box fbox-effect">
+										<div class="fbox-icon">
+											<i class="icon-line2-bulb i-alt"></i>
+										</div>
+										<h3>No Unfair Advantage</h3>
+										<p>No Unfair Advantage, everyone donated something for their FLASH, except for less than 0.1% of the FLASH that was given to people who tested FLASH. There is no developer slush fund, please don’t ask for free coins.</p>
+									</div>
+								</div>
+
+								<div class="col_one_third">
+									<div class="feature-box fbox-effect">
+										<div class="fbox-icon">
+											<i class="icon-bar-chart i-alt"></i>
+										</div>
+										<h3>Zero Inflation</h3>
+										<p>Zero Inflation. All coins were issued to the community. No new coins will ever be issued. If you want some FLASH you will need to trade with community members.</p>
+									</div>
+								</div>
+
+								<div class="col_one_third col_last">
+									<div class="feature-box fbox-effect">
+										<div class="fbox-icon">
+											<i class="icon-users2 i-alt"></i>
+										</div>
+										<h3>Public blockchain</h3>
+										<p>Public blockchain operated for the public good.</p>
+									</div>
+								</div>
+
+								<div class="clear"></div>
+
+								<div class="col_one_third nobottommargin">
+									<div class="feature-box fbox-effect">
+										<div class="fbox-icon">
+											<i class="icon-users i-alt"></i>
+										</div>
+										<h3>Community supported</h3>
+										<p>Community supported. Anyone can develop using the FLASH blockchain. Build a project, collect your fee for using your app directly into your own wallet. Projects can be developed by anyone. Developers solicit donations from the community.</p>
+									</div>
+								</div>
+
+								<div class="col_one_third nobottommargin">
+									<div class="feature-box fbox-effect">
+										<div class="fbox-icon">
+											<i class="icon-leaf i-alt"></i>
+										</div>
+										<h3>Eco-Friendly</h3>
+										<p>Eco-Friendly. We’ve benchmarked 25k transactions per second using 80 watts of power.</p>
+									</div>
+								</div>
+
+								<div class="col_one_third nobottommargin col_last">
+									<div class="feature-box fbox-effect">
+										<div class="fbox-icon">
+											<i class="icon-line2-bar-chart i-alt"></i>
+										</div>
+										<h3>High volume</h3>
+										<p>Optimized and tested for efficiency and high volume.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
 					</div>
+					<!-- #section-about-flash-advantage end -->
 
-					<div class="container clearfix">
+					<!-- Call to action
+				============================================= -->
+					<a href="#" data-scrollto="#wallet" class="button button-full center tright topmargin">
+						<div class="container clearfix">
+							Get your wallet. <strong>Start here</strong> <i class="icon-caret-right" style="top:4px;"></i>
+						</div>
+					</a>
+					<!-- call to action end -->
 
-						<div class="row topmargin-lg divcenter" style="max-width: 1000px;">
+					<!-- Team
+				============================================= -->
+					<div id="team" class="page-section topmargin-lg">
 
-							<div class="col-md-4 col-sm-4">
+						<div class="heading-block center">
+							<div class="fancy-title title-border title-center">
+								<h1><span>Core Team</span></h1>
+							</div>
+						</div>
 
-								<div class="team">
-									<div class="team-image">
-										<img src="images/team/chris-kitze.jpg" alt="Chris Kitze">
-										<!--<div class="team-overlay">
+						<div class="container clearfix">
+
+							<div class="row topmargin-lg divcenter" style="max-width: 1000px;">
+
+								<div class="col-md-4 col-sm-4">
+
+									<div class="team">
+										<div class="team-image">
+											<img src="images/team/chris-kitze.jpg" alt="Chris Kitze">
+											<!--<div class="team-overlay">
 											<div class="team-social-icons">
 												<a href="#" class="social-icon si-borderless si-small si-twitter" title="Twitter">
 													<i class="icon-twitter"></i>
@@ -342,555 +447,689 @@
 												</a>
 											</div>
 										</div>-->
+										</div>
+										<div class="team-desc team-desc-bg">
+											<div class="team-title">
+												<h4>Chris Kitze</h4><span>Co-Creator</span></div>
+										</div>
 									</div>
-									<div class="team-desc team-desc-bg">
-										<div class="team-title"><h4>Chris Kitze</h4><span>Co-Creator</span></div>
+
+								</div>
+
+								<div class="col-md-4 col-sm-4">
+
+									<div class="team">
+										<div class="team-image">
+											<img src="images/team/jason-king.png" alt="Jason King">
+										</div>
+										<div class="team-desc team-desc-bg">
+											<div class="team-title">
+												<h4>Jason King</h4><span>Co-Creator</span></div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="col-md-4 col-sm-4">
+
+									<div class="team">
+										<div class="team-image">
+											<img src="images/team/vinh-vo.jpg" alt="Vinh Vo">
+										</div>
+										<div class="team-desc team-desc-bg">
+											<div class="team-title">
+												<h4>Vinh Vo</h4><span>Co-Creator</span></div>
+										</div>
 									</div>
 								</div>
 
-							</div>
-
-							<div class="col-md-4 col-sm-4">
-
-								<div class="team">
-									<div class="team-image">
-										<img src="images/team/jason-king.jpg" alt="Jason King">
-									</div>
-									<div class="team-desc team-desc-bg">
-										<div class="team-title"><h4>Jason King</h4><span>Co-Creator</span></div>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="col-md-4 col-sm-4">
-
-								<div class="team">
-									<div class="team-image">
-										<img src="images/team/vinh-vo.jpg" alt="Vinh Vo">
-									</div>
-									<div class="team-desc team-desc-bg">
-										<div class="team-title"><h4>Vinh Vo</h4><span>Co-Creator</span></div>
+								<div class="col-md-12">
+									<div class="promo promo-center">
+										<a href="our-team.html" class="button button-rounded button-reveal button-large button-yellow button-light tright"><i class="icon-line-arrow-right"></i><span>More</span></a>
 									</div>
 								</div>
 							</div>
-
-							<div class="col-md-12"><div class="promo promo-center">
-									<a href="our-team.html" class="button button-rounded button-reveal button-large button-yellow button-light tright"><i class="icon-line-arrow-right"></i><span>More</span></a>
-								</div></div>
 						</div>
+
 					</div>
-
-				</div><!-- #section-team end -->
-
-				<!-- Roadmap
+					<!-- #section-team end -->
+					<!-- Roadmap
 				============================================= -->
-				<div id="roadmap" class="page-section topmargin-lg">
+					<div id="roadmap" class="page-section topmargin-lg">
 
-					<div class="heading-block center">
-						<div class="fancy-title title-border title-center">
-							<h1><span>Roadmap</span></h1>
+						<div class="heading-block center">
+							<div class="fancy-title title-border title-center">
+								<h1><span>Roadmap</span></h1>
+							</div>
+							<span>FLASH is being optimized to support applications in the $1 Trillion remittance market. We have exchanges in UAE, India, Mexico and Liechtenstein that have agreed to participate.</span>
 						</div>
-						<span>FLASH is being optimized to support applications in the $1 Trillion remittance market. We have exchanges in UAE, India, Mexico and Liechtenstein that have agreed to participate.</span>
-					</div>
 
-					<div class="container clearfix">
+						<div class="container clearfix">
 
-						<div class="row">
-							<div class="col-md-4">
-								<img src="images/circle.png" alt="">
-							</div>
-							<div class="col-md-8">
-								<h2>Features</h2>
-								<span>The features are broken into several categories:</span>
-								<ul>
-									<li>FLASH web wallet (FWW), which will have support for credit card purchase and in-wallet exchange for BTC, BCH, and local currency. Many additional local languages will be added</li>
-									<li>Blockchain upgrades to make FLASH more stable</li>
-									<li>Remittance applications including Human ATM and automatic conversion to local fiat</li>
-									<li>FLASH Merchant services including consumer payment via FLASH with cash back feature</li>
-								</ul>
-								<span>Please Note: Roadmap will be updated on regular basis as we make progress.</span>
-							</div>
-							<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="images/circle.png" alt="">
+								</div>
+								<div class="col-md-8">
+									<h2>Features</h2>
+									<span>The features are broken into several categories:</span>
+									<ul>
+										<li>FLASH web wallet (FWW), which will have support for credit card purchase and in-wallet exchange for BTC, BCH, and local currency. Many additional local languages will be added</li>
+										<li>Blockchain upgrades to make FLASH more stable</li>
+										<li>Remittance applications including Human ATM and automatic conversion to local fiat</li>
+										<li>FLASH Merchant services including consumer payment via FLASH with cash back feature</li>
+									</ul>
+									<span>Please Note: Roadmap will be updated on regular basis as we make progress.</span>
+								</div>
+								<div class="col-md-12">
 
-								<!-- Posts
+									<!-- Posts
 								============================================= -->
-								<div id="posts" class="post-grid grid-container post-masonry post-timeline grid-2 clearfix">
+									<div id="posts" class="post-grid grid-container post-masonry post-timeline grid-2 clearfix">
 
-									<div class="timeline-border"></div>
+										<div class="timeline-border"></div>
 
-									<!--Q1 2018-->
-									<div class="entry entry-date-section"><span>Q1 2018</span></div>
+										<!--Q1 2018-->
+										<div class="entry entry-date-section"><span>Q1 2018</span></div>
 
-									<div class="entry clearfix">
-										<div class="entry-timeline">
-											<div class="timeline-divider"></div>
+										<div class="entry clearfix">
+											<div class="entry-timeline">
+												<div class="timeline-divider"></div>
+											</div>
+											<div class="fancy-title title-border">
+												<h2>Flash <span>Web</span> Wallet</h2>
+											</div>
+											<div class="entry-content">
+												<ul>
+													<li>New features addition and stability improvement</li>
+													<li>Multi cryptocurrencies support- BTC</li>
+												</ul>
+											</div>
 										</div>
-										<div class="fancy-title title-border">
-											<h2>Flash <span>Web</span> Wallet</h2>
+
+										<div class="entry clearfix">
+											<div class="entry-timeline">
+												<div class="timeline-divider"></div>
+											</div>
+											<div class="fancy-title title-border">
+												<h2>FLASH <span>Blockchain</span> &amp; <span>Applications</span></h2>
+											</div>
+											<div class="entry-content">
+												<ul>
+													<li>Launch of FLASH Android Wallet</li>
+													<li>Launch of Merchant Services</li>
+												</ul>
+											</div>
 										</div>
-										<div class="entry-content">
-											<ul>
-												<li>New features addition and stability improvement</li>
-												<li>Multi cryptocurrencies support- BTC</li>
-											</ul>
+
+										<!--Q2 2018-->
+										<div class="entry entry-date-section"><span>Q2 2018</span></div>
+
+										<div class="entry clearfix">
+											<div class="entry-timeline">
+												<div class="timeline-divider"></div>
+											</div>
+											<div class="fancy-title title-border">
+												<h2>Flash <span>Web</span> Wallet</h2>
+											</div>
+											<div class="entry-content">
+												<ul>
+													<li>Multi cryptocurrencies support- BCH, LTC, ETH and more</li>
+													<li>Multi Address support</li>
+													<li>Import and Export of Private keys</li>
+													<li>Support for Mammoth.li Exchange</li>
+												</ul>
+											</div>
 										</div>
+
+										<div class="entry clearfix">
+											<div class="entry-timeline">
+												<div class="timeline-divider"></div>
+											</div>
+											<div class="fancy-title title-border">
+												<h2>FLASH <span>Blockchain</span> &amp; <span>Applications</span></h2>
+											</div>
+											<div class="entry-content">
+												<ul>
+													<li>Release of FLASH iOS wallet</li>
+													<li>DPOW Whitepaper Launch</li>
+													<li>Upgrade of exisitng Blockchain ecosystem</li>
+													<li>Testnet launch of FLASH DPOW and GovNodes</li>
+													<li>Adding new features to Merchant Services</li>
+													<li>Launch of Human Teller Machine ( HTM ) on Mobile App</li>
+												</ul>
+											</div>
+										</div>
+
+										<!--Q3 2018-->
+										<div class="entry entry-date-section"><span>Q3 2018</span></div>
+
+										<div class="entry clearfix">
+											<div class="entry-timeline">
+												<div class="timeline-divider"></div>
+											</div>
+											<div class="fancy-title title-border">
+												<h2>Flash <span>Web</span> Wallet</h2>
+											</div>
+											<div class="entry-content">
+												<ul>
+													<li>Launch of Credit Card purchase</li>
+													<li>Launch of FLASH Web Wallet 2.0</li>
+													<li>Hardware Wallet support</li>
+													<li>Introducing FLASH SWAP</li>
+													<li>Launch of Human Teller Machine on FLASH Web Wallet</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="entry clearfix">
+											<div class="entry-timeline">
+												<div class="timeline-divider"></div>
+											</div>
+											<div class="fancy-title title-border">
+												<h2>FLASH <span>Blockchain</span> &amp; <span>Applications</span></h2>
+											</div>
+											<div class="entry-content">
+												<ul>
+													<li>Launch of Remittance</li>
+													<li>Adding new features to Remittance</li>
+													<li>Regional Exchanges partnership and allow FIAT deposits and withdrawals</li>
+													<li>Mainnet Launch of FLASH DPOW and GovNodes</li>
+												</ul>
+											</div>
+										</div>
+
+										<!--Q4 2018-->
+										<div class="entry entry-date-section"><span>Q4 2018</span></div>
+
+										<div class="entry clearfix">
+											<div class="entry-timeline">
+												<div class="timeline-divider"></div>
+											</div>
+											<div class="fancy-title title-border">
+												<h2>Flash <span>Web</span> Wallet</h2>
+											</div>
+											<div class="entry-content">
+												<ul>
+													<li>Addition of more cryptocurrencies</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="entry clearfix">
+											<div class="entry-timeline">
+												<div class="timeline-divider"></div>
+											</div>
+											<div class="fancy-title title-border">
+												<h2>FLASH <span>Blockchain</span> &amp; <span>Applications</span></h2>
+											</div>
+											<div class="entry-content">
+												<ul>
+													<li>Launch of Cold storage as service</li>
+													<li>Launch of FLASH proprietary USB container for Cold storage</li>
+												</ul>
+											</div>
+										</div>
+
+										<!-- TBA -->
+										<div class="entry entry-date-section"><span>TBA</span></div>
+
+										<div class="entry clearfix">
+											<div class="entry-timeline">
+												<div class="timeline-divider"></div>
+											</div>
+											<div class="fancy-title title-border">
+												<h2>Flash <span>Web</span> Wallet</h2>
+											</div>
+											<div class="entry-content">
+												<ul>
+													<li>FLASH Web Wallet 3.0 - Decentralized</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="entry clearfix">
+											<div class="entry-timeline">
+												<div class="timeline-divider"></div>
+											</div>
+											<div class="fancy-title title-border">
+												<h2>FLASH <span>Mobile</span> Wallet</h2>
+											</div>
+											<div class="entry-content">
+												<ul>
+													<li>FLASH Mobile App Wallet 2.0 - Decentralized</li>
+													<li>FLASH Decentralized Chat Service</li>
+												</ul>
+											</div>
+										</div>
+
+									</div>
+									<!-- #posts end -->
+
+									<div class="page-load-status">
+										<div class="css3-spinner infinite-scroll-request">
+											<div class="css3-spinner-ball-pulse-sync">
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+										<div class="alert alert-warning center infinite-scroll-last mx-auto" style="max-width: 20rem;">End of content</div>
+										<div class="alert alert-warning center infinite-scroll-error mx-auto" style="max-width: 20rem;">No more pages to load</div>
 									</div>
 
-									<div class="entry clearfix">
-										<div class="entry-timeline">
-											<div class="timeline-divider"></div>
-										</div>
-										<div class="fancy-title title-border">
-											<h2>FLASH <span>Blockchain</span> &amp; <span>Applications</span></h2>
-										</div>
-										<div class="entry-content">
-											<ul>
-												<li>Launch of FLASH Android Wallet</li>
-												<li>Launch of Merchant Services</li>
-											</ul>
-										</div>
+									<div class="center">
+										<a href="blog-timeline-2.html" style="display: none;" class="button button-3d button-dark button-large button-rounded load-next-posts">Load more..</a>
 									</div>
+									<!--#timeline end-->
 
-									<!--Q2 2018-->
-									<div class="entry entry-date-section"><span>Q2 2018</span></div>
 
-									<div class="entry clearfix">
-										<div class="entry-timeline">
-											<div class="timeline-divider"></div>
-										</div>
-										<div class="fancy-title title-border">
-											<h2>Flash <span>Web</span> Wallet</h2>
-										</div>
-										<div class="entry-content">
-											<ul>
-												<li>Multi cryptocurrencies support- BCH, LTC, ETH and more</li>
-												<li>Multi Address support</li>
-												<li>Import and Export of Private keys</li>
-												<li>Support for Mammoth.li Exchange</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="entry clearfix">
-										<div class="entry-timeline">
-											<div class="timeline-divider"></div>
-										</div>
-										<div class="fancy-title title-border">
-											<h2>FLASH <span>Blockchain</span> &amp; <span>Applications</span></h2>
-										</div>
-										<div class="entry-content">
-											<ul>
-												<li>Release of FLASH iOS wallet</li>
-												<li>DPOW Whitepaper Launch</li>
-												<li>Upgrade of exisitng Blockchain ecosystem</li>
-												<li>Testnet launch of FLASH DPOW and GovNodes</li>
-												<li>Adding new features to Merchant Services</li>
-												<li>Launch of Human Teller Machine ( HTM ) on Mobile App</li>
-											</ul>
-										</div>
-									</div>
-
-									<!--Q3 2018-->
-									<div class="entry entry-date-section"><span>Q3 2018</span></div>
-
-									<div class="entry clearfix">
-										<div class="entry-timeline">
-											<div class="timeline-divider"></div>
-										</div>
-										<div class="fancy-title title-border">
-											<h2>Flash <span>Web</span> Wallet</h2>
-										</div>
-										<div class="entry-content">
-											<ul>
-												<li>Launch of Credit Card purchase</li>
-												<li>Launch of FLASH Web Wallet 2.0</li>
-												<li>Hardware Wallet support</li>
-												<li>Introducing FLASH SWAP</li>
-												<li>Launch of Human Teller Machine on FLASH Web Wallet</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="entry clearfix">
-										<div class="entry-timeline">
-											<div class="timeline-divider"></div>
-										</div>
-										<div class="fancy-title title-border">
-											<h2>FLASH <span>Blockchain</span> &amp; <span>Applications</span></h2>
-										</div>
-										<div class="entry-content">
-											<ul>
-												<li>Launch of Remittance</li>
-												<li>Adding new features to Remittance</li>
-												<li>Regional Exchanges partnership and allow FIAT deposits and withdrawals</li>
-												<li>Mainnet Launch of FLASH DPOW and GovNodes</li>
-											</ul>
-										</div>
-									</div>
-
-									<!--Q4 2018-->
-									<div class="entry entry-date-section"><span>Q4 2018</span></div>
-
-									<div class="entry clearfix">
-										<div class="entry-timeline">
-											<div class="timeline-divider"></div>
-										</div>
-										<div class="fancy-title title-border">
-											<h2>Flash <span>Web</span> Wallet</h2>
-										</div>
-										<div class="entry-content">
-											<ul>
-												<li>Addition of more cryptocurrencies</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="entry clearfix">
-										<div class="entry-timeline">
-											<div class="timeline-divider"></div>
-										</div>
-										<div class="fancy-title title-border">
-											<h2>FLASH <span>Blockchain</span> &amp; <span>Applications</span></h2>
-										</div>
-										<div class="entry-content">
-											<ul>
-												<li>Launch of Cold storage as service</li>
-												<li>Launch of FLASH proprietary USB container for Cold storage</li>
-											</ul>
-										</div>
-									</div>
-
-									<!-- TBA -->
-									<div class="entry entry-date-section"><span>TBA</span></div>
-
-									<div class="entry clearfix">
-										<div class="entry-timeline">
-											<div class="timeline-divider"></div>
-										</div>
-										<div class="fancy-title title-border">
-											<h2>Flash <span>Web</span> Wallet</h2>
-										</div>
-										<div class="entry-content">
-											<ul>
-												<li>FLASH Web Wallet 3.0 - Decentralized</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="entry clearfix">
-										<div class="entry-timeline">
-											<div class="timeline-divider"></div>
-										</div>
-										<div class="fancy-title title-border">
-											<h2>FLASH <span>Mobile</span> Wallet</h2>
-										</div>
-										<div class="entry-content">
-											<ul>
-												<li>FLASH Mobile App Wallet 2.0 - Decentralized</li>
-												<li>FLASH Decentralized Chat Service</li>
-											</ul>
-										</div>
-									</div>
-
-								</div><!-- #posts end -->
-
-								<div class="page-load-status">
-									<div class="css3-spinner infinite-scroll-request">
-										<div class="css3-spinner-ball-pulse-sync">
-											<div></div>
-											<div></div>
-											<div></div>
-										</div>
-									</div>
-									<div class="alert alert-warning center infinite-scroll-last mx-auto" style="max-width: 20rem;">End of content</div>
-									<div class="alert alert-warning center infinite-scroll-error mx-auto" style="max-width: 20rem;">No more pages to load</div>
 								</div>
-
-								<div class="center">
-									<a href="blog-timeline-2.html" style="display: none;" class="button button-3d button-dark button-large button-rounded load-next-posts">Load more..</a>
-								</div><!--#timeline end-->
-
-
 							</div>
 						</div>
+
 					</div>
+					<!-- #section-about-roadmap end -->
 
-				</div><!-- #section-about-roadmap end -->
-
-				<!-- News
+					<!-- News
 				============================================= -->
-				<div id="news" class="page-section topmargin-lg">
+					<div id="news" class="page-section topmargin-lg">
 
-					<div class="fancy-title title-border title-center">
-						<h1><span>News</span></h1>
+						<div class="fancy-title title-border title-center">
+							<h1><span>News</span></h1>
+						</div>
+
+						<div class="container clearfix">
+
+							<div class="row">
+								<section id="news">
+									<div class="section-header news">
+										<h2 class="text-left" style="color: #fff;"><b>Tweets </b><span style="font-size:15px"> <a target="_blank" href="https://twitter.com/FlashCoins"> by @FlashCoins</a></span></h2>
+									</div>
+									<div class="row twitter-timeline" style="max-height:448px; overflow:auto; ">
+										<div class="zl-tweet-img" style="text-align:center;" id="zl-twitts"></div>
+										<div class="zl-github-btn" style="padding:20px;">
+											<a target="_blank" href="https://twitter.com/FlashCoins" class="zl-button-style" data-scribe="element:load_more"><span>Follow @Flashcoins</span></a>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+
 					</div>
+					<!-- #section-about-news end -->
 
-					<div class="container clearfix">
+					<!-- Exchanges
+				============================================= -->
+					<div id="exchanges" class="page-section topmargin-lg">
 
-						<div class="row">
-							<section id="news">
-								<div class="section-header news">
-									<h2 class="text-left" style="color: #fff;"><b>Tweets </b><span style="font-size:15px"> <a target="_blank" href="https://twitter.com/FlashCoins"> by @FlashCoins</a></span></h2>
+						<div class="container clearfix">
+
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="fancy-title title-border title-center">
+										<h1><span>Exchanges</span></h1>
+									</div>
+									<p>FLASH supports any legal cryptocurrency exchange, including decentralized exchanges. Our community occasionally contributes funds to get FLASH listed. FLASH is ideal for exchanges, as the transfer speeds and transaction costs are very low and
+										because it is based on LTC, integration. If you operate an exchange and are interested in listing FLASH, please contact <a href="mailto:support@flashcoin.io" target="_top">support@flashcoin.io</a> to receive a file with details on our source
+										code repo for exchanges and a legal opinion regarding FLASH’s status as a security token (it’s a community coin, not a security)</p>
+									<ul class="clients-grid nobottommargin clearfix">
+										<li><a href="https://www.cryptopia.co.nz/" target="_blank"><img src="images/exchanges/cryptopia.png" alt="Clients"></a></li>
+										<li><a href="https://crypto-bridge.org/" target="_blank"><img src="images/exchanges/crypto-bridge.png" alt="Clients"></a></li>
+										<li><a href="https://www.coinexchange.io/" target="_blank"><img src="images/exchanges/coinexchange.png" alt="Clients"></a></li>
+										<li><a href="https://cryptowolf.eu/" target="_blank"><img src="images/exchanges/cryptowolf.png" alt="Clients"></a></li>
+										<li><a href="https://crex24.com/" target="_blank"><img src="images/exchanges/crex24.png" alt="Clients"></a></li>
+									</ul>
 								</div>
-								<div class="row twitter-timeline" style="max-height:448px; overflow:auto; ">
-									<div class="zl-tweet-img"style="text-align:center;" id="zl-twitts"></div>
-									<div class="zl-github-btn" style="padding:20px;">
-									<a target="_blank" href="https://twitter.com/FlashCoins" class="zl-button-style" data-scribe="element:load_more"><span>Follow @Flashcoins</span></a>
+							</div>
+						</div>
+
+					</div>
+					<!-- #section-about-exchanges end -->
+
+					<div class="clear"></div>
+					<div class="line"></div>
+					<!-- partners
+				============================================= -->
+					<div id="partners" class="page-section topmargin-lg">
+
+						<div class="heading-block center">
+							<div class="fancy-title title-border title-center">
+								<h1><span>Our Partners</span></h1>
+							</div>
+							<span>Partners proudly accept FLASH as a method of payment for their services.</span>
+						</div>
+
+						<div class="container clearfix">
+
+							<div class="row topmargin-lg divcenter" style="max-width: 1000px;">
+								<div class="col-md-3 col-sm-3">
+
+									<div class="team partners">
+										<div class="team-image">
+											<a href="http://www.theseafoodclub.com/" target="_blank">
+												<img src="images/partners_logo/the-sea-food-club.png" alt="Seafood Club">
+											</a>
+										</div>
+										<div class="team-desc">
+											<div class="partners-title">
+												<span>Seafood Club</span></div>
+										</div>
 									</div>
 								</div>
-							</section>
-						</div>
-					</div>
+								<div class="col-md-3 col-sm-3">
 
-				</div><!-- #section-about-news end -->
+									<div class="team partners">
+										<div class="team-image">
+											<a href="http://www.bitlounge.ca/" target="_blank">
+												<img src="images/partners_logo/thebitlounge.png" alt="BitLounge">
+											</a>
+										</div>
+										<div class="team-desc">
+											<div class="partners-title">
+												<span>BitLounge</span></div>
+										</div>
+									</div>
 
-				<!-- Exchanges
-				============================================= -->
-				<div id="exchanges" class="page-section topmargin-lg">
-
-					<div class="container clearfix">
-
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="fancy-title title-border title-center">
-									<h1><span>Exchanges</span></h1>
 								</div>
-								<p>FLASH supports any legal cryptocurrency exchange, including decentralized exchanges. Our community occasionally contributes funds to get FLASH listed. FLASH is ideal for exchanges, as the transfer speeds and transaction costs are very low and because it is based on LTC, integration. If you operate an exchange and are interested in listing FLASH, please contact <a href="mailto:support@flashcoin.io" target="_top">support@flashcoin.io</a> to receive a file with details on our source code repo for exchanges and a legal opinion regarding FLASH’s status as a security token (it’s a community coin, not a security)</p>
-								<ul class="clients-grid nobottommargin clearfix">
-									<li><a href="https://www.cryptopia.co.nz/" target="_blank"><img src="images/exchanges/cryptopia.png" alt="Clients"></a></li>
-									<li><a href="https://crypto-bridge.org/" target="_blank"><img src="images/exchanges/crypto-bridge.png" alt="Clients"></a></li>
-									<li><a href="https://www.coinexchange.io/" target="_blank"><img src="images/exchanges/coinexchange.png" alt="Clients"></a></li>
-									<li><a href="https://cryptowolf.eu/" target="_blank"><img src="images/exchanges/cryptowolf.png" alt="Clients"></a></li>
-									<li><a href="https://crex24.com/" target="_blank"><img src="images/exchanges/crex24.png" alt="Clients"></a></li>
+								<div class="col-md-3 col-sm-3">
+
+									<div class="team partners">
+										<div class="team-image">
+											<a href="http://www.greensautomotive.com/" target="_blank">
+												<img src="images/partners_logo/greens-auto-wheel-repair.png" alt="Green's Auto Wheel Repair">
+											</a>
+										</div>
+										<div class="team-desc">
+											<div class="partners-title">
+												<span>Green's Auto Wheel Repair</span></div>
+										</div>
+									</div>
+
+								</div>
+								<div class="col-md-3 col-sm-3">
+
+									<div class="team partners">
+										<div class="team-image">
+											<a href="https://www.westcoastjewellers.com/" target="_blank">
+												<img src="images/partners_logo/westcoast-jewellers.png" alt="Westcoast Jewellers & Diamonds">
+											</a>
+										</div>
+										<div class="team-desc">
+											<div class="partners-title">
+												<span>Westcoast Jewellers & Diamonds</span></div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="col-md-12">
+									<div class="promo promo-center">
+										<a href="our-partners.html" class="button button-rounded button-reveal button-large button-yellow button-light tright"><i class="icon-line-arrow-right"></i><span>More</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- #section-partners end -->
+
+					<!-- Upcoming Features
+				============================================= -->
+					<div id="feature-flash" class="page-section topmargin-lg">
+
+						<div class="fancy-title title-border title-center">
+							<h1><span>Upcoming Features</span></h1>
+						</div>
+
+						<div class="container clearfix">
+
+							<div class="row">
+								<ul class="clients-grid grid-4 nobottommargin clearfix">
+									<li><a href="upcoming-features.html#upcoming-emittances"><img src="images/upcoming/icon-feature-flash-1.png" alt="Clients"><span>Remittances</span></a></li>
+									<li><a href="upcoming-features.html#upcoming-merchant"><img src="images/upcoming/icon-feature-flash-2.png" alt="Clients"><span>Merchant Services</span></a></li>
+									<li><a href="upcoming-features.html#upcoming-integrated"><img src="images/upcoming/icon-feature-flash-3.png" alt="Clients"><span>Integrated Exchange</span></a></li>
+									<li><a href="upcoming-features.html#upcoming-htm"><img src="images/upcoming/icon-feature-flash-4.png" alt="Clients"><span>Human Teller Machine (HTM)</span></a></li>
 								</ul>
 							</div>
 						</div>
+
 					</div>
+					<!-- #section-about-upcoming-features end -->
 
-				</div><!-- #section-about-exchanges end -->
+					<div class="clear"></div>
+					<div class="line"></div>
 
-				<div class="clear"></div><div class="line"></div>
-
-				<!-- Upcoming Features
+					<!-- Wallet
 				============================================= -->
-				<div id="feature-flash" class="page-section topmargin-lg">
-
-					<div class="fancy-title title-border title-center">
-						<h1><span>Upcoming Features</span></h1>
-					</div>
-
-					<div class="container clearfix">
-
-						<div class="row">
-							<ul class="clients-grid grid-4 nobottommargin clearfix">
-								<li><a href="upcoming-features.html#upcoming-emittances"><img src="images/upcoming/icon-feature-flash-1.png" alt="Clients"><span>Remittances</span></a></li>
-								<li><a href="upcoming-features.html#upcoming-merchant"><img src="images/upcoming/icon-feature-flash-2.png" alt="Clients"><span>Merchant Services</span></a></li>
-								<li><a href="upcoming-features.html#upcoming-integrated"><img src="images/upcoming/icon-feature-flash-3.png" alt="Clients"><span>Integrated Exchange</span></a></li>
-								<li><a href="upcoming-features.html#upcoming-htm"><img src="images/upcoming/icon-feature-flash-4.png" alt="Clients"><span>Human Teller Machine (HTM)</span></a></li>
-							</ul>
-						</div>
-					</div>
-
-				</div><!-- #section-about-upcoming-features end -->
-
-				<div class="clear"></div><div class="line"></div>
-
-				<!-- Wallet
-				============================================= -->
-				<div id="wallet" class="page-section clearfix">
-					<div id="web-wallet" class="container clearfix">
-						<div id="qt-wallet" class="heading-block center">
+					<div id="wallet" class="page-section clearfix">
+						<div id="web-wallet" class="container clearfix">
+							<div id="qt-wallet" class="heading-block center">
 								<div class="fancy-title title-border title-center">
 									<h1><span>Wallet</span></h1>
 								</div>
-								<span>FLASH supports a number of online wallets including <a href="https://coinomi.com/" target="_blank">Coinomi</a>, <a href="https://www.coinpayments.net/" target="_blank">Coin Payments</a>, QT (Window, Mac, Linux) and an easy to use online wallet designed for the mass consumer market. If you can make online payments, you already know how to use FLASH.</span>
+								<span>FLASH supports a number of online wallets including <a href="https://coinomi.com/" target="_blank">Coinomi</a>, <a href="https://www.coinpayments.net/" target="_blank">Coin Payments</a>, <a href="https://www.ethos.io/" target="_blank">ETHOS</a>, QT (Window, Mac, Linux) and an easy to use online wallet designed for the mass consumer market. If you can make online payments, you already know how to use FLASH.</span>
 							</div>
-						<div class="row clearfix">
-							<div class="col-lg-4 d-md-block">
-								<div class="fancy-title title-border">
-										<h2>Flash <span>Web</span> Wallets</h2>
-								</div>
-								<span>With the web wallet, you can use an email address or your public address for sending and receiving coins.<br /><br />
-								The web wallet supports most browsers and mobile devices. There's nothing to download or install for maximum convenience.<br /></span>
-								<a href="https://wallet.flashcoin.io/" target="_blank" class="button button-3d topmargin-sm">Flash Web Wallet</a>
-							</div>
-							<div class="col-lg-8">
-								<div class="max-height">
+							<div class="row clearfix">
+								<div class="col-lg-4 d-md-block">
 									<div class="fancy-title title-border">
-										<h2>Flash <span>QT</span> Wallets</h2>
+										<h2>Flash <span>Web</span> Wallets</h2>
 									</div>
-									<div class="row common-height grid-border clearfix">
-										<div class="col-lg-3 col-md-6 col-sm-6 col-padding">
-											<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-												<div class="fbox-icon">
-													<img src="images/icons/icon_microsoft.png" />
-												</div>
-												<h3>Windows</h3>
-												<a href="downloads/flashcoin-0.10.3.0-win64-setup.exe">64 Bit</a><br />
-												<a href="downloads/flashcoin-0.10.3.0-win32-setup.exe">32 Bit</a><br />
-											</div>
+									<span>With the web wallet, you can use an email address or your public address for sending and receiving coins.<br /><br />
+								The web wallet supports most browsers and mobile devices. There's nothing to download or install for maximum convenience.<br /></span>
+									<a href="https://wallet.flashcoin.io/" target="_blank" class="button button-3d topmargin-sm">Flash Web Wallet</a>
+								</div>
+								<div class="col-lg-8">
+									<div class="max-height">
+										<div class="fancy-title title-border">
+											<h2>Flash <span>QT</span> Wallets</h2>
 										</div>
-										<div class="col-lg-3 col-md-6 col-sm-6 col-padding">
-											<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-												<div class="fbox-icon">
-													<img src="images/icons/icon_ubuntu.png" />
+										<div class="row common-height grid-border clearfix">
+											<div class="col-lg-3 col-md-6 col-sm-6 col-padding">
+												<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
+													<div class="fbox-icon">
+														<img src="images/icons/icon_microsoft.png" />
+													</div>
+													<h3>Windows</h3>
+													<a href="downloads/flashcoin-0.10.3.0-win64-setup.exe">64 Bit</a><br />
+													<a href="downloads/flashcoin-0.10.3.0-win32-setup.exe">32 Bit</a><br />
 												</div>
-												<h3>Unbuntu</h3>
-												<a href="downloads/Flashcoin-Qt-Ubuntu-12.04-amd64.deb">12.04 64</a><br />
-												<a href="downloads/Flashcoin-Qt-Ubuntu-14.04-amd64.deb">14.04 64</a><br />
-												<a href="downloads/Flashcoin-Qt-Ubuntu-16.04-amd64.deb">16.04 64</a><br />
 											</div>
-										</div>
-										<div class="col-lg-3 col-md-6 col-sm-6 col-padding">
-											<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-												<div class="fbox-icon">
-													<img src="images/icons/icon_linux.png" />
+											<div class="col-lg-3 col-md-6 col-sm-6 col-padding">
+												<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
+													<div class="fbox-icon">
+														<img src="images/icons/icon_ubuntu.png" />
+													</div>
+													<h3>Unbuntu</h3>
+													<a href="downloads/Flashcoin-Qt-Ubuntu-12.04-amd64.deb">12.04 64</a><br />
+													<a href="downloads/Flashcoin-Qt-Ubuntu-14.04-amd64.deb">14.04 64</a><br />
+													<a href="downloads/Flashcoin-Qt-Ubuntu-16.04-amd64.deb">16.04 64</a><br />
 												</div>
-												<h3>Linux</h3>
-												<a href="downloads/Flashcoin-x86_64-unknown-linux-gnu.tar">64 Bit</a><br />
-												<a href="downloads/Flashcoin-arm-linux-gnueabihf.tar">Arm</a><br />
 											</div>
-										</div>
-										<div class="col-lg-3 col-md-6 col-sm-6 col-padding">
-											<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-												<div class="fbox-icon">
-													<img src="images/icons/icon_apple.png" />
+											<div class="col-lg-3 col-md-6 col-sm-6 col-padding">
+												<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
+													<div class="fbox-icon">
+														<img src="images/icons/icon_linux.png" />
+													</div>
+													<h3>Linux</h3>
+													<a href="downloads/Flashcoin-x86_64-unknown-linux-gnu.tar">64 Bit</a><br />
+													<a href="downloads/Flashcoin-arm-linux-gnueabihf.tar">Arm</a><br />
 												</div>
-												<h3>Mac</h3>
-												<a href="downloads/Flashcoin-Qt.dmg">dmg</a>
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-padding">
+												<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
+													<div class="fbox-icon">
+														<img src="images/icons/icon_apple.png" />
+													</div>
+													<h3>Mac</h3>
+													<a href="downloads/Flashcoin-Qt.dmg">dmg</a>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
+
+							</div>
+						</div>
+
+					</div>
+					<!-- #section-wallet end -->
+
+					<!-- Resources
+				============================================= -->
+					<div id="section-resources" class="page-section topmargin-lg">
+
+						<div class="fancy-title title-border title-center">
+							<h1><span>Resources</span></h1>
+						</div>
+
+						<div class="container clearfix">
+
+							<div class="row">
+								<!--CONTENT HERE-->
+							</div>
+						</div>
+
+					</div>
+					<!-- #section-resources end -->
+
+					<!-- Whitepaper
+				============================================= -->
+					<div id="whitepaper" class="section parallax page-section" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
+
+						<div class="container clearfix">
+
+							<div class="heading-block title-center nobottomborder">
+								<h2>Download Whitepaper</h2>
+							</div>
+
+							<div class="center">
+
+								<a href="docs/FLASHWhitepaper.pdf" class="button button-3d button-yellow button-xlarge nobottommargin"><i class="icon-star3"></i>DOWNLOAD OUR WHITEPAPER</a> - <a href="docs/FLASHWhitepaper-en-Espanol.pdf" data-scrollto="#section-pricing" class="button button-3d button-yellow button-xlarge nobottommargin"><i class="icon-user2"></i>WHITEPAPER EN ESPAÑOL</a>
+
+							</div>
+
+							<div class="heading-block title-center nobottomborder topmargin-lg">
+								<h2>Github</h2>
+							</div>
+
+							<div class="center">
+
+								<a href="https://github.com/flash-coin" target="_blank" class="button button-3d button-yellow button-xlarge nobottommargin"><i class="icon-github"></i>FLASHCOIN REPOSITORY</a>
+
 							</div>
 
 						</div>
+
 					</div>
+					<!-- #section-resources-whitepaper end -->
 
-				</div><!-- #section-wallet end -->
-
-				<!-- Resources
+					<!-- Community
 				============================================= -->
-				<div id="section-resources" class="page-section topmargin-lg">
+					<a name="section-community"></a>
+					<div id="social-forum" class="page-section bottommargin-lg">
+						<div class="container clearfix">
+							<div class="fancy-title title-border title-center">
+								<h1><span>Communities</span></h1>
+							</div>
 
-					<div class="fancy-title title-border title-center">
-						<h1><span>Resources</span></h1>
+							<div class="row">
+								<ul class="icon-social">
+									<li><a href="https://discord.gg/2nFmMqA" target="_blank"><i class="fab fa-discord"></i><span>Discord</span></a></li>
+									<li><a href="https://t.me/joinchat/C5go9ExsGGNeVvForEgb6w" target="_blank"><i class="fab fa-telegram"></i><span>Telegram</span></a></li>
+									<li><a href="https://medium.com/@FlashCoin" target="_blank"><i class="fab fa-medium"></i><span>Medium</span></a></li>
+									<li><a href="https://www.facebook.com/FlashCoin-1800026016723751" target="_blank"><i class="fab fa-facebook"></i><span>Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/flashcoin.io/" target="_blank"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+									<li><a href="https://twitter.com/FlashCoins" target="_blank"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+									<li><a href="https://plus.google.com/u/0/b/110236490072104998071/110236490072104998071" target="_blank"><i class="fab fa-google-plus"></i><span>Google+</span></a></li>
+									<li><a href="https://github.com/flash-coin" target="_blank"><i class="fab fa-github"></i><span>Github</span></a></li>
+									<li><a href="https://bitcointalk.org/index.php?topic=1605453.0" target="_blank"><i class="fab fa-bitcoin"></i><span>BitcoinTalk</span></a></li>
+									<li><a href="https://www.reddit.com/r/FlashCoins/" target="_blank"><i class="fab fa-reddit"></i><span>Reddit</span></a></li>
+									<li><a href="https://steemit.com/@flash.coin" target="_blank"><i class="fas fa-stop"></i><span>SteemIt</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- .container end -->
 					</div>
+					<!-- #social-forum end -->
 
-					<div class="container clearfix">
-
-						<div class="row">
-							<!--CONTENT HERE-->
-						</div>
-					</div>
-
-				</div><!-- #section-resources end -->
-
-				<!-- Whitepaper
-				============================================= -->
-				<div id="whitepaper" class="section parallax page-section" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
-
-					<div class="container clearfix">
-
-						<div class="heading-block title-center nobottomborder">
-							<h2>Download Whitepaper</h2>
-						</div>
-
-						<div class="center">
-
-							<a href="docs/FLASHWhitepaper.pdf" class="button button-3d button-yellow button-xlarge nobottommargin"><i class="icon-star3"></i>DOWNLOAD OUR WHITEPAPER</a> - <a href="docs/FLASHWhitepaper-en-Espanol.pdf" data-scrollto="#section-pricing" class="button button-3d button-yellow button-xlarge nobottommargin"><i class="icon-user2"></i>WHITEPAPER EN ESPAÑOL</a>
-
-						</div>
-
-						<div class="heading-block title-center nobottomborder topmargin-lg">
-							<h2>Github</h2>
-						</div>
-
-						<div class="center">
-
-							<a href="https://github.com/flash-coin" target="_blank" class="button button-3d button-yellow button-xlarge nobottommargin"><i class="icon-github"></i>FLASHCOIN REPOSITORY</a>
-
-						</div>
-
-					</div>
-
-				</div><!-- #section-resources-whitepaper end -->
-
-				<!-- Community
-				============================================= -->
-				<a name="section-community"></a>
-				<div id="social-forum" class="page-section bottommargin-lg">
-					<div class="container clearfix">
-						<div class="fancy-title title-border title-center">
-						<h1><span>Communities</span></h1>
-					</div>
-
-						<div class="row">
-							<ul class="icon-social">
-								<li><a href="https://discord.gg/2nFmMqA" target="_blank"><i class="fab fa-discord"></i><span>Discord</span></a></li>
-								<li><a href="https://t.me/joinchat/C5go9ExsGGNeVvForEgb6w" target="_blank"><i class="fab fa-telegram"></i><span>Telegram</span></a></li>
-								<li><a href="https://www.facebook.com/FlashCoin-1800026016723751" target="_blank"><i class="fab fa-facebook"></i><span>Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/flashcoin.io/" target="_blank"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
-								<li><a href="https://twitter.com/FlashCoins" target="_blank"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
-								<li><a href="https://plus.google.com/u/0/b/110236490072104998071/110236490072104998071" target="_blank"><i class="fab fa-google-plus"></i><span>Google+</span></a></li>
-								<li><a href="https://github.com/flash-coin" target="_blank"><i class="fab fa-github"></i><span>Github</span></a></li>
-								<li><a href="https://bitcointalk.org/index.php?topic=1605453.0" target="_blank"><i class="fab fa-bitcoin"></i><span>BitcoinTalk</span></a></li>
-								<li><a href="https://www.reddit.com/r/FlashCoins/" target="_blank"><i class="fab fa-reddit"></i><span>Reddit</span></a></li>
-								<li><a href="https://medium.com/@FlashCoin" target="_blank"><i class="fab fa-medium"></i><span>Medium</span></a></li>
-								<li><a href="https://steemit.com/@flash.coin" target="_blank"><i class="fas fa-stop"></i><span>SteemIt</span></a></li>
-							</ul>
-						</div>
-					</div><!-- .container end -->
-				</div><!-- #social-forum end -->
-
-			</div><!-- .content-wrap end -->
-		</section><!-- #content end -->
+				</div>
+				<!-- .content-wrap end -->
+			</section>
+			<!-- #content end -->
 
 
-		<!-- Footer
+			<!-- Footer
 		============================================= -->
-		<footer id="footer" class="dark">
+			<footer id="footer" class="dark">
 
-			<div class="container">
+				<div class="container">
 
-				<!-- Footer Widgets
+					<!-- Footer Widgets
 				============================================= -->
-				<div class="footer-widgets-wrap clearfix">
+					<div class="footer-widgets-wrap clearfix">
 
-					<div class="col_two_third">
+						<div class="col_two_third">
 
-						<div class="col_one_third">
+							<div class="col_one_third">
 
-							<div class="widget clearfix">
+								<div class="widget clearfix">
 
-								<img src="images/footer-logo.png" alt="" class="footer-logo">
+									<img src="images/footer-logo.png" alt="" class="footer-logo">
 
-								<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
-									<address>
+									<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+										<address>
 										<strong>Headquarters:</strong><br>
 										Lichtenstein<br>
 									</address>
-									<abbr title="Email Address"><strong>Email:</strong></abbr> <a href="mailto:info@flashcoin.io" target="_top">info@flashcoin.io</a>
+										<abbr title="Email Address"><strong>Email:</strong></abbr> <a href="mailto:info@flashcoin.io" target="_top">info@flashcoin.io</a>
+									</div>
+
 								</div>
 
 							</div>
 
-						</div>
+							<div class="col_one_third">
 
-						<div class="col_one_third">
+								<div class="widget widget_links clearfix">
 
-							<div class="widget widget_links clearfix">
+									<h4>Menu</h4>
 
-								<h4>Menu</h4>
+									<ul>
+										<li>
+											<a href="#" data-scrollto="#wrapper">
+												<div>HOME</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-scrollto="#about">
+												<div>ABOUT</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-scrollto="#wallet">
+												<div>WALLET</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-scrollto="#section-resources">
+												<div>RESOURCES</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-scrollto="#social-forum">
+												<div>COMMUNITIES</div>
+											</a>
+										</li>
+									</ul>
 
-								<ul>
-									<li><a href="#" data-scrollto="#wrapper"><div>HOME</div></a></li>
-									<li><a href="#" data-scrollto="#about"><div>ABOUT</div></a></li>
-									<li><a href="#" data-scrollto="#wallet"><div>WALLET</div></a></li>
-									<li><a href="#" data-scrollto="#section-resources"><div>RESOURCES</div></a></li>
-									<li><a href="#" data-scrollto="#social-forum"><div>COMMUNITIES</div></a></li>
-								</ul>
+								</div>
+
+							</div>
+
+							<div class="col_one_third col_last">
+
+								<!--CONTENT HERE-->
 
 							</div>
 
@@ -898,203 +1137,198 @@
 
 						<div class="col_one_third col_last">
 
-							<!--CONTENT HERE-->
+							<div class="widget clearfix" style="margin-bottom: -20px;">
 
-						</div>
+								<div class="row">
 
-					</div>
+									<!--CONTENT HERE-->
 
-					<div class="col_one_third col_last">
-
-						<div class="widget clearfix" style="margin-bottom: -20px;">
-
-							<div class="row">
-
-								<!--CONTENT HERE-->
+								</div>
 
 							</div>
 
-						</div>
+							<div class="widget clearfix" style="margin-bottom: -20px;">
 
-						<div class="widget clearfix" style="margin-bottom: -20px;">
+								<div class="row">
 
-							<div class="row">
+									<!--CONTENT HERE-->
 
-								<!--CONTENT HERE-->
+								</div>
 
 							</div>
 
 						</div>
 
 					</div>
-
-				</div><!-- .footer-widgets-wrap end -->
-
-			</div>
-
-			<!-- Copyrights
-			============================================= -->
-			<div id="copyrights">
-
-				<div class="container clearfix">
-
-					<div class="col_half">
-						<!-- <div>Copyrights &copy; 2018 All Rights Reserved by Flashcoin.io
-						Flashcoin.io is provided by the Flashcoin Foundation,Liechtenstein.Supported by the FLASH community.</div> -->
-						<!--<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>-->
-						FLASH is supported by the Third Millennium Foundation for Economics and Culture, Liechtenstein, and the FLASH community worldwide.
-					</div>
-
-					<div class="col_half col_last tright">
-						<div class="fright clearfix">
-							<ul class="icon-social">
-								<li><a href="https://discord.gg/2nFmMqA" target="_blank"><i class="fab fa-discord"></i></a></li>
-								<li><a href="https://t.me/joinchat/C5go9ExsGGNeVvForEgb6w" target="_blank"><i class="fab fa-telegram"></i></a></li>
-								<li><a href="https://www.facebook.com/FlashCoin-1800026016723751" target="_blank"><i class="fab fa-facebook"></i></a></li>
-								<li><a href="https://www.instagram.com/flashcoin.io/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-								<li><a href="https://twitter.com/FlashCoins" target="_blank"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="https://plus.google.com/u/0/b/110236490072104998071/110236490072104998071" target="_blank"><i class="fab fa-google-plus"></i><span>Google+</span></a></li>
-								<li><a href="https://github.com/flash-coin" target="_blank"><i class="fab fa-github"></i></a></li>
-								<li><a href="https://bitcointalk.org/index.php?topic=1605453.0" target="_blank"><i class="fab fa-bitcoin"></i></a></li>
-								<li><a href="https://www.reddit.com/r/FlashCoins/" target="_blank"><i class="fab fa-reddit"></i></a></li>
-								<li><a href="https://medium.com/@FlashCoin" target="_blank"><i class="fab fa-medium"></i></a></li>
-								<li><a href="https://steemit.com/@flash.coin" target="_blank"><i class="fas fa-stop"></i></a></li>
-							</ul>
-						</div>
-
-						<div class="clear"></div>
-
-						<a href="mailto:info@flashcoin.io" target="_top"><i class="icon-envelope2"></i> info@flashcoin.io</a> <span class="middot">&middot;</span> <a href="https://discord.gg/2nFmMqA" target="_blank"><i class="fab fa-discord"></i> FlashcoinOnDiscord</a>
-					</div>
+					<!-- .footer-widgets-wrap end -->
 
 				</div>
 
-			</div><!-- #copyrights end -->
+				<!-- Copyrights
+			============================================= -->
+				<div id="copyrights">
 
-		</footer><!-- #footer end -->
+					<div class="container clearfix">
 
-	</div><!-- #wrapper end -->
+						<div class="col_half">
+							<!-- <div>Copyrights &copy; 2018 All Rights Reserved by Flashcoin.io
+						Flashcoin.io is provided by the Flashcoin Foundation,Liechtenstein.Supported by the FLASH community.</div> -->
+							<!--<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>-->
+							FLASH is supported by the Third Millennium Foundation for Economics and Culture, Liechtenstein, and the FLASH community worldwide.
+						</div>
 
-	<!-- Go To Top
+						<div class="col_half col_last tright">
+							<div class="fright clearfix">
+								<ul class="icon-social">
+									<li><a href="https://discord.gg/2nFmMqA" target="_blank"><i class="fab fa-discord"></i></a></li>
+									<li><a href="https://t.me/joinchat/C5go9ExsGGNeVvForEgb6w" target="_blank"><i class="fab fa-telegram"></i></a></li>
+									<li><a href="https://medium.com/@FlashCoin" target="_blank"><i class="fab fa-medium"></i></a></li>
+									<li><a href="https://www.facebook.com/FlashCoin-1800026016723751" target="_blank"><i class="fab fa-facebook"></i></a></li>
+									<li><a href="https://www.instagram.com/flashcoin.io/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="https://twitter.com/FlashCoins" target="_blank"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="https://plus.google.com/u/0/b/110236490072104998071/110236490072104998071" target="_blank"><i class="fab fa-google-plus"></i><span>Google+</span></a></li>
+									<li><a href="https://github.com/flash-coin" target="_blank"><i class="fab fa-github"></i></a></li>
+									<li><a href="https://bitcointalk.org/index.php?topic=1605453.0" target="_blank"><i class="fab fa-bitcoin"></i></a></li>
+									<li><a href="https://www.reddit.com/r/FlashCoins/" target="_blank"><i class="fab fa-reddit"></i></a></li>
+									<li><a href="https://steemit.com/@flash.coin" target="_blank"><i class="fas fa-stop"></i></a></li>
+								</ul>
+							</div>
+
+							<div class="clear"></div>
+
+							<a href="mailto:info@flashcoin.io" target="_top"><i class="icon-envelope2"></i> info@flashcoin.io</a> <span class="middot">&middot;</span> <a href="https://discord.gg/2nFmMqA" target="_blank"><i class="fab fa-discord"></i> FlashcoinOnDiscord</a>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- #copyrights end -->
+
+			</footer>
+			<!-- #footer end -->
+
+			</div>
+			<!-- #wrapper end -->
+
+			<!-- Go To Top
 	============================================= -->
-	<div id="gotoTop" class="icon-angle-up"></div>
+			<div id="gotoTop" class="icon-angle-up"></div>
 
-	<!-- External JavaScripts
+			<!-- External JavaScripts
 	============================================= -->
-	<script src="js/jquery.js"></script>
-	<script src="js/key-indicator.js"></script>
-	<script src="js/twitterFetcher_min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/aos.js"></script>
-	<script defer src="js/fontawesome5.0.8.all.js"></script>
+			<script src="js/jquery.js"></script>
+			<script src="js/key-indicator.js"></script>
+			<script src="js/twitterFetcher_min.js"></script>
+			<script src="js/plugins.js"></script>
+			<script src="js/aos.js"></script>
+			<script defer src="js/fontawesome5.0.8.all.js"></script>
 
-	<!-- Footer Scripts
+			<!-- Footer Scripts
 	============================================= -->
-	<script src="js/functions.js"></script>
+			<script src="js/functions.js"></script>
 
-	<script>
-		jQuery(document).ready(function(){
-			jQuery('#primary-menu-trigger').click(function() {
-				jQuery( '#header .button' ).toggleClass("d-block");
-			});
-		});
-
-		//hide menu logo and home button on homepage
-		$(window).scroll( function() {
-			if( $(this).scrollTop() > 100 ) {
-				// $("#logo").hide();
-				// $("#header-wrap").show();
-				$('.hide-this').css('display', 'block');
-				if($(window).width() <= 768) {
-						$('#header').addClass('responsive-sticky-header').removeClass('static-sticky');
-				} else {
-					$('#header').removeClass('responsive-sticky-header').addClass('static-sticky');
-				}
-			}
-			else {
-				$("#logo, .hide-this").hide();
-				$('#header').removeClass('responsive-sticky-header').addClass('static-sticky');
-			}
-		});
-
-		//timeline
-		jQuery(window).on( 'load', function(){
-
-			var $container = $('#posts');
-
-			$container.isotope({
-				itemSelector: '.entry',
-				masonry: {
-					columnWidth: '.entry:not(.entry-date-section)'
-				}
-			});
-
-			$container.infiniteScroll({
-				path: '.load-next-posts',
-				button: '.load-next-posts',
-				scrollThreshold: false,
-				history: false,
-				status: '.page-load-status'
-			});
-
-			$container.on( 'load.infiniteScroll', function( event, response, path ) {
-				var $items = $( response ).find('.entry');
-				// append items after images loaded
-				$items.imagesLoaded( function() {
-					$container.append( $items );
-					$container.isotope( 'insert', $items );
-					setTimeout( function(){
-						$container.isotope('layout');
-						SEMICOLON.initialize.resizeVideos();
-						SEMICOLON.widget.loadFlexSlider();
-						SEMICOLON.widget.masonryThumbs();
-					}, 1000 );
-					setTimeout( function(){
-						SEMICOLON.initialize.blogTimelineEntries();
-					}, 1500 );
+			<script>
+				jQuery(document).ready(function() {
+					jQuery('#primary-menu-trigger').click(function() {
+						jQuery('#header .button').toggleClass("d-block");
+					});
 				});
-			});
 
-			setTimeout( function(){
-				SEMICOLON.initialize.blogTimelineEntries();
-			}, 2500 );
-
-			$(window).resize(function() {
-				$container.isotope('layout');
-				setTimeout( function(){
-					SEMICOLON.initialize.blogTimelineEntries();
-				}, 2500 );
-			});
-
-		});
-
-		// Onepage anchorlink
-			jQuery(document).ready( function(){
-				setTimeout(function() {
-					if (location.hash) {
-						window.scrollTo(0, 0);
+				//hide menu logo and home button on homepage
+				$(window).scroll(function() {
+					if ($(this).scrollTop() > 100) {
+						// $("#logo").hide();
+						// $("#header-wrap").show();
+						$('.hide-this').css('display', 'block');
+						if ($(window).width() <= 768) {
+							$('#header').addClass('responsive-sticky-header').removeClass('static-sticky');
+						} else {
+							$('#header').removeClass('responsive-sticky-header').addClass('static-sticky');
+						}
+					} else {
+						$("#logo, .hide-this").hide();
+						$('#header').removeClass('responsive-sticky-header').addClass('static-sticky');
 					}
-				}, 1);
-			});
+				});
 
-			jQuery(window).on('load', function(){
-				var divScrollToAnchor = window.location.hash;
-				if( typeof divScrollToAnchor !== 'undefined' && divScrollToAnchor != '') {
-					var t = setTimeout( function(){
-						$('html,body').stop(true).animate({
-							'scrollTop': $( divScrollToAnchor ).offset().top - 100
-						}, 700, 'easeOutQuad');
-					}, 1000);
-				}
-			});
+				//timeline
+				jQuery(window).on('load', function() {
 
-			// Browser anchorlink back forward
-			$(window).on('hashchange', function ()
-			{
-				var top = $(window.location.hash).offset().top;
-				$(window).scrollTop(top);
-			});
-	</script>
+					var $container = $('#posts');
 
-</body>
+					$container.isotope({
+						itemSelector: '.entry',
+						masonry: {
+							columnWidth: '.entry:not(.entry-date-section)'
+						}
+					});
+
+					$container.infiniteScroll({
+						path: '.load-next-posts',
+						button: '.load-next-posts',
+						scrollThreshold: false,
+						history: false,
+						status: '.page-load-status'
+					});
+
+					$container.on('load.infiniteScroll', function(event, response, path) {
+						var $items = $(response).find('.entry');
+						// append items after images loaded
+						$items.imagesLoaded(function() {
+							$container.append($items);
+							$container.isotope('insert', $items);
+							setTimeout(function() {
+								$container.isotope('layout');
+								SEMICOLON.initialize.resizeVideos();
+								SEMICOLON.widget.loadFlexSlider();
+								SEMICOLON.widget.masonryThumbs();
+							}, 1000);
+							setTimeout(function() {
+								SEMICOLON.initialize.blogTimelineEntries();
+							}, 1500);
+						});
+					});
+
+					setTimeout(function() {
+						SEMICOLON.initialize.blogTimelineEntries();
+					}, 2500);
+
+					$(window).resize(function() {
+						$container.isotope('layout');
+						setTimeout(function() {
+							SEMICOLON.initialize.blogTimelineEntries();
+						}, 2500);
+					});
+
+				});
+
+				// Onepage anchorlink
+				jQuery(document).ready(function() {
+					setTimeout(function() {
+						if (location.hash) {
+							window.scrollTo(0, 0);
+						}
+					}, 1);
+				});
+
+				jQuery(window).on('load', function() {
+					var divScrollToAnchor = window.location.hash;
+					if (typeof divScrollToAnchor !== 'undefined' && divScrollToAnchor != '') {
+						var t = setTimeout(function() {
+							$('html,body').stop(true).animate({
+								'scrollTop': $(divScrollToAnchor).offset().top - 100
+							}, 700, 'easeOutQuad');
+						}, 1000);
+					}
+				});
+
+				// Browser anchorlink back forward
+				$(window).on('hashchange', function() {
+					var top = $(window.location.hash).offset().top;
+					$(window).scrollTop(top);
+				});
+			</script>
+
+	</body>
+
 </html>
