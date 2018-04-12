@@ -278,14 +278,63 @@ a.button.button-rounded.button-reveal.button-large.button-yellow.button-light.tr
 .partners img {
   border-radius: unset;
   margin: auto;
-  width: 200px;
 }
 
 #partners span {
   font-style: normal;
 }
-
+#team span {
+  font-style: normal;
+}
+#team span a{
+  color: white;
+}
+.fab { font-size: 18px !important; }
+#partners ul {
+  width:100%;
+}
 .partners-title {
   color: #E0AE27;
   margin-top: 15px;
+}
+.img-padding
+{
+  padding: 0em 0em 2em 0em;  
+} 
+.play-store-btn
+{
+  background-color: unset !important;
+  display: block;
+  padding-left: 60px;
+}
+.play-store-btn:hover
+{
+  background-color: unset !important;
+}
+.get-web-wallet-btn
+{
+  z-index: 299;
+  position: fixed;
+  height: 50px;
+  background-color: #333;
+  background-color: rgba(0,0,0,0.3);
+  font-size: 20px;
+  text-align: center;
+  color: #FFF;
+  top: auto;
+  right: auto;
+  left: 0px;
+  bottom: 50px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.get-web-wallet-btn a
+{
+  text-transform: unset;
+  letter-spacing: 0px;
+  font-size: 15px;
+}
+#gotoTop
+{
+  background-color: #E0AE27;
 }
