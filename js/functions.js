@@ -228,7 +228,6 @@ var SEMICOLON = SEMICOLON || {};
 				elementOffset = $goToTopEl.attr('data-offset');
 
 			if( !elementOffset ) { elementOffset = 450; }
-
 			if( elementMobile != 'true' && ( $body.hasClass('device-sm') || $body.hasClass('device-xs') ) ) { return true; }
 
 			if( $window.scrollTop() > Number(elementOffset) ) {
