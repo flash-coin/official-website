@@ -296,17 +296,17 @@
 						$('.sub-menu ul').hide();
 					});
 					$('.subpage ul li a, .widget_links ul li a').click(function() {
-							var href = $(this).attr('data-href');
+							var dhref = $(this).attr('data-href');
 							if ($('.subpage').length) {
-								if (href != undefined && href != '') {
-									window.location.href = 'index.html'+href;
-								} else {
+								if (dhref != undefined && dhref != '') {
+									window.location.href = 'index.html'+dhref;
+								} else if ($(this).attr('data-home')) {
 									window.location.href = 'index.html';
 								}
 						  }	else {
-								if (href != undefined && href != '') {
+								if (dhref != undefined && dhref != '') {
 									$('html, body').animate({
-							        scrollTop: $(href).offset().top - 100
+							        scrollTop: $(dhref).offset().top - 100
 							    }, 2000);
 								}
 							}

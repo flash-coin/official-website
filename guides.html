@@ -46,33 +46,13 @@
 	<!-- Document Title
 	============================================= -->
 	<title>Flashcoin | How to use FLASH Web Wallet</title>
-
-<style>
-@media (min-width: 992px) {
-	#header .button {
-		margin: 30px 10px;
-		-webkit-transition: all .4s ease;
-		-o-transition: all .4s ease;
-		transition: all .4s ease;
-	}
-
-	body.top-search-open #header .button { opacity: 0; }
-
-	#header.sticky-header:not(.static-sticky) .button {
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
-}
-
-@media (max-width: 991px) {
-	#header .button {
-		display: none;
-		margin: 10px 5px 20px;
-	}
-
-	#header .button.d-block { display: inline-block !important; }
-}
-</style>
+	<script src="js/jquery.js"></script>
+	<script>
+		$(function() {
+				$('#header-wrap').load('header.html');
+				$('#footer-comman').load('footer.html');
+		});
+		</script>
 
 </head>
 
@@ -84,96 +64,9 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="transparent-header dark responsive-sticky-header" data-sticky-offset="100">
+		<header id="header" class="subpage transparent-header dark responsive-sticky-header" data-sticky-offset="100">
 
 			<div id="header-wrap">
-
-				<div class="container clearfix">
-
-					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-
-					<!-- Logo
-					============================================= -->
-					<div id="logo" style="display: inline;">
-						<a href="index.html" class="standard-logo retina-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Flashcoin Logo"></a>
-					</div><!-- #logo end -->
-
-					<!-- Primary Navigation
-					============================================= -->
-					<nav id="primary-menu" class="one-page-menu">
-
-						<ul>
-							<li><a href="index.html"><div>HOME</div></a></li>
-							<li><a href="index.html#about"><div>ABOUT</div></a>
-								<ul>
-									<li><a href="index.html#about"><div>WHAT IS FLASH</div></a></li>
-									<li><a href="index.html#flash-advantage"><div>FLASH ADVANTAGES</div></a></li>
-									<li><a href="index.html#governance-model"><div>GOVERNANCE MODEL</div></a></li>
-									<li><a href="index.html#team"><div>TEAM</div></a></li>
-									<li><a href="index.html#roadmap"><div>ROADMAP</div></a></li>
-									<li><a href="index.html#news"><div>NEWS</div></a></li>
-									<li><a href="index.html#exchanges"><div>EXCHANGES</div></a></li>
-									<li><a href="index.html#partners"><div>PARTNERS</div></a></li>
-									<li><a href="index.html#feature-flash"><div>UPCOMING FEATURES</div></a></li>
-								</ul>
-							</li>
-							<li><a href="index.html#wallet"><div>WALLET</div></a>
-								<ul>
-									<li><a href="index.html#wallet"><div>WEB WALLET</div></a></li>
-									<li><a href="https://play.google.com/store/apps/details?id=com.flash.wallet.android" target="_blank"><div>ANDROID WALLET</div></a></li>
-									<li><a href="index.html#wallet"><div>QT WALLET DOWNLOADS</div></a></li>
-									<li><a href="flash-snapshot.html"><div>FLASH SNAPSHOT</div></a></li>
-									<li><a href="index.html#wallet"><div>THIRD PARTY WALLETS</div></a></li>
-								</ul>
-							</li>
-							<li><a href="index.html#section-resources"><div>RESOURCES</div></a>
-								<ul>
-									<li><a href="index.html#whitepaper"><div>WHITEPAPER</div></a></li>
-									<li><a href="https://github.com/flash-coin/" target="_blank"><div>GITHUB</div></a></li>
-									<li><a href="https://explorer.flashcoin.io/" target="_blank"><div>EXPLORER</div></a></li>
-									<li><a href="https://charts.flashcoin.io/" target="_blank"><div>CHARTS</div></a></li>
-									<li><a href="https://nodes.flashcoin.io/" target="_blank"><div>NODES</div></a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="index.html#social-forum">
-									<div>COMMUNITIES</div>
-								</a>
-							</li>
-							<!-- <li>
-									<a href="#" data-href="">
-										<div>Docs</div>
-									</a>
-									<ul>
-										<li>
-											<a href="https://dev03landing.flashcoin.io/guides.html" target="_blank">
-												<div>How to use FLASH Web Wallet</div>
-											</a>
-										</li>
-										<li>
-											<a href=" https://dev03landing.flashcoin.io/guides3.html" target="_blank">
-												<div>How to use FLASH QT Wallet</div>
-											</a>
-										</li>
-										<li>
-											<a href="https://dev03landing.flashcoin.io/guides2.html" target="_blank">
-												<div>How to Buy Bitcoin using Coinbase</div>
-											</a>
-										</li>
-										<li>
-											<a href="https://dev03landing.flashcoin.io/tutorials.html" target="_blank">
-												<div>Video Tutorials</div>
-											</a>
-										</li>
-									</ul>
-								</li> -->
-
-						</ul>
-
-					</nav><!-- #primary-menu end -->
-
-				</div>
-
 			</div>
 
 		</header><!-- #header end -->
@@ -198,7 +91,7 @@
 
 						<!-- Remittances
 						============================================= -->
-        
+
             <div class="section-header our-team">
                 <h2 class="section-title wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">Flash Web Wallet</h2>
             </div>
@@ -219,14 +112,14 @@
                             <!-- The icon that will wrap the number -->
                             <!-- <span style="color:gold" class="fa fa-circle-o fa-stack-2x"></span> -->
                             <!-- a strong element with the custom content, in this case a number -->
-                            
+
                         <!-- </span> -->
                        <p><strong>
-                                1. 
+                                1.
                             </strong> Click on the <b>‘Flash Web Wallet‘</b> or <b>‘Get a web wallet here’</b> buttons.</p>
                     </div>
                 </div>
-                
+
 
             </div>
             <div class="row video_row">
@@ -240,7 +133,7 @@
                         <p><strong> 2. </strong>On the registration page, enter your name and email address, and select <b>Create Wallet</b>.</p>
                     </div>
                 </div>
-                
+
             </div>
             <div class="row video_row">
             	<div class="col-md-8 col-md-pull-4 section-header aos-init" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
@@ -256,7 +149,7 @@
                             </strong>
                         Verify your email by going to your email inbox and continue to login to the Flash Web Wallet. Your main login page will look like this once successful.</p>                   </div>
                 </div>
-                
+
             </div>
             <div class="row video_row">
             	<div class="col-md-8 col-md-pull-4 section-header aos-init" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
@@ -266,15 +159,15 @@
                 </div>
                 <div class="col-md-4 col-md-push-8 aos-init" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <div style="font-size: 0.875rm; visibility: visible; animation-duration: 400ms; animation-delay: 100ms; animation-name: fadeInUp;" class="team-member wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="100ms">
-                         
+
                            <p>
                             <strong>
-                                4. 
+                                4.
                             </strong>
-                        
+
                         You should consider enabling 2FA (two-factor authentication); this helps to further secure your wallet and is done through the&nbsp;Google Authenticator app. It is not mandatory to activate 2FA to use the wallet but it is highly advised. To activate, go to your <b>My Account</b> tab and then click on <b>Account Settings</b>.  Scan your QR code with your phone using the app (explained in the step below). <br><br> <b>Write down or store your recovery key somewhere safe in case you ever lose your phone. <br><br>Pay attention that there is no way to recover the wallet without the recovery key or the 2FA</b>           </p>         </div>
                 </div>
-                
+
             </div>
             <div class="row video_row">
             	<div class="col-md-8 col-md-pull-4 section-header aos-init" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
@@ -286,12 +179,12 @@
                     <div style="font-size: 0.875rm; visibility: visible; animation-duration: 400ms; animation-delay: 100ms; animation-name: fadeInUp;" class="team-member wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="100ms">
                             <p>
                             <strong>
-                                5. 
+                                5.
                             </strong>
-                       
+
                         Follow the illustrated steps for the Google Authenticator app to add the Flash Web Wallet 2FA.   </p>                 </div>
                 </div>
-                
+
             </div>
             <div class="row video_row">
             	 <div class="col-md-8 col-md-pull-4 section-header aos-init" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
@@ -303,12 +196,12 @@
                     <div style="font-size: 0.875rm; visibility: visible; animation-duration: 400ms; animation-delay: 100ms; animation-name: fadeInUp;" class="team-member wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="100ms">
                             <p>
                             <strong>
-                                6. 
+                                6.
                             </strong>
                         Now you can enter the code you received in the app to sign in to your account.</p>
                     </div>
                 </div>
-               
+
             </div>
             <br>
             <br>
@@ -326,12 +219,12 @@
                     <div style="font-size: 0.875rm; visibility: visible; animation-duration: 400ms; animation-delay: 100ms; animation-name: fadeInUp;" class="team-member wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="100ms">
                         <p>
                             <strong>
-                                1. 
+                                1.
                             </strong>
-                     
+
                         To receive Flash coins, you will need to provide the sender with your Flash coin Address or your QR code. To identify your Public Address and QR code, click on the <b>My Account</b> tab and then select <b>Account Settings</b>. Your Public Address can be used to receive Flash coins or alternatively, your QR code can be scanned by the sender to send you Flash coins.  </p>                   </div>
                 </div>
-               
+
             </div>
             <div class="row video_row">
 				<div class="col-md-8 col-md-pull-4 section-header aos-init" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
@@ -343,13 +236,13 @@
                     <div style="font-size: 0.875rm; animation-duration: 400ms; animation-delay: 100ms; animation-name: none;" class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
         				<p>
                             <strong>
-                                2. 
+                                2.
                             </strong>
-                       
+
                         To send Flash coins, select the <b>Send</b> tab and input the Flash address or scan the QR code. Input the amount you wish to send and click <b>Continue</b>. Your transaction will require one more confirmation and then your coins will be sent. (Please note, once coins have been sent you cannot reverse the transaction. Hence it is necessary you are sending to the correct address and to someone whom you trust.)</p>
                     </div>
                 </div>
-                
+
             </div>
             <div class="row video_row">
             	<div class="col-md-8 col-md-pull-4 section-header aos-init" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
@@ -360,14 +253,14 @@
                 <div class="col-md-4 col-md-push-8 aos-init" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <div style="font-size: 0.875rm;animation-duration: 400ms; animation-delay: 100ms; animation-name: none;" class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
                         <p>
-                            <strong">
-                                3. 
+                            <strong>
+                                3.
                             </strong>
-                      
+
                         Your Sent/Received transactions can be viewed by clicking on the <b>Activity</b> tab.</p>
                     </div>
                 </div>
-                
+
             </div>
 
 
@@ -414,159 +307,12 @@
 
 			</div><!-- .content-wrap end -->
 		</section><!-- #content end -->
-
-
-		<!-- Footer
-		============================================= -->
-		<footer id="footer" class="dark">
-
-			<div class="container">
-
-				<!-- Footer Widgets
-				============================================= -->
-				<div class="footer-widgets-wrap clearfix">
-
-					<div class="col_two_third">
-
-						<div class="col_one_third">
-
-							<div class="widget clearfix">
-
-								<img src="images/footer-logo.png" alt="" class="footer-logo">
-
-								<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
-									<address>
-										<strong>Headquarters:</strong><br>
-										Liechtenstein<br>
-									</address>
-									<abbr title="Email Address"><strong>Email:</strong></abbr> <a href="mailto:info@flashcoin.io" target="_top">info@flashcoin.io</a>
-								</div>
-
-							</div>
-
-						</div>
-
-						<div class="col_one_third">
-
-							<div class="widget widget_links clearfix">
-
-								<h4>Menu</h4>
-								<ul>
-									<li><a href="index.html#wrapper"><div>HOME</div></a></li>
-									<li><a href="index.html#about"><div>ABOUT</div></a></li>
-									<li><a href="index.html#wallet"><div>WALLET</div></a></li>
-									<li><a href="index.html#section-resources"><div>RESOURCES</div></a></li>
-									<li><a href="index.html#social-forum"><div>COMMUNITIES</div></a></li>
-								</ul>
-
-							</div>
-
-						</div>
-
-						<div class="col_one_third col_last">
-
-							<!--CONTENT HERE-->
-
-						</div>
-
-					</div>
-
-					<div class="col_one_third col_last">
-
-						<div class="widget clearfix" style="margin-bottom: -20px;">
-
-							<div class="row">
-
-								<!--CONTENT HERE-->
-
-							</div>
-
-						</div>
-
-						<div class="widget clearfix" style="margin-bottom: -20px;">
-
-							<div class="row">
-
-								<!--CONTENT HERE-->
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</div><!-- .footer-widgets-wrap end -->
-
-			</div>
-
-			<!-- Copyrights
-			============================================= -->
-			<div id="copyrights">
-
-				<div class="container clearfix">
-
-					<div class="col_half">
-						<!-- <div>Copyrights &copy; 2018 All Rights Reserved by Flashcoin.io
-						Flashcoin.io is provided by the Flashcoin Foundation,Liechtenstein.Supported by the FLASH community.</div> -->
-						<!--<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>-->
-						FLASH is supported by the Third Millennium Foundation for Economics and Culture, Liechtenstein, and the FLASH community worldwide.
-					</div>
-
-					<div class="col_half col_last tright">
-						<div class="fright clearfix">
-							<ul class="icon-social">
-								<li><a href="https://discord.gg/2nFmMqA" target="_blank"><i class="fab fa-discord"></i></a></li>
-								<li><a href="https://t.me/joinchat/C5go9ExsGGNeVvForEgb6w" target="_blank"><i class="fab fa-telegram"></i></a></li>
-								<li><a href="https://www.facebook.com/FlashCoin-1800026016723751" target="_blank"><i class="fab fa-facebook"></i></a></li>
-								<li><a href="https://www.instagram.com/flashcoin.io/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-								<li><a href="https://twitter.com/FlashCoins" target="_blank"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="https://plus.google.com/u/0/b/110236490072104998071/110236490072104998071" target="_blank"><i class="fab fa-google-plus"></i></a></li>
-								<li><a href="https://github.com/flash-coin" target="_blank"><i class="fab fa-github"></i></a></li>
-								<li><a href="https://bitcointalk.org/index.php?topic=1605453.0" target="_blank"><i class="fab fa-bitcoin"></i></a></li>
-								<li><a href="https://www.reddit.com/r/FlashCoins/" target="_blank"><i class="fab fa-reddit"></i></a></li>
-								<li><a href="https://medium.com/@FlashCoin" target="_blank"><i class="fab fa-medium"></i></a></li>
-								<li><a href="https://steemit.com/@flash.coin" target="_blank"><i class="fas fa-stop"></i></a></li>
-							</ul>
-						</div>
-
-						<div class="clear"></div>
-
-						<a href="mailto:info@flashcoin.io" target="_top"><i class="icon-envelope2"></i> info@flashcoin.io</a> <span class="middot">&middot;</span> <a href="https://discord.gg/2nFmMqA" target="_blank"><i class="fab fa-discord"></i> FlashcoinOnDiscord</a>
-					</div>
-
-				</div>
-
-			</div><!-- #copyrights end -->
-
-		</footer><!-- #footer end -->
-
+		<div id="footer-comman">
+		</div>
 	</div><!-- #wrapper end -->
-
-	<!-- Go To Top
-	============================================= -->
-	<div id="gotoTop" class="icon-angle-up"></div>
 
 	<!-- External JavaScripts
 	============================================= -->
-	<script src="js/jquery.js"></script>
-	<script src="js/key-indicator.js"></script>
-	<script src="js/twitterFetcher_min.js"></script>
 	<script src="js/plugins.js"></script>
-	<!--<script src="js/aos.js"></script>-->
-	<script defer src="js/fontawesome5.0.8.all.js"></script>
-
-	<!-- Footer Scripts
-	============================================= -->
-	<script src="js/functions.js"></script>
-
-	<script>
-		jQuery(document).ready(function(){
-			jQuery('#primary-menu-trigger').click(function() {
-				jQuery( '#header .button' ).toggleClass("d-block");
-			});
-		});
-	</script>
-
 </body>
 </html>
-	

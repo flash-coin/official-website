@@ -299,8 +299,8 @@ a.button.button-rounded.button-reveal.button-large.button-yellow.button-light.tr
 }
 .img-padding
 {
-  padding: 0em 0em 2em 0em;  
-} 
+  padding: 0em 0em 2em 0em;
+}
 .play-store-btn
 {
   background-color: unset !important;
@@ -335,4 +335,16 @@ a.button.button-rounded.button-reveal.button-large.button-yellow.button-light.tr
 #gotoTop
 {
   background-color: #E0AE27;
+}
+.video_row
+{ clear: both;
+margin-bottom: 100px;
+}
+@media (max-width: 768px) {
+.video_row {
+margin-bottom: unset;
+}
+.heading-color h2
+{
+color: #E0AE27 !important;
 }
