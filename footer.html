@@ -35,27 +35,27 @@
 
 									<ul>
 										<li>
-											<a href="#" data-scrollto="#wrapper">
+											<a href="#" data-href="#wrapper">
 												<div>HOME</div>
 											</a>
 										</li>
 										<li>
-											<a href="#" data-scrollto="#about">
+											<a href="#" data-href="#about">
 												<div>ABOUT</div>
 											</a>
 										</li>
 										<li>
-											<a href="#" data-scrollto="#wallet">
+											<a href="#" data-href="#wallet">
 												<div>WALLET</div>
 											</a>
 										</li>
 										<li>
-											<a href="#" data-scrollto="#section-resources">
+											<a href="#" data-href="#section-resources">
 												<div>RESOURCES</div>
 											</a>
 										</li>
 										<li>
-											<a href="#" data-scrollto="#social-forum">
+											<a href="#" data-href="#social-forum">
 												<div>COMMUNITIES</div>
 											</a>
 										</li>
@@ -121,7 +121,6 @@
 									<li><a href="https://discord.gg/2nFmMqA" target="_blank"><i class="fab fa-discord"></i></a></li>
 									<li><a href="https://t.me/joinchat/C5go9ExsGGNeVvForEgb6w" target="_blank"><i class="fab fa-telegram"></i></a></li>
 									<li><a href="https://medium.com/@FlashCoin" target="_blank"><i class="fab fa-medium"></i></a></li>
-									<li><a href="https://www.facebook.com/FlashCoin-1800026016723751" target="_blank"><i class="fab fa-facebook"></i></a></li>
 									<li><a href="https://www.instagram.com/flashcoin.io/" target="_blank"><i class="fab fa-instagram"></i></a></li>
 									<li><a href="https://twitter.com/FlashCoins" target="_blank"><i class="fab fa-twitter"></i></a></li>
 									<li><a href="https://plus.google.com/u/0/b/110236490072104998071/110236490072104998071" target="_blank"><i class="fab fa-google-plus"></i><span>Google+</span></a></li>
@@ -152,18 +151,6 @@
 
 			<!-- External JavaScripts
 			============================================= -->
-			<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600|Open+Sans|Roboto" rel="stylesheet">
-			<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-			<link rel="stylesheet" href="css/04.style.css" type="text/css" />
-			<link rel="stylesheet" href="css/swiper.css" type="text/css" />
-			<link rel="stylesheet" href="css/dark.css" type="text/css" />
-			<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-			<link rel="stylesheet" href="css/animate.css" type="text/css" />
-			<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-			<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-			<link rel="stylesheet" href="css/et-line.css" type="text/css" />
-			<link rel="stylesheet" href="css/04.custom.css" type="text/css" />
-			<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 
 			<style>
 				@media (min-width: 992px) {
@@ -215,8 +202,12 @@
 					jQuery('#primary-menu-trigger').click(function() {
 						jQuery('#header .button').toggleClass("d-block");
 					});
-					if ($(window).width() < 768) {
-						$('#logo').hide();
+					if ($('.homepage').length)  {
+						if ($(window).width() < 768) {
+							$("#logo").css('display','block');
+						} else {
+							$("#logo").hide();
+						}
 					}
 				});
 
@@ -232,8 +223,12 @@
 						}
 						$('#gotoTop').show();
 					} else {
-						if ($('.homepage').length) {
-							$("#logo").css('display','block');
+						if ($('.homepage').length)  {
+							if ($(window).width() < 768) {
+								$("#logo").css('display','block');
+							} else {
+								$("#logo").hide();
+							}
 						}
 						$('#header').removeClass('responsive-sticky-header').addClass('static-sticky');
 						$('#gotoTop').hide();
@@ -296,16 +291,27 @@
 							window.scrollTo(0, 0);
 						}
 					}, 1);
-					if ($('.subpage').length) {
-						$('.subpage ul li a').click(function() {
-								var href = $(this).attr('data-href');
+					$('.homepage ul li a').click(function() {
+						$('.sub-menu, .sub-menu li').removeClass('sfHover');
+						$('.sub-menu ul').hide();
+					});
+					$('.subpage ul li a, .widget_links ul li a').click(function() {
+							var href = $(this).attr('data-href');
+							if ($('.subpage').length) {
 								if (href != undefined && href != '') {
 									window.location.href = 'index.html'+href;
 								} else {
 									window.location.href = 'index.html';
 								}
-						});
-					}
+						  }	else {
+								if (href != undefined && href != '') {
+									$('html, body').animate({
+							        scrollTop: $(href).offset().top - 100
+							    }, 2000);
+								}
+							}
+					});
+
 					var divScrollToAnchor = window.location.hash;
 					if (typeof divScrollToAnchor !== 'undefined' && divScrollToAnchor != '') {
 						var t = setTimeout(function() {
