@@ -123,7 +123,7 @@
 									<li><a href="https://medium.com/@FlashCoin" target="_blank"><i class="fab fa-medium"></i></a></li>
 									<li><a href="https://www.instagram.com/flashcoin.io/" target="_blank"><i class="fab fa-instagram"></i></a></li>
 									<li><a href="https://twitter.com/FlashCoins" target="_blank"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="https://plus.google.com/u/0/b/110236490072104998071/110236490072104998071" target="_blank"><i class="fab fa-google-plus"></i><span>Google+</span></a></li>
+									<li><a href="https://plus.google.com/u/0/b/110236490072104998071/110236490072104998071" target="_blank"><i class="fab fa-google-plus"></i></a></li>
 									<li><a href="https://github.com/flash-coin" target="_blank"><i class="fab fa-github"></i></a></li>
 									<li><a href="https://bitcointalk.org/index.php?topic=1605453.0" target="_blank"><i class="fab fa-bitcoin"></i></a></li>
 									<li><a href="https://www.reddit.com/r/FlashCoins/" target="_blank"><i class="fab fa-reddit"></i></a></li>
@@ -291,9 +291,21 @@
 							window.scrollTo(0, 0);
 						}
 					}, 1);
-					$('.homepage ul li a').click(function() {
-						$('.sub-menu, .sub-menu li').removeClass('sfHover');
-						$('.sub-menu ul').hide();
+					$('.homepage ul li a').click(function(e) {
+						$('.sub-menu, .sub-menu li, li.hide-this').removeClass('sfHover');
+						$('.sub-menu ul, li.hide-this').hide();
+						if ($(window).width() < 768) {
+							var dhref = $(this).attr('data-href');
+							if (dhref != undefined && dhref != '') {
+								var heightmm = $('#header-wrap').height()+15;
+								$('html, body').animate({
+										scrollTop: $(dhref).offset().top - heightmm
+								}, 2000);
+							}
+							if ($(this).attr('data-scrollto') != undefined) {
+								$('.sf-js-enabled').removeClass('d-block');
+							}
+						}
 					});
 					$('.subpage ul li a, .widget_links ul li a').click(function() {
 							var dhref = $(this).attr('data-href');
