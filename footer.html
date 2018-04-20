@@ -291,12 +291,12 @@
 							window.scrollTo(0, 0);
 						}
 					}, 1);
-					$('.homepage ul li a').click(function(e) {
+					$('.homepage .sub-menu ul li a').click(function(e) {
 						$('.sub-menu, .sub-menu li, li.hide-this').removeClass('sfHover');
 						$('.sub-menu ul, li.hide-this').hide();
 						if ($(window).width() < 768) {
 							var dhref = $(this).attr('data-href');
-							if (dhref != undefined && dhref != '') {
+							if (dhref != undefined && dhref != '' && $(dhref).length) {
 								var heightmm = $('#header-wrap').height()+15;
 								$('html, body').animate({
 										scrollTop: $(dhref).offset().top - heightmm
@@ -308,7 +308,7 @@
 						}
 					});
 					$('.subpage ul li a, .widget_links ul li a').click(function() {
-							var dhref = $(this).attr('data-href');
+						 var dhref = $(this).attr('data-href');
 							if ($('.subpage').length) {
 								if (dhref != undefined && dhref != '') {
 									window.location.href = 'index.html'+dhref;
@@ -316,7 +316,7 @@
 									window.location.href = 'index.html';
 								}
 						  }	else {
-								if (dhref != undefined && dhref != '') {
+								if (dhref != undefined && dhref != '' && $(dhref).length) {
 									$('html, body').animate({
 							        scrollTop: $(dhref).offset().top - 100
 							    }, 2000);
@@ -325,13 +325,21 @@
 					});
 
 					var divScrollToAnchor = window.location.hash;
-					if (typeof divScrollToAnchor !== 'undefined' && divScrollToAnchor != '') {
+					if (typeof divScrollToAnchor !== 'undefined' && divScrollToAnchor != '' && $(divScrollToAnchor).length) {
 						var t = setTimeout(function() {
 							$('html,body').stop(true).animate({
 								'scrollTop': $(divScrollToAnchor).offset().top - 100
 							}, 700, 'easeOutQuad');
 						}, 1000);
 					}
+
+
+					$('.subpage .sub-menu').click(function() {
+						if ($(this).parent('sub-menu').hasClass('sfHover') || $(this).hasClass('sfHover')) {
+							$('.sub-menu, .sub-menu li, li.hide-this').removeClass('sfHover');
+							$('.sub-menu ul, li.hide-this').hide();
+						}
+					});
 				});
 				//
 				// jQuery(window).on('load', function() {
@@ -340,8 +348,11 @@
 
 				//Browser anchorlink back forward
 				$(window).on('hashchange', function() {
-					var top = $(window.location.hash).offset().top;
-					$(window).scrollTop(top);
+					var ahash = window.location.hash;
+					if (window.location.hash != '' && window.location.hash != undefined && $(ahash).length) {
+						var top = $(window.location.hash).offset().top;
+						$(window).scrollTop(top);
+					}
 				});
 
 			</script>
