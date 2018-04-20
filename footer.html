@@ -208,6 +208,8 @@
 						} else {
 							$("#logo").hide();
 						}
+					} else {
+						$('.hide-this').css('display', 'block');
 					}
 				});
 
@@ -227,7 +229,7 @@
 							if ($(window).width() < 768) {
 								$("#logo").css('display','block');
 							} else {
-								$("#logo").hide();
+								$("#logo, .hide-this").hide();
 							}
 						}
 						$('#header').removeClass('responsive-sticky-header').addClass('static-sticky');
