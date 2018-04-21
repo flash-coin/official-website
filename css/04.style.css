@@ -13574,3 +13574,25 @@ body:not(.no-transition) #wrapper,
 	-webkit-text-stroke: 0px !important;
 	text-shadow: none !important;
 }
+
+/*zluck custom css*/
+.vjs-poster
+{
+	background-color: white;
+	opacity: 0.1;
+}
+/*.vjs-big-play-button
+{
+	position: unset !important;
+	display: none;
+}*/
+.video-border
+{
+	border:1px solid #fff;
+}
+@media (max-width: 768px) {
+  .video-border
+	{
+		border:2px solid #fff;
+	}
+}
