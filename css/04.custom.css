@@ -412,3 +412,11 @@ animation: spin 10s linear infinite;
     font-size: 4.6vw;
   }
 }
+.community-leaders img
+{
+width: 80%;
+}
+.community-volunteers img
+{
+width: 90%;
+}
