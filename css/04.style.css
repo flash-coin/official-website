@@ -13598,4 +13598,21 @@ body:not(.no-transition) #wrapper,
 	{
 		border:2px solid #fff;
 	}
+	marquee a
+	{
+	   font-size: 16px !important;
+	}
+	marquee img
+	{
+	   width: 45px !important;
+	}
+}
+/*date:14-5-2018*/
+marquee a
+{
+   font-size: 22px;
+}
+marquee img
+{
+   width: 60px;
 }
