@@ -271,11 +271,6 @@ a.button.button-rounded.button-reveal.button-large.button-yellow.button-light.tr
 }
 
 /*date:10-4-2018*/
-
-.team-advisors img {
-  width: 80%;
-}
-
 .partners img {
   border-radius: unset;
   margin: auto;
@@ -411,4 +406,25 @@ animation: spin 10s linear infinite;
   #flash-snapshot h2{
     font-size: 4.6vw;
   }
+}
+.volunteers-title h4
+{
+  font-size: 18px;
+}
+/*date:12-5-18*/
+@media (min-width: 575px) {
+.community-leader
+  {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .team-advisors img {
+  width: 80%;
+  }
+}
+.team-title span
+{
+  padding: 3px;
 }

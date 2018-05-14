@@ -93,7 +93,10 @@
 /* ----------------------------------------------------------------
 	Bootstrap Adjustments
 -----------------------------------------------------------------*/
-
+@font-face {
+    font-family: "futura-medium-bt";
+    src: url(fonts/futura-medium-bt.ttf) format("truetype");
+}
 @media (min-width: 576px) {
 	.container { max-width: 540px; }
 }
@@ -164,7 +167,7 @@ dl, dt, dd, ol, ul, li {
 body {
 	line-height: 1.5;
 	color: #555;
-	font-family: 'Nunito Sans1', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 }
 
 a {
@@ -196,7 +199,7 @@ h6 {
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 30px 0;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 }
 
 h5,
@@ -238,7 +241,7 @@ table,
 fieldset,
 form { margin-bottom: 30px; }
 
-small { font-family: 'Nunito Sans1', sans-serif; }
+small { font-family: 'futura-medium-bt', sans-serif; }
 
 
 /* ----------------------------------------------------------------
@@ -442,11 +445,11 @@ span.middot {
 
 .nolineheight { line-height: 0 !important; }
 
-.font-body { font-family: 'Nunito Sans1', sans-serif; }
+.font-body { font-family: 'futura-medium-bt', sans-serif; }
 
-.font-primary { font-family: 'Nunito Sans', sans-serif; }
+.font-primary { font-family: 'futura-medium-bt', sans-serif; }
 
-.font-secondary { font-family: 'Crete Round', serif; }
+.font-secondary { font-family: 'futura-medium-bt', serif; }
 
 .bgicon {
 	display: block;
@@ -1035,7 +1038,7 @@ body.stretched #header.full-header .container {
 #logo {
 	position: relative;
 	float: left;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 	font-size: 36px;
 	line-height: 100%;
 	margin-right: 40px;
@@ -1165,7 +1168,7 @@ body.stretched #header.full-header .container {
 	font-size: 13px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 	-webkit-transition: margin .4s ease, padding .4s ease;
 	-o-transition: margin .4s ease, padding .4s ease;
 	transition: margin .4s ease, padding .4s ease;
@@ -1240,7 +1243,7 @@ body.no-superfish #primary-menu li:hover > .mega-menu-content { display: block; 
 	padding-bottom: 10px;
 	border: 0;
 	letter-spacing: 0;
-	font-family: 'Nunito Sans1', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 	-webkit-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
@@ -1333,7 +1336,7 @@ body.stretched #header.full-header #primary-menu ul li.mega-menu .mega-menu-cont
 #primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a {
 	font-size: 13px;
 	font-weight: bold;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 	letter-spacing: 1px;
 	text-transform: uppercase !important;
 	margin-bottom: 15px;
@@ -1797,7 +1800,7 @@ body.top-search-open #top-search form {
 	color: #333;
 	font-weight: 700;
 	margin-top: 0 !important;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 	letter-spacing: 2px;
 }
 
@@ -1995,7 +1998,7 @@ body:not(.device-md):not(.device-sm):not(.device-xs) #header.transparent-header:
 #top-account .dropdown-menu { padding: 10px 0; }
 
 #top-account .dropdown-menu li a {
-	font-family: 'Nunito Sans1', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 	font-weight: 400;
 	text-align: left;
 	line-height: 22px;
@@ -4903,7 +4906,7 @@ body.device-touch.device-xs .portfolio-notitle .portfolio-overlay { display: non
 	line-height: 14px;
 	margin: 0 10px 15px 0;
 	color: #999;
-	font-family: 'Crete Round', serif;
+	font-family: 'futura-medium-bt', serif;
 	font-style: italic;
 }
 
@@ -4950,7 +4953,7 @@ body.device-touch.device-xs .portfolio-notitle .portfolio-overlay { display: non
 	padding: 30px 0;
 	text-align: center;
 	color: #444;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 24px;
@@ -4973,7 +4976,7 @@ body:not(.device-touch) .entry-link {
 .entry-link span {
 	display: block;
 	margin-top: 5px;
-	font-family: 'Crete Round', serif;
+	font-family: 'futura-medium-bt', serif;
 	font-style: italic;
 	font-weight: normal;
 	text-transform: none;
@@ -4986,7 +4989,7 @@ body:not(.device-touch) .entry-link {
 
 .entry blockquote p {
 	font-weight: 400;
-	font-family: 'Crete Round', serif;
+	font-family: 'futura-medium-bt', serif;
 	font-style: italic;
 }
 
@@ -5188,7 +5191,7 @@ body:not(.device-touch) .entry-link {
 	font-weight: bold;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 }
 
 .post-timeline .entry-timeline {
@@ -5325,7 +5328,7 @@ body:not(.device-touch) .entry-link {
 	display: inline-block;
 	border-bottom: 1px solid #E0AE27;
 	padding: 0 2px;
-	font-family: 'Crete Round', serif;
+	font-family: 'futura-medium-bt', serif;
 	font-style: italic;
 }
 
@@ -5595,7 +5598,7 @@ body:not(.device-touch) .entry-link {
 .comment-content .comment-author span a {
 	font-size: 12px;
 	font-weight: normal;
-	font-family: 'Crete Round', serif;
+	font-family: 'futura-medium-bt', serif;
 	font-style: italic;
 	color: #AAA;
 }
@@ -5708,7 +5711,7 @@ div.alignright {
 .wp-caption {
 	text-align: center;
 	margin: 10px 20px 13px 20px;
-	font-family: 'Nunito Sans1', Georgia, "Times New Roman", Times, serif;
+	font-family: 'futura-medium-bt', Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
 }
 
@@ -6618,7 +6621,7 @@ body:not(.device-touch) .button {
 	font-size: 22px;
 	height: auto;
 	line-height: 1;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 }
 
 .button.button-desc span {
@@ -6627,7 +6630,7 @@ body:not(.device-touch) .button {
 	font-size: 14px;
 	font-weight: 400;
 	letter-spacing: 1px;
-	font-family: 'Crete Round', serif;
+	font-family: 'futura-medium-bt', serif;
 	font-style: italic;
 	text-transform: none;
 }
@@ -7801,7 +7804,7 @@ body:not(.device-touch) .button.button-full strong {
 
 .feature-box.fbox-center.fbox-italic p {
 	font-style: italic;
-	font-family: 'Nunito Sans1', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 }
 
 
@@ -9219,7 +9222,7 @@ ul.tab-nav-lg li {
 ul.tab-nav-lg li a {
 	display: inline-block;
 	color: #444;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 	font-size: 13px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -9636,7 +9639,7 @@ body:not(.device-touch) .clients-grid li a {
 
 .testi-content p {
 	margin-bottom: 0;
-	font-family: 'Crete Round', serif;
+	font-family: 'futura-medium-bt', serif;
 	font-style: italic;
 }
 
@@ -9826,7 +9829,7 @@ body:not(.device-touch) .clients-grid li a {
 	display: block;
 	color: #E0AE27;
 	font-weight: 400;
-	font-family: 'Crete Round', serif;
+	font-family: 'futura-medium-bt', serif;
 	font-style: italic;
 	font-size: 15px;
 	margin-top: 5px;
@@ -10178,7 +10181,7 @@ body:not(.device-touch) .team-overlay {
 .counter {
 	font-size: 42px;
 	font-weight: 600;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 }
 
 .counter.counter-small { font-size: 28px; }
@@ -10308,7 +10311,7 @@ body:not(.device-touch) .rounded-skill {
 
 .skills li .progress-percent .counter {
 	font-weight: 400;
-	font-family: 'Nunito Sans1', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 }
 
 .progress-percent:after, .progress-percent:before {
@@ -10388,7 +10391,7 @@ blockquote.float-right {
 .quote p { position: relative; }
 
 .quote:before {
-	font-family: 'font-icons';
+	font-family: 'futura-medium-bt';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -10933,7 +10936,7 @@ label {
 	display: inline-block;
 	font-size: 13px;
 	font-weight: 700;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #555;
@@ -11313,7 +11316,7 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 	display: block;
 	margin: 0 0 5px;
 	font-size: 16px;
-	font-family: 'Crete Round', serif;
+	font-family: 'futura-medium-bt', serif;
 	font-style: italic;
 	font-weight: 400;
 	color: #999;
@@ -12267,7 +12270,7 @@ body:not(.device-touch) .tagcloud a {
 .widget-filter-links li a {
 	display: block;
 	color: #444;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 	font-weight: 500;
 }
 
@@ -12323,7 +12326,7 @@ body:not(.device-touch) .tagcloud a {
 	font-size: 13px;
 	font-weight: 700;
 	letter-spacing: 2px;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 }
 
 .nav-tree li i {
@@ -12356,7 +12359,7 @@ body:not(.device-touch) .tagcloud a {
 	font-size: 12px;
 	padding: 6px 0;
 	letter-spacing: 1px;
-	font-family: 'Nunito Sans1', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 }
 
 .nav-tree ul ul a i.icon-angle-down { font-size: 12px; }
@@ -12387,7 +12390,7 @@ body:not(.device-touch) .tagcloud a {
 	font-weight: bold;
 	text-align: right;
 	text-transform: uppercase;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'futura-medium-bt', sans-serif;
 	letter-spacing: 2px;
 }
 
@@ -12403,14 +12406,14 @@ body:not(.device-touch) .tagcloud a {
 	font-size: 56px;
 	font-weight: 400;
 	font-style: italic;
-	font-family: 'Crete Round', serif;
+	font-family: 'futura-medium-bt', serif;
 	text-transform: none;
 }
 
 .wedding-head .and {
 	margin: 0;
 	font-size: 200px;
-	font-family: 'Times New Roman', serif;
+	font-family: 'futura-medium-bt', serif;
 }
 
 
@@ -13595,4 +13598,21 @@ body:not(.no-transition) #wrapper,
 	{
 		border:2px solid #fff;
 	}
+	marquee a
+	{
+	   font-size: 16px !important;
+	}
+	marquee img
+	{
+	   width: 45px !important;
+	}
+}
+/*date:14-5-2018*/
+marquee a
+{
+   font-size: 22px;
+}
+marquee img
+{
+   width: 60px;
 }
