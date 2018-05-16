@@ -13,7 +13,15 @@
 #about {
   background: url('../images/_newsite/bg_section-about.jpg') scroll no-repeat top/cover;
   padding-top: 80px;
-  min-height: 700px;
+  min-height: 800px;
+}
+
+#about .topmargin-lg {
+  padding-top: 15px;
+}
+
+.whitepaper img {
+  width: 250px;
 }
 
 #wallet {
@@ -208,7 +216,7 @@ a.button.button-rounded.button-reveal.button-large.button-yellow.button-light.tr
 }
 
 #slider .col-lg-5 {
-  padding-left: 60px;
+  padding-left: 95px;
 }
 
 .zl-tweet-area p {
