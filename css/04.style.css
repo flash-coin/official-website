@@ -9507,7 +9507,7 @@ ul.tab-nav li a i {
 .testimonials-grid li {
 	float: left;
 	position: relative;
-	width: 20%;
+	width: 33.33%;
 	padding: 20px 0;
 	-webkit-backface-visibility: hidden;
 }
