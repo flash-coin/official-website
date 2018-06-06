@@ -13616,3 +13616,9 @@ marquee img
 {
    width: 60px;
 }
+
+/* added on 6-6-2018*/
+.exchanges-border:after
+{
+    border-bottom: none !important;
+}
