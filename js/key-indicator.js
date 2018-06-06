@@ -12,11 +12,11 @@
             var market_price_btc = 'Market Price: ' + btc_price_sat.toFixed(0) + ' sat [~' + price_usd.toFixed(4) +' usd]';
             $('#market_price').val(market_price_btc);
             $('#current_rate').val('Rank: '+data[0].rank);
-            var market_price_percent_sign = data[0].percent_change_1h > 0 ? '+':'';
-            var market_price_percent_str = '(' + market_price_percent_sign + data[0].percent_change_1h + '%)';
+            var market_price_percent_sign = data[0].percent_change_24h > 0 ? '+':'';
+            var market_price_percent_str = '(' + market_price_percent_sign + data[0].percent_change_24h + '%)';
             $('#market_price_percentage').val(market_price_percent_str);
 
-            var market_price_percent = data[0].percent_change_1h;
+            var market_price_percent = data[0].percent_change_24h;
             if (market_price_percent > 0) {
               $('#market_price_percentage').css('color','green');
             }
