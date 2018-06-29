@@ -305,13 +305,13 @@ a.button.button-rounded.button-reveal.button-large.button-yellow.button-light.tr
 {
   padding: 0em 0em 2em 0em;
 }
-.play-store-btn
+.play-store-btn, .app-store-btn
 {
   background-color: unset !important;
   display: block;
   padding-left: 60px;
 }
-.play-store-btn:hover
+.play-store-btn:hover, .app-store-btn:hover
 {
   background-color: unset !important;
 }
