@@ -39,6 +39,19 @@
 						$('#header-wrap').load('header.html');
 					$('#footer-comman').load('footer.html');
 			});
+
+			function hover(element) {
+				var img = $(element).attr('data-imgname');
+				img = img+'Hover.png';
+			  element.setAttribute('src', 'images/_newsite/update/'+img);
+			}
+
+			function unhover(element) {
+				var img = $(element).attr('data-imgname');
+				img = img+'.png';
+			  element.setAttribute('src', 'images/_newsite/update/'+img);
+			}
+
 			</script>
 	</head>
 
@@ -62,50 +75,73 @@
 			<section id="slider" class="full-screen slider-element clearfix">
 
 				<div class="vertical-middle ignore-header clearfix" style="z-index: 2;">
-					<div class="container">
+					<div class="">
 						<div class="row clearfix">
-							<div class="col-lg-7 textcenter-sm">
+							<div class="col-lg-4 text-center" >
 								<img class="bottommargin-sm" src="images/logo@2x.png" style="width:180px;" />
-								<h3 class="t300" style="font-size: 18px;">CONNECTING THE WORLD IN A FLASH<br />#GOFASTER</h3>
-								<a href="#" data-scrollto="#about" class="button button-rounded button-reveal button-large button-yellow button-light tright"><i class="icon-line-arrow-down"></i><span>Get Started</span></a>
+								<div class="bottommargin-sm">
+									<a><img src="images/_newsite/update/GetStartedButton.png" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="GetStartedButton" style="width:18%"></a>
+								</div>
+								<div class="bottommargin-sm">
+									<a><img src="images/_newsite/update/WhitePaperButton.png" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="WhitePaperButton" style="width:18%"></a>
+								</div>
 							</div>
-							<div class="col-lg-5" id="data-pulled">
-								<div class="fancy-title title-border">
-									<h2>Key <span>Performance</span> Indicators</h2>
-								</div>
-
+							<div class="col-lg-8 text-center" id="data-pulled">
 								<!--DATA PULLED-->
-								<form>
-									<input class="form-control" type="text" id="AddressesBalance" placeholder="Addresses with Balance" value="Addresses with Balance" readonly="readonly">
-									<input class="form-control" type="text" id="total_web_wallet" placeholder="Total Web-Wallet Signups" value="Total Web-wallet Signups" readonly="readonly">
-
-									<h4 class="transaction24h">Transactions 24h</h4>
-
-									<input class="form-control" type="text" id="TotalTxs" placeholder="Total Transactions" value="Total Txs" readonly="readonly">
-									<input class="form-control" type="text" id="total_txns_24h" placeholder="Total 24h" value="Total Txs 24h" readonly="readonly">
-									<input class="form-control" type="text" id="ave_txn_time" placeholder="Ave Txn Time" value="Ave Txn Time" readonly="readonly">
-
-
-									<h4>Circulating Supply:  900 million</h4>
-
-									<input class="form-control" type="text" id="TotalBlocks" placeholder="Total Blocks" value="Total Blocks" readonly="readonly">
-									<input class="form-control" type="text" id="current_rate" placeholder="Rank" value="Rank" readonly="readonly">
-									<input class="form-control" type="text" id="market_price" placeholder="Market Price" value="Market Price" readonly="readonly">
-									<input class="form-control" style="color:red;" id="market_price_percentage" type="text" placeholder="" value="Market Price (%)" readonly="readonly">
-								</form>
-								<div class="whitepaper">
-									<a href="docs/FLASHWhitepaper.pdf" target="_blank"><img src="images/NewFlashWhitePaper2018.png"></a>
+								<div class="whitepaper bottommargin-sm">
+									<a href=""><img src="images/_newsite/update/WebWalletButton1.png" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="WebWalletButton1"></a>
 								</div>
+								<div class="whitepaper bottommargin-sm">
+									<a href=""><img src="images/_newsite/update/DiscordButton.png" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="DiscordButton" ></a>
+									<a href=""><img src="images/_newsite/update/TelegramButton.png" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="TelegramButton" ></a>
+								</div>
+								<div class="whitepaper bottommargin-sm text-center" style="width:50%; margin-left:25%; background-color:#000; opacity:0.3">
+									<div class="clearfix" style="border:1px solid; padding:10px;">
+											<h2 style="opacity:1">Flash Latest News </h2>
+											<h4> FLASHcon 2018 will be in Vancouver, BC Canada on June 29th and 30th! Email </h4>
+										</div>
+								</div>
+								<form class="text-center">
+									<input class="form-control text-center" type="text" id="AddressesBalance" placeholder="Addresses with Balance" value="Addresses with Balance" readonly="readonly">
+									<input class="form-control text-center" type="text" id="total_web_wallet" placeholder="Total Web-Wallet Signups" value="Total Web-wallet Signups" readonly="readonly">
+
+									<h4 class="transaction24h color-gold">Transactions 24h</h4>
+
+									<input class="form-control text-center" type="text" id="TotalTxs" placeholder="Total Transactions" value="Total Txs" readonly="readonly">
+									<input class="form-control text-center" type="text" id="total_txns_24h" placeholder="Total 24h" value="Total Txs 24h" readonly="readonly">
+									<input class="form-control text-center" type="text" id="ave_txn_time" placeholder="Ave Txn Time" value="Ave Txn Time" readonly="readonly">
+
+									<h4 class="color-gold">Circulating Supply:  900 million</h4>
+
+									<input class="form-control text-center" type="text" id="TotalBlocks" placeholder="Total Blocks" value="Total Blocks" readonly="readonly">
+									<input class="form-control text-center" type="text" id="current_rate" placeholder="Rank" value="Rank" readonly="readonly">
+									<input class="form-control text-center" type="text" id="market_price" placeholder="Market Price" value="Market Price" readonly="readonly">
+									<input class="form-control text-center" style="color:red;" id="market_price_percentage" type="text" placeholder="" value="Market Price (%)" readonly="readonly">
+								</form>
 							</div>
 						</div>
 					</div>
-					<marquee onmouseover="this.stop()"
-                   onmouseout="this.start()" scrollamount="10" direction="left" class="style41" style="padding-bottom:15px"><a href=" https://www.thenewswire.com/archives/A8vFpmoK-announcing-flashcon-2018-a-flash-community-event-with-lead-sponsor-binary-financial.html"  target="_blank"><b> FLASHcon 2018 will be in Vancouver, BC Canada on June 29th and 30th! Email patty@flashcoin.io to RSVP or for more information</b></a>
-                   </marquee>
-                   <div class="text-center">
-                   	<a href="docs/FLASHCON_2018_Schedule_of_Events.pdf" target="_blank" class="button button-border button-rounded button-light button-large">FLASHcon Schedule</a>
-                   </div>
+
 			</section>
+
+			<!-- <form>
+				<input class="form-control" type="text" id="AddressesBalance" placeholder="Addresses with Balance" value="Addresses with Balance" readonly="readonly">
+				<input class="form-control" type="text" id="total_web_wallet" placeholder="Total Web-Wallet Signups" value="Total Web-wallet Signups" readonly="readonly">
+
+				<h4 class="transaction24h">Transactions 24h</h4>
+
+				<input class="form-control" type="text" id="TotalTxs" placeholder="Total Transactions" value="Total Txs" readonly="readonly">
+				<input class="form-control" type="text" id="total_txns_24h" placeholder="Total 24h" value="Total Txs 24h" readonly="readonly">
+				<input class="form-control" type="text" id="ave_txn_time" placeholder="Ave Txn Time" value="Ave Txn Time" readonly="readonly">
+
+
+				<h4>Circulating Supply:  900 million</h4>
+
+				<input class="form-control" type="text" id="TotalBlocks" placeholder="Total Blocks" value="Total Blocks" readonly="readonly">
+				<input class="form-control" type="text" id="current_rate" placeholder="Rank" value="Rank" readonly="readonly">
+				<input class="form-control" type="text" id="market_price" placeholder="Market Price" value="Market Price" readonly="readonly">
+				<input class="form-control" style="color:red;" id="market_price_percentage" type="text" placeholder="" value="Market Price (%)" readonly="readonly">
+			</form> -->
 			<!-- #slider end -->
 
 			<!-- Content
@@ -117,10 +153,19 @@
 					<!-- About
 				============================================= -->
 					<div id="about" class="page-section">
-						<div class="container clearfix">
-							<div class="row">
-								<div class="col-sm-4 col-xs-12">
-									<div class="topmargin-lg">
+						<div class="">
+							<div class="row clearfix">
+								<div class="col-lg-4 text-center">
+									<div class="topmargin-lg text-center">
+									<h2>Whitepaper</h2>
+
+									<div><a href="docs/FLASHWhitepaper.pdf" target="_blank" class="button button-border button-rounded button-light button-large">English</a></div>
+									<!--<a href="docs/FLASHWhitepaper.pdf" target="_blank"><img src="images/NewFlashWhitePaper2018.png"></a>-->
+									<div><a href="docs/FLASHWhitepaper-Espanol.pdf" target="_blank" class="button button-border button-rounded button-light button-large">Español</a></div>
+								</div>
+								</div>
+								<div class="col-lg-7">
+									<div class="topmargin-lg text-center">
 										<h2>What is FLASH?</h2>
 										<p>FLASH is not money, it’s a much bigger idea than money. It’s a community supported blockchain designed for small and fast transactions. People can send and receive FLASH and use it for just about anything, limited only by their imaginations.There
 											are only 900m coins and they were all distributed to the community.</p>
@@ -129,13 +174,7 @@
 										<a href="#" data-scrollto="#flash-advantage" class="button button-rounded button-reveal button-large button-yellow button-light tright"><i class="icon-line-arrow-down"></i><span>The FLASH Advantage</spahttp://localhost/flashcoinweb_new_back/n></a>
 									</div>
 								</div>
-								<div class="col-sm-4 col-xs-12 ml-auto topmargin-lg whitepaper">
-									<h2>Whitepaper</h2>
 
-									<a href="docs/FLASHWhitepaper.pdf" target="_blank" class="button button-border button-rounded button-light button-large">English</a>
-									<!--<a href="docs/FLASHWhitepaper.pdf" target="_blank"><img src="images/NewFlashWhitePaper2018.png"></a>-->
-									<a href="docs/FLASHWhitepaper-Espanol.pdf" target="_blank" class="button button-border button-rounded button-light button-large">Español</a>
-								</div>
 							</div>
 							<!-- .row end -->
 						</div>
