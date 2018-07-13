@@ -6,12 +6,12 @@
 -----------------------------------------------------------------*/
 
 #slider {
-  background: url('../images/_newsite/update/WebsiteBackground.png') no-repeat center right;
+  background: url('../images/_newsite/web_img/WebsiteBackground.png?123') no-repeat center right;
   background-size: cover;
 }
 
 #about {
-  background: url('../images/_newsite/update/ActualAboutPage.png') no-repeat top;
+  background: url('../images/_newsite/web_img/ActualAboutPage.png?123') no-repeat top;
   padding-top: 80px;
   background-size: cover;
   min-height: 100vh;
