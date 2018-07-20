@@ -34,11 +34,52 @@
 		<title>Flashcoin | Home</title>
 		<script src="js/jquery.js"></script>
 		<script>
+			$(document).ready(function(){
+				var slider = true;
+				var about = true;
+				$("#slider").bind('mousewheel DOMMouseScroll', function(event){
+					about = true;
+					var direction = scroolDirection(event);
+					if (direction === 'down' && slider == true) {
+						slider = false;
+						$('.get-started-btn').trigger('click');
+					}
+				});
+				$("#about").bind('mousewheel DOMMouseScroll', function(event){
+					slider = true;
+					var direction = scroolDirection(event);
+					if (isInViewport($(this)) && direction === 'up' && about === true) {
+						about = false;
+						$('body,html').animate({
+								scrollTop: $("#slider").offset().top
+						}, 500);
+					}
+				});
+			});
 			$(function() {
 					$('#header-wrap').load('header.html');
 					$('#footer-comman').load('footer.html');
 			});
-
+			function isInViewport(ele) {
+				var elementTop = ele.offset().top;
+				var elementBottom = elementTop + ele.outerHeight();
+				var viewportTop = $(window).scrollTop();
+				var viewportBottom = viewportTop + $(window).height();
+				return elementBottom >= viewportBottom;
+			}
+			function scroolDirection(eve) {
+				eve = eve.originalEvent;
+				if ( eve.wheelDelta ) {
+						delta = eve.wheelDelta / 60;
+				} else if ( eve.detail ) {
+						delta = -eve.detail / 2;
+				}
+				direction = '';
+				if (delta && delta !== null ) {
+						direction = delta > 0 ? 'up' : 'down';
+				}
+				return direction;
+			}
 			function hover(element) {
 				var img = $(element).attr('data-imgname');
 				img = img+'Hover.png';
@@ -78,7 +119,7 @@
 							<div class="col-lg-4 text-center" >
 								<img class="bottommargin-sm flash-icon-main" src="images/_newsite/web_img/WebsiteActualLogo.png"/>
 								<div class="bottommargin-sm">
-									<a class="display-centrally" href="#" data-scrollto="#about"><img src="images/_newsite/web_img/GetStartedButton.png" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="GetStartedButton"></a>
+									<a class="display-centrally get-started-btn" href="#" data-scrollto="#about"><img src="images/_newsite/web_img/GetStartedButton.png" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="GetStartedButton"></a>
 									<a class="display-centrally" href="#" data-scrollto="#about"><img src="images/_newsite/web_img/WhitePaperButton.png" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="WhitePaperButton"></a>
 								</div>
 							</div>
