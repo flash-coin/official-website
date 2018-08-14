@@ -11,6 +11,9 @@
   padding-bottom: 45px !important;
   margin-bottom: 0px;
 }
+#slider .main-section-image {
+  margin-top: -15px;
+}
 #slider > div {
   min-height: 100vh;
 }
@@ -356,6 +359,9 @@ a.display-centrally img {
   }
 }
 @media (max-width: 991px) {
+  #slider .main-section-image {
+    margin-top: 0;
+  }
   #slider .bottom-section {
     bottom:0%
   }
@@ -435,15 +441,18 @@ a.display-centrally img {
 }
 @media (max-width: 420px) {
   #about .inner-section {
-    padding: 46px;
-    height: 301px;
-    width: 301px;
+    padding: 30px;
+    height: 265px;
+    width: 265px;
+  }
+  #about .inner-section h2 {
+    font-size: 21px;
   }
   #about .inner-section h4 {
-    font-size: 11px;
+    font-size: 10px;
   }
   #about .inner-section.second-child h4, #about .inner-section.last-child h4 {
-    font-size: 13px;
+    font-size: 12px;
   }
   #wallet .col-lg-3 {
     border-left: 0;
@@ -463,6 +472,9 @@ a.display-centrally img {
   }
   .primary-menu ul li.hide-this, #logo.hide-this {
     display: block !important;
+  }
+  .flash-latest-news h3 {
+    font-size: 15px;
   }
 }
 
@@ -598,11 +610,7 @@ animation: spin 10s linear infinite;
 .embed-responsive-4by3::before {
   padding-top: 0 !important;
 }
-@media (max-width: 332px) {
-  .whitepaper img {
-    width: 100px !important;
-  }
-}
+
 @media (max-width: 550px) {
   .whitepaper img {
     width: 140px;
