@@ -380,6 +380,14 @@ a.display-centrally img {
     width: 180px !important;
   }
 }
+@media(min-width: 991px) {
+  .sticky-header #logo {
+    padding-left: 20px;
+  }
+  .sticky-header #primary-menu li {
+    padding: 12px 0 !important;
+  }
+}
 @media (min-width: 991px) and (max-width: 1199px) {
   #primary-menu ul li > a {
     padding: 15px 9px;
