@@ -1254,7 +1254,7 @@ body.no-superfish #primary-menu li:hover > .mega-menu-content { display: block; 
 
 #primary-menu ul ul li:hover > a {
 	background-color: #F9F9F9;
-	padding-left: 18px;
+	padding-left: 14px;
 	color: #E0AE27;
 }
 
