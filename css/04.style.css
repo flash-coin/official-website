@@ -111,7 +111,7 @@
 
 @media (min-width: 1200px) {
 	.container { max-width: 1170px; }
-  .about-flash-section .container { max-width: 1400px; }
+  .about-flash-section .container , .kpi-section .container { max-width: 1400px; }
 }
 
 
