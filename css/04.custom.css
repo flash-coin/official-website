@@ -106,12 +106,12 @@
 }
 
 #wallet {
-  background: url('../images/_newsite/WalletBackground.png') scroll no-repeat bottom/cover;
+  background: url('../images/_newsite/wallet-sec-bg.png') scroll no-repeat bottom/cover;
   min-height: 700px;
 }
 
 #whitepaper {
-  background: url('../images/_newsite/ResourceBackground.png') no-repeat center top;
+  background: url('../images/_newsite/resource-sec-bg.png') no-repeat center top;
   background-size: cover;
 }
 
