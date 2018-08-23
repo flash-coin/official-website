@@ -106,12 +106,12 @@
 }
 
 #wallet {
-  background: url('../images/_newsite/bg_section-wallet.jpg') scroll no-repeat bottom/cover;
-  min-height: 900px;
+  background: url('../images/_newsite/WalletBackground.png') scroll no-repeat bottom/cover;
+  min-height: 700px;
 }
 
 #whitepaper {
-  background: url('../images/_newsite/bg_hero.jpg') no-repeat center right;
+  background: url('../images/_newsite/ResourceBackground.png') no-repeat center top;
   background-size: cover;
 }
 
@@ -132,7 +132,10 @@
 #wallet .col-lg-3 {
   border-left: 1px solid white;
 }
-body { font-size: 1rem; }
+body {
+  font-size: 1rem;
+  background-color: #0A0A0A !important;
+}
 
 .svg-inline--fa {
   width: .775em !important;
@@ -284,7 +287,7 @@ a.button.button-rounded.button-reveal.button-large.button-yellow.button-light.tr
 }
 
 .fancy-title.title-border.title-center h1 span, .fancy-title.title-border.title-center h2 span, .dark .fancy-title h1, .dark .fancy-title h2, .dark .fancy-title h3, .dark .fancy-title h4, .dark .fancy-title h5, .dark .fancy-title h6 {
-  background: #000 !important;
+  background: #0A0A0A !important;
 }
 
 .fancy-title {
