@@ -215,7 +215,7 @@
 
 	#header.dark.transparent-header,
 	#header.dark.semi-transparent {
-		background-color: #000;
+		background-color: #0A0A0A;
 		border-bottom: 1px solid rgba(0,0,0,0.1);
 	}
 
