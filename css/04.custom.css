@@ -300,11 +300,20 @@ a.button.button-rounded.button-reveal.button-large.button-yellow.button-light.tr
 
 /* FAQs Page */
 @media(min-width: 991px) {
-  .faqspage.subpage {
+  .faqs-page #content {
+    top: -100px;
+  }
+  .faqspage #logo {
     display: none !important;
   }
-  .faqspage.subpage.sticky-header {
-    display: block !important;
+  .faqspage.subpage.sticky-header #logo {
+    display: inline !important;
+  }
+  .faqspage.subpage , .faqspage.subpage #header-wrap {
+    background-color: transparent !important;
+  }
+  .faqspage.subpage.sticky-header , .faqspage.subpage.sticky-header #header-wrap{
+    background-color: #0A0A0A !important;
   }
   .faqs-title h3 {
     font-size: 21px;
@@ -474,7 +483,8 @@ a.display-centrally img {
       float: none;
       top: 25px;
       margin-left: 63px;
-      background: rgba(0, 0, 0, 0.5);
+      background-color: #0A0A0A;
+      min-width: 200px;
   }
   #logo { display: none !important; }
   .main-section-image , .webmainpart {
@@ -733,6 +743,7 @@ animation: spin 10s linear infinite;
   }
   .download-link {
     word-wrap: break-word;
+    font-size: 14px;
   }
   a.display-centrally img {
     width: 18%;
