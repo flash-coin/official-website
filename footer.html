@@ -124,11 +124,13 @@
 									<li><a href="https://medium.com/@FlashCoin" target="_blank"><i class="fab fa-medium"></i></a></li>
 									<li><a href="https://www.instagram.com/flashcoin.io/" target="_blank"><i class="fab fa-instagram"></i></a></li>
 									<li><a href="https://twitter.com/FlashCoins" target="_blank"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="https://www.youtube.com/channel/UCMOYSMroaTrgCNslbaQ6Urw" target="_blank"><i class="fab fa-youtube"></i></a></li>
 									<li><a href="https://plus.google.com/u/0/b/110236490072104998071/110236490072104998071" target="_blank"><i class="fab fa-google-plus"></i></a></li>
 									<li><a href="https://github.com/flash-coin" target="_blank"><i class="fab fa-github"></i></a></li>
 									<li><a href="https://bitcointalk.org/index.php?topic=1605453.0" target="_blank"><i class="fab fa-bitcoin"></i></a></li>
 									<li><a href="https://www.reddit.com/r/FlashCoins/" target="_blank"><i class="fab fa-reddit"></i></a></li>
-									<li><a href="https://steemit.com/@flash.coin" target="_blank"><i class="fas fa-stop"></i></a></li>
+									<li><a href="https://steemit.com/@flash.coin" target="_blank"><i class="fas fa-comments"></i></a></li>
+									<li><a href="https://blog.flashcoin.io/" target="_blank"><i class="fa fa-rss-square"></i></a></li>
 								</ul>
 							</div>
 
@@ -145,52 +147,14 @@
 			<!-- #footer end -->
 			<!-- #wrapper end -->
 			<div class="get-web-wallet-btn">
-				<a href="https://wallet.flashcoin.io/" target="_blank" class="button button-3d topmargin-sm">Get a web wallet here</a>
+				<!-- <a href="https://wallet.flashcoin.io/" target="_blank" class="button button-3d topmargin-sm">Get a web wallet here</a> -->
+				<a href="https://wallet.flashcoin.io/" target="_blank" class="topmargin-sm"><img src="images/_newsite/web_img/img-GetWebWalletButton.png"></a>
 			</div>
-				<div id="gotoTop" class="icon-angle-up"></div>
+			<div id="gotoTop" class="" style="background-color:transparent !important"><img src="images/_newsite/web_img/UpButton.png"></div>
 			<!-- #wrapper end -->
 
 			<!-- External JavaScripts
 			============================================= -->
-
-			<style>
-				/*@media (min-width: 992px) {
-					#header .button {
-						margin: 30px 10px;
-						-webkit-transition: all .4s ease;
-						-o-transition: all .4s ease;
-						transition: all .4s ease;
-					}
-
-					body.top-search-open #header .button {
-						opacity: 0;
-					}
-
-					#header.sticky-header:not(.static-sticky) .button {
-						margin-top: 10px;
-						margin-bottom: 10px;
-					}
-				}
-
-				@media (max-width: 991px) {
-					#header .button {
-						display: none;
-						margin: 10px 5px 20px;
-					}
-
-					#header .button.d-block {
-						display: inline-block !important;
-					}
-
-					#header.dark.transparent-header,
-					#header.dark.semi-transparent {
-						background-color: transparent;
-						min-height: auto !important;
-					}
-				}*/
-			</style>
-
-			<!-- <script src="js/aos.js"></script> -->
 			<script defer src="js/fontawesome5.0.8.all.js"></script>
 
 			<!-- Footer Scripts
@@ -200,7 +164,7 @@
 <script>
 				jQuery(document).ready(function() {
 
-					jQuery('#primary-menu-trigger').click(function() {
+					jQuery('#primary-menu-trigger').bind('click',function() {
 						jQuery('#header .button').toggleClass("d-block");
 					});
 					if ($('.homepage').length)  {
@@ -294,7 +258,7 @@
 							window.scrollTo(0, 0);
 						}
 					}, 1);
-					$('.homepage .sub-menu ul li a').click(function(e) {
+					$('.homepage .sub-menu ul li a').bind('click', function(e) {
 						$('.sub-menu, .sub-menu li, li.hide-this').removeClass('sfHover');
 						$('.sub-menu ul, li.hide-this').hide();
 						if ($(window).width() < 768) {
@@ -310,7 +274,7 @@
 							}
 						}
 					});
-					$('.subpage ul li a, .widget_links ul li a').click(function() {
+					$('.subpage ul li a, .widget_links ul li a').bind('click',function() {
 						 var dhref = $(this).attr('data-href');
 							if ($('.subpage').length) {
 								if (dhref != undefined && dhref != '') {
@@ -337,7 +301,7 @@
 					}
 
 
-					$('.subpage .sub-menu').click(function() {
+					$('.subpage .sub-menu').bind('click',function() {
 						if ($(this).parent('sub-menu').hasClass('sfHover') || $(this).hasClass('sfHover')) {
 							$('.sub-menu, .sub-menu li, li.hide-this').removeClass('sfHover');
 							$('.sub-menu ul, li.hide-this').hide();

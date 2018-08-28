@@ -9,14 +9,13 @@
         $.get('https://api.coinmarketcap.com/v1/ticker/flash/').then(function (data){
             var btc_price_sat = data[0].price_btc * 100000000;
             var price_usd = data[0].price_usd * 1;
-            var market_price_btc = 'Market Price: ' + btc_price_sat.toFixed(0) + ' sat [~' + price_usd.toFixed(4) +' usd]';
-            $('#market_price').val(market_price_btc);
-            $('#current_rate').val('Rank: '+data[0].rank);
-            var market_price_percent_sign = data[0].percent_change_1h > 0 ? '+':'';
-            var market_price_percent_str = '(' + market_price_percent_sign + data[0].percent_change_1h + '%)';
+            var market_price_btc = btc_price_sat.toFixed(0) + ' sat [~' + price_usd.toFixed(4) +' usd]';
+            $('#market_price').html(market_price_btc);
+            $('#current_rate').html(data[0].rank);
+            var market_price_percent_sign = data[0].percent_change_24h > 0 ? '+':'';
+            var market_price_percent_str = '(' + market_price_percent_sign + data[0].percent_change_24h + '%)';
             $('#market_price_percentage').val(market_price_percent_str);
-
-            var market_price_percent = data[0].percent_change_1h;
+            var market_price_percent = data[0].percent_change_24h;
             if (market_price_percent > 0) {
               $('#market_price_percentage').css('color','green');
             }
@@ -27,14 +26,14 @@
 
     function get_wallet_stats(){
         $.get('https://keys.flashcoin.io/api/wallet-stats').then(function(data) {
-            var total_signups = 'Total Web-wallet Signups: ' + data.stats.total_wallet_count.toFixed(0);
-            $('#total_web_wallet').val(total_signups);
+            var total_signups = data.stats.total_wallet_count.toFixed(0);
+            $('#total_web_wallet').html(total_signups);
         }, function(err) {
             console.log(err);
         });
         $.get('https://keys.flashcoin.io/api/transaction-stats').then(function(data) {
-            var ave_txn = 'Ave Txn Time: ' + data.stats.average_processing_duration.toFixed(2) + ' sec';
-            $('#ave_txn_time').val(ave_txn);
+            var ave_txn = data.stats.average_processing_duration.toFixed(2) + ' sec';
+            $('#ave_txn_time').html(ave_txn);
         }, function(err) {
             console.log(err);
         });
@@ -42,12 +41,12 @@
 
     function get_blockscan_stats(){
         $.get('https://blockinfo.flashcoin.io/api/report/block/general').then(function(data) {
-            var address_with_balance = 'Addresses with Balance: ' + data.TotalAddress.toFixed(0);
-            $('#AddressesBalance').val(address_with_balance);
-            var total_txns = 'Total Txs: ' + data.TotalTransaction.toFixed(0);
-            $('#TotalTxs').val(total_txns);
-            var total_blocks = 'Total Blocks: ' + data.TotalBlock.toFixed(0);
-            $('#TotalBlocks').val(total_blocks);
+            var address_with_balance = data.TotalAddress.toFixed(0);
+            $('#AddressesBalance').html(address_with_balance);
+            var total_txns = data.TotalTransaction.toFixed(0);
+            $('#TotalTxs').html(total_txns);
+            var total_blocks = data.TotalBlock.toFixed(0);
+            $('#TotalBlocks').html(total_blocks);
         }, function(err) {
             console.log(err);
         });
@@ -79,8 +78,8 @@
                 break;
               }
             }
-            var total_txns_24h = 'Total Txs 24h: ' + total_txns;
-            $('#total_txns_24h').val(total_txns_24h);
+            var total_txns_24h = total_txns;
+            $('#total_txns_24h').html(total_txns_24h);
         }, function(err) {
             console.log(err);
         });

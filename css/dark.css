@@ -21,7 +21,7 @@ body.dark,
 .dark .modal-content,
 .dark .css3-spinner,
 body.dark #side-panel,
-body #side-panel.dark { background-color: #000; }
+body #side-panel.dark { background-color: #0A0A0A; }
 
 .dark .css3-spinner > div,
 .dark .css3-spinner-grid-pulse > div,
@@ -93,7 +93,7 @@ body #side-panel.dark { background-color: #000; }
 #header.dark.transparent-header.floating-header .container,
 #header.dark.transparent-header.floating-header.sticky-header .container,
 .dark .responsive-sticky-header #header-wrap,
-.responsive-sticky-header.dark #header-wrap { background-color: #000; }
+.responsive-sticky-header.dark #header-wrap { background-color: #0A0A0A; }
 
 .dark #header.full-header #header-wrap:not(.not-dark),
 #header.full-header.dark #header-wrap:not(.not-dark) { border-bottom-color: rgba(255,255,255,0.15); }
@@ -1684,4 +1684,3 @@ body #side-panel.dark #side-panel-trigger-close a {
 	.dark .pricing-box.pricing-extended .pricing-action-area { border-top-color: rgba(255,255,255,0.15); }
 
 }
-
