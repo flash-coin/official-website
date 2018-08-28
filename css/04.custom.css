@@ -6,7 +6,7 @@
 -----------------------------------------------------------------*/
 
 #slider {
-  background: url('../images/_newsite/web_img/section-bg.jpeg?126') no-repeat center right;
+  background: url('../images/_newsite/web_img/Homepage-first-section.png?126') no-repeat center right;
   background-size: cover;
   margin-bottom: 0px;
 }
@@ -15,11 +15,11 @@
   background-size: cover;
   margin-top: -50px;
 }
-#slider .main-section-image {
+.main-section-image {
   padding: 0 0 30px;
   margin-top: 2%;
 }
-#slider .main-section-image img {
+.main-section-image img {
   width: 140px !important;
   padding: 11px;
 }
@@ -298,6 +298,76 @@ a.button.button-rounded.button-reveal.button-large.button-yellow.button-light.tr
   margin-bottom: 0;
 }
 
+/* FAQs Page */
+@media(min-width: 991px) {
+  .faqs-page #content {
+    top: -100px;
+  }
+  .faqspage #logo {
+    display: none !important;
+  }
+  .faqspage.subpage.sticky-header #logo {
+    display: inline !important;
+  }
+  .faqspage.subpage , .faqspage.subpage #header-wrap {
+    background-color: transparent !important;
+  }
+  .faqspage.subpage.sticky-header , .faqspage.subpage.sticky-header #header-wrap{
+    background-color: #0A0A0A !important;
+  }
+  .faqs-title h3 {
+    font-size: 21px;
+    font-weight: normal;
+  }
+}
+@media(max-width: 991px) {
+  .faqs-page .main-section-image img {
+    display: none;
+  }
+  .faqs-title h3 {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .faqs-title h4 {
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+.faqs-page-title {
+  font-size: 3rem;
+  margin: 0;
+}
+.faqs-section {
+  border: 1px solid #E0AE27;
+  margin-bottom: 30px;
+}
+.faqs-title h3 {
+  margin: 0;
+  padding: 3px;
+}
+.faqs-desc-bg {
+  background-color: #E0AE27;
+  color: #0A0A0A;
+  padding: 3px;
+}
+.faqs-desc-bg h4 {
+  border: 2px solid #0A0A0A;
+  padding: 3px;
+  margin: 0;
+  color: #0A0A0A;
+  font-weight: normal;
+}
+.faqs-desc-bg a {
+  color: #FFF;
+  font-weight: normal;
+}
+.faqs-desc-bg a:hover {
+  color: #0A0A0A;
+}
+.faqs-desc-bg p {
+  margin: 0;
+}
+
 /* Custom CSS for Homepage Update */
 a.display-centrally {
   width: 100%;
@@ -357,7 +427,7 @@ a.display-centrally img {
   }
 }
 @media(min-width: 991px) {
-  #slider .main-section-image {
+  .main-section-image {
     margin-top: 4rem;
     margin-bottom: 1rem;
   }
@@ -382,7 +452,7 @@ a.display-centrally img {
     width: 297px;
   }
   #about .inner-section h2 , #kpi .inner-section h2 {
-    font-size: 26px;
+    font-size: 23px;
   }
   #about .inner-section h4 {
     font-size: 11.3px;
@@ -413,10 +483,11 @@ a.display-centrally img {
       float: none;
       top: 25px;
       margin-left: 63px;
-      background: rgba(0, 0, 0, 0.5);
+      background-color: #0A0A0A;
+      min-width: 200px;
   }
   #logo { display: none !important; }
-  #slider .main-section-image , #slider .webmainpart {
+  .main-section-image , .webmainpart {
     margin-top: 0;
   }
 
@@ -672,6 +743,7 @@ animation: spin 10s linear infinite;
   }
   .download-link {
     word-wrap: break-word;
+    font-size: 14px;
   }
   a.display-centrally img {
     width: 18%;
