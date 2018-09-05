@@ -261,17 +261,15 @@
 					$('.homepage .sub-menu ul li a').bind('click', function(e) {
 						$('.sub-menu, .sub-menu li, li.hide-this').removeClass('sfHover');
 						$('.sub-menu ul, li.hide-this').hide();
-						if ($(window).width() < 768) {
-							var dhref = $(this).attr('data-href');
-							if (dhref != undefined && dhref != '' && $(dhref).length) {
-								var heightmm = $('#header-wrap').height()+15;
-								$('html, body').animate({
-										scrollTop: $(dhref).offset().top - heightmm
-								}, 2000);
-							}
-							if ($(this).attr('data-scrollto') != undefined) {
-								$('.sf-js-enabled').removeClass('d-block');
-							}
+						var dhref = $(this).attr('data-href');
+						if (dhref != undefined && dhref != '' && $(dhref).length) {
+							var heightmm = $('#header-wrap').height()+15;
+							$('html, body').animate({
+									scrollTop: $(dhref).offset().top - heightmm
+							}, 2000);
+						}
+						if ($(this).attr('data-scrollto') != undefined) {
+							$('.sf-js-enabled').removeClass('d-block');
 						}
 					});
 					$('.subpage ul li a, .widget_links ul li a').bind('click',function() {
