@@ -106,7 +106,8 @@
   padding-right: 10px;
   left: -60px;
   text-align: center;
-  width: 100%
+  width: 100%;
+  line-height: 1.2 !important;
 }
 
 .timeline-section::-webkit-scrollbar-track
@@ -137,35 +138,76 @@
 .arrowRight {
   left: 89.7vw;
 }
+
 @media (max-width:1640px) {
   .arrowLeft {
     left: 4.3vw;
   }
 }
+@media (max-width:1146px) {
+  .timeline-horizontal:before {
+    left: 0 !important;
+  }
+  .arrowLeft {
+    left: -10px !important;
+  }
+  .arrowRight {
+    left: auto !important;
+    right: -10px !important;
+  }
+}
 
 
-
-/* Roadmap - Achivements */
-#achivements .inner-section {
+/* Roadmap - achievements */
+#achievements .inner-section {
   padding: 10px;
   border: 2px solid #E0AE27;
   border-radius: 6px;
   min-height: 265px;
 }
-#achivements .inner-section h2 , #achivements .inner-section h3 {
+#achievements .inner-section h2 , #achievements .inner-section h3 {
   margin-bottom: 5px;
   font-weight: normal;
 }
-#achivements .inner-section .sub-section span {
+#achievements .inner-section .sub-section span {
   color: #FFF;
   font-weight: normal;
   font-size: 16px;
 }
-#achivements .inner-section .sub-section span.fill-in {
+#achievements .inner-section .sub-section span.fill-in {
   min-height: 6px;
-  background-color: #E0AE27;
-  color: #0A0A0A;
+  /*background-color: #E0AE27;*/
+  color: #FFF;
   text-align: center;
   width: 100%;
   display: block;
+  border: 2px solid #E0AE27;
+  position:relative;
+  background-color: #0A0A0A;
+  z-index: 1
+}
+
+
+
+#achievements .inner-section .sub-section span.fill-in:after {
+    content: '\A';  /*attr(data-width) '% Completed';*/
+    position:absolute;
+    background-color:#E0AE27;
+    top:0;
+    bottom:0;
+    left:0;
+    z-index: -1;
+    color:#0A0A0A;
+}
+#achievements .inner-section .sub-section span.fill-in[data-width='100']:after {
+  width: 100%;
+}
+#achievements .inner-section .sub-section span.fill-in[data-width='70']:after {
+  width: 70%;
+}
+#achievements .inner-section .sub-section span.fill-in[data-width='55']:after {
+  width: 55%;
+}
+#achievements .inner-section .sub-section span.fill-in[data-width='15']:after {
+  width: 15%;
 }
