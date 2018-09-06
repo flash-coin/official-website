@@ -29,7 +29,9 @@
 		<!-- <link rel="stylesheet" href="css/et-line.css" type="text/css" /> -->
 		<link rel="stylesheet" href="css/04.custom.css?ver=2.5" type="text/css" />
 		<link rel="stylesheet" href="css/responsive.css" type="text/css" />
-		<link rel="stylesheet" href="css/roadmap_styles.css" type="text/css" />
+		<link rel="stylesheet" href="css/swiper.min.css" integrity="text/css">
+		<link rel="stylesheet" href="css/roadmap_css.css" type="text/css" />
+		<link rel="stylesheet" href="css/achievement_style.css" type="text/css" />
 		<!-- Document Title
 	============================================= -->
 		<title>Flashcoin | Home</title>
@@ -56,6 +58,7 @@
 						}, 500);
 					}
 				});
+
 			});
 			$(function() {
 					$('#header-wrap').load('header.html');
@@ -133,12 +136,11 @@
 									<a href="https://t.me/joinchat/C5go9ExsGGNeVvForEgb6w" target="_blank"><img src="images/_newsite/web_img/img-TelegramButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-TelegramButton" ></a>
 									<a href="https://discord.gg/2nFmMqA" target="_blank"><img src="images/_newsite/web_img/img-DiscordButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-DiscordButton" ></a>
 								</div>
-
 							</div>
 						</div>
 						<div class="row clearfix">
 							<div class="col-lg-12 text-center bottom-section" style="">
-								<a href="docs/FLASHWhitepaper.pdf?new" target="_blank" class="display-centrally WhitePaperButton"><img src="images/_newsite/web_img/img-WhitePaperButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-WhitePaperButton" style="width:150px"></a>
+								<a href="javascript: void(0)" class="display-centrally WhitePaperButton"><img src="images/_newsite/web_img/img-WhitePaperButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-WhitePaperButton" style="width:150px" onclick="javascript: window.open('docs/FLASHWhitepaper.pdf?new')"></a>
 								<a class="LearnMoreButton" href="#" data-scrollto="#about"><img src="images/_newsite/web_img/img-LearnMoreButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-LearnMoreButton" ></a>
 							</div>
 						</div>
@@ -305,7 +307,7 @@
 								</div>
 								<div class="col-md-12">
 									<div class="promo promo-center">
-										<a href="our-team.html"><img src="images/_newsite/web_img/img-MoreButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-MoreButton" style="width:13%;"></a>
+										<a href="our-team.html"><img src="images/_newsite/web_img/img-MoreButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-MoreButton" style="width:130px;"></a>
 									</div>
 								</div>
 							</div>
@@ -313,118 +315,89 @@
 					</div>
 					<!-- #section-team end -->
 
-										<!-- Roadmap ============================================= -->
-										<div id="roadmap" class="page-section topmargin-lg">
-											<div class="heading-block center">
-												<div class="fancy-title title-border title-center">
-													<h1><span>Roadmap</span></h1>
-												</div>
-												<!-- <span>FLASH is optimized to support applications in the $1 Trillion remittance market.</span> -->
-											</div>
-											<!-- <div class="container clearfix">
-												<div class="row">
-													<div class="col-md-4">
-														<img src="images/circle.png?ver=1.1" alt="">
-													</div>
-													<div class="col-md-8">
-														<h2>Features</h2>
-														<ul>
-															<li>The FLASH Web Wallet (FWW) currently holds BTC, BCH, DASH, ETH, and OMG, with more coins coming soon.</li>
-															<li>The FWW will soon offer a built in exchange that will support fiat/cryptocurrency conversions.</li>
-															<li>The FWW will offer remittance applications including Human ATMs and automatic conversion to local fiat.</li>
-															<li>The FWW is available as a mobile app on Android and iOS so it can be accessed anywhere.</li>
-														</ul>
-														<span>Please Note: Roadmap will be updated on regular basis as we make progress.</span>
-													</div>
-												</div>
-											</div> -->
-											<div class=" topmargin-lg">
-												<div class="row">
-													<div class="timeline-section">
-														<img src="images/_newsite/NewRoadmapArrowRight.png"	class="arrowRight"/>
-														<img src="images/_newsite/NewRoadmapArrowLeft.png"	class="arrowLeft"/>
-														<ul class="timeline timeline-horizontal">
-															<li class="timeline-item">
-																<div class="timeline-heading">
-																	<p><small class="">January 2018</small></p>
-																</div>
-																<div class="timeline-badge active"><i class="glyphicon glyphicon-time"></i></div>
-																<div class="timeline-description">
-																	<p><small class="">New features addition and stability improvement.<br>Multi cryptocurrencies support - BTC.</small></p>
-																</div>
-															</li>
-															<li class="timeline-item">
-																<div class="timeline-heading">
-																	<p><small class="">March 2018</small></p>
-																</div>
-																<div class="timeline-badge active"><i class="glyphicon glyphicon-time"></i></div>
-																<div class="timeline-description">
-																	<p><small class="">Launch of FLASH Android Wallet.<br>Launch of Merchant Services.</small></p>
-																</div>
-															</li>
-															<li class="timeline-item">
-																<div class="timeline-heading">
-																	<p><small class="">April 2018</small></p>
-																</div>
-																<div class="timeline-badge active"><i class="glyphicon glyphicon-time"></i></div>
-																<div class="timeline-description">
-																	<p><small class="">Multi cryptocurrencies support ETH, DASH, LTC</small></p>
-																</div>
-															</li>
-															<li class="timeline-item">
-																<div class="timeline-heading">
-																	<p><small class="">June 2018</small></p>
-																</div>
-																<div class="timeline-badge active"><i class="glyphicon glyphicon-time"></i></div>
-																<div class="timeline-description">
-																	<p><small class="">Release of FLASH iOS Wallet.</small></p>
-																</div>
-															</li>
-															<li class="timeline-item">
-																<div class="timeline-heading">
-																	<p><small class="">July 2018</small></p>
-																</div>
-																<div class="timeline-badge active"><i class="glyphicon glyphicon-time"></i></div>
-																<div class="timeline-description">
-																	<p><small class="">Support for integrated exchange. <br> Testnet launch of decentralized FLASH. </small></p>
-																</div>
-															</li>
-															<li class="timeline-item">
-																<div class="timeline-heading">
-																	<p><small class="">September 2018</small></p>
-																</div>
-																<div class="timeline-badge active"><i class="glyphicon glyphicon-time"></i></div>
-																<div class="timeline-description">
-																	<p><small class="">Addition of more cryptocurrencies - ERC20 tokens, NEO, etc. <br> Launch of Human Teller Machine (HTM) on Mobile App.</small></p>
-																</div>
-															</li>
-															<li class="timeline-item">
-																<div class="timeline-heading">
-																	<p><small class="">October 2018</small></p>
-																</div>
-																<div class="timeline-badge active"><i class="glyphicon glyphicon-time"></i></div>
-																<div class="timeline-description">
-																	<p><small class="">Introducing FLASH SWAPBOT. <br> Mainnet launch of decentralized FLASH.</small></p>
-																</div>
-															</li>
-															<li class="timeline-item">
-																<div class="timeline-heading">
-																	<p><small class="">December 2018</small></p>
-																</div>
-																<div class="timeline-badge active"><i class="glyphicon glyphicon-time"></i></div>
-																<div class="timeline-description">
-																	<p><small class="">Launch of FLASH Web Wallet 2.0 <br> Launch of Human Teller Machine (HTM) on FLASH Web Wallet.</small></p>
-																</div>
-															</li>
-															<!-- <li class="timeline-item">
-																<div class="timeline-badge"><i class="glyphicon glyphicon-time"></i></div>
-															</li> -->
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- #section-about-roadmap end -->
+					<!-- Roadmap ============================================= -->
+					<div id="roadmap" class="page-section topmargin-lg">
+						<div class="heading-block center">
+							<div class="fancy-title title-border title-center">
+								<h1><span>Roadmap</span></h1>
+							</div>
+							<!-- <span>FLASH is optimized to support applications in the $1 Trillion remittance market.</span> -->
+						</div>
+						<div class="container topmargin-lg">
+							<div class="row">
+								<div class="home-roadmap__wrapper swiper-container-horizontal">
+                    <div class="home-roadmap__map swiper-wrapper">
+                        <div class="home-roadmap__item swiper-slide">
+                            <div class="home-roadmap__points">
+                                <div class="home-roadmap__point"></div>
+                                <div class="home-roadmap__point _active"></div>
+                            </div>
+                            <div class="home-roadmap__date">January 2018</div>
+                            <div class="home-roadmap__title">New features addition and stability improvement. Multi cryptocurrencies support - BTC.</div>
+                        </div>
+                        <div class="home-roadmap__item swiper-slide">
+                            <div class="home-roadmap__points">
+                                <div class="home-roadmap__point"></div>
+                                <div class="home-roadmap__point _active"></div>
+                            </div>
+                            <div class="home-roadmap__date">March 2018</div>
+                            <div class="home-roadmap__title">Launch of FLASH Android Wallet. Launch of Merchant Services.</div>
+                        </div>
+                        <div class="home-roadmap__item swiper-slide">
+                            <div class="home-roadmap__points">
+                                <div class="home-roadmap__point"></div>
+                                <div class="home-roadmap__point _active"></div>
+                            </div>
+                            <div class="home-roadmap__date">April 2018</div>
+                            <div class="home-roadmap__title">Multi cryptocurrencies support ETH, DASH, LTC</div>
+                        </div>
+                        <div class="home-roadmap__item swiper-slide">
+                            <div class="home-roadmap__points">
+                                <div class="home-roadmap__point"></div>
+                                <div class="home-roadmap__point _active"></div>
+                            </div>
+                            <div class="home-roadmap__date">June 2018</div>
+                            <div class="home-roadmap__title">Release of FLASH iOS Wallet.</div>
+                        </div>
+                        <div class="home-roadmap__item swiper-slide">
+                            <div class="home-roadmap__points">
+                                <div class="home-roadmap__point"></div>
+                                <div class="home-roadmap__point _active"></div>
+                            </div>
+                            <div class="home-roadmap__date">July 2018</div>
+                            <div class="home-roadmap__title">Support for integrated exchange. Testnet launch of decentralized FLASH.</div>
+                        </div>
+                        <div class="home-roadmap__item swiper-slide">
+                            <div class="home-roadmap__points">
+                                <div class="home-roadmap__point"></div>
+                                <div class="home-roadmap__point _active"></div>
+                            </div>
+                            <div class="home-roadmap__date">September 2018</div>
+                            <div class="home-roadmap__title">Addition of more cryptocurrencies - ERC20 tokens, NEO, etc. Launch of Human Teller Machine (HTM) on Mobile App.</div>
+                        </div>
+                        <div class="home-roadmap__item swiper-slide">
+                            <div class="home-roadmap__points">
+                                <div class="home-roadmap__point"></div>
+                                <div class="home-roadmap__point _active"></div>
+                            </div>
+                            <div class="home-roadmap__date">October 2018</div>
+                            <div class="home-roadmap__title">Introducing FLASH SWAPBOT. Mainnet launch of decentralized FLASH.</div>
+                        </div>
+                        <div class="home-roadmap__item swiper-slide">
+                            <div class="home-roadmap__points">
+                                <div class="home-roadmap__point"></div>
+                                <div class="home-roadmap__point _active"></div>
+                            </div>
+                            <div class="home-roadmap__date">December 2018</div>
+                            <div class="home-roadmap__title">Launch of FLASH Web Wallet 2.0. Launch of Human Teller Machine (HTM) on FLASH Web Wallet.</div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+							</div>
+						</div>
+				  </div>
 
 										<!-- #section-team end -->
 										<div id="achievements" class="page-section topmargin-lg">
@@ -446,7 +419,10 @@
 															<div class="sub-section">
 																<h3 class="color-gold">FLASH Blockchain & Apps</h3>
 																<h5 class="row"><div class="col-md-6"><span>Launch of FLASH Android wallet</span></div><div class="col-md-6"><span class="fill-in" data-width="100">100% Complete</span></div></h5>
-																<h5 class="row"><div class="col-md-6"><span>Launch of Merchant Services</span></div><div class="col-md-6"><span class="fill-in" data-width="100">100% Complete</span></div></h5>
+																<h5 class="row clearfix collapse" id="Quarter1">
+																	<div class="col-md-6"><span>Launch of Merchant Services</span></div><div class="col-md-6"><span class="fill-in" data-width="100">100% Complete</span></div>
+																</h5>
+																<h5 class="text-right" style="margin:0"><a href="javascript:void(0)" onclick="javascript:expandAchievementSection(this)" class="color-gold" data-toggle="collapse" data-target="#Quarter1">More+</a></h5>
 															</div>
 														</div>
 													</div>
@@ -460,7 +436,6 @@
 															<div class="sub-section">
 																<h3 class="color-gold">FLASH Blockchain & Apps</h3>
 																<h5 class="row"><div class="col-md-6"><span>Release of FLASH iOS wallet</span></div><div class="col-md-6"><span class="fill-in" data-width="100">100% Completed</span></div></h5>
-																<!-- <h5 class="text-right" style="margin:0"><a href="javascript:void(0)" class="color-gold">More+</a></h5> -->
 															</div>
 														</div>
 													</div>
@@ -476,7 +451,6 @@
 															<div class="sub-section">
 																<h3 class="color-gold">FLASH Blockchain & Apps</h3>
 																<h5 class="row"><div class="col-md-6"><span>Testnet launch of Decentralized FLASH</span></div><div class="col-md-6"><span class="fill-in" data-width="55">55% Complete</span></div></h5>
-																<!-- <h5 class="text-right" style="margin:0"><a href="javascript:void(0)" class="color-gold">More+</a></h5> -->
 															</div>
 														</div>
 													</div>
@@ -604,7 +578,7 @@
 								</ul>
 								<div class="col-md-12">
 									<div class="promo promo-center">
-										<a href="flash-merchants.html"><img src="images/_newsite/web_img/img-MoreButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-MoreButton" style="width:11%;"></a>
+										<a href="flash-merchants.html"><img src="images/_newsite/web_img/img-MoreButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-MoreButton" style="width:130px;"></a>
 									</div>
 								</div>
 							</div>
@@ -741,20 +715,54 @@
 							<div class="heading-block title-center nobottomborder">
 								<h2>Download Whitepaper</h2>
 							</div>
-							<div class="center">
-								<a href="docs/FLASHWhitepaper.pdf" target="_blank"><img src="images/_newsite/web_img/img-EnglishButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-EnglishButton" style="width:15%; margin-right:10px;"></a>
-								<a href="docs/FLASHWhitepaper-Espanol.pdf" target="_blank"><img src="images/_newsite/web_img/img-EspanolButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-EspanolButton" style="width:15%; margin-left:10px;"></a>
+							<div class="center bottommargin">
+								<a href="docs/FLASHWhitepaper.pdf" target="_blank"><img src="images/_newsite/web_img/img-EnglishButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-EnglishButton" style="width:140px; margin:10px;"></a>
+								<a href="docs/FLASHWhitepaper-Espanol.pdf" target="_blank"><img src="images/_newsite/web_img/img-EspanolButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-EspanolButton" style="width:140px; margin:10px;"></a>
 							</div>
 							<div class="heading-block title-center nobottomborder topmargin-lg">
 								<h2>Github</h2>
 							</div>
 							<div class="center">
-								<a href="https://github.com/flash-coin" target="_blank"><img src="images/_newsite/web_img/img-GitFLASHCOINButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-GitFLASHCOINButton" style="width:35%;"></a>
+								<a href="https://github.com/flash-coin" target="_blank"><img src="images/_newsite/web_img/img-GitFLASHCOINButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-GitFLASHCOINButton" style="width:330px;"></a>
 							</div>
 						</div>
 					</div>
 					<!-- #section-resources-whitepaper end -->
 
+					<!-- FAQs============================================= -->
+					<div id="faqs" class="page-section">
+						<div class="container content-wrap nopadding">
+							<div class="fancy-title title-border title-center bottommargin">
+								<h1 class=""><span>FAQs</span></h1>
+							</div>
+							<div class="row clearfix bottommargin">
+								<div class="col-md-1 col-lg-1">&nbsp;</div>
+								<div class="col-md-10 col-lg-10 text-center">
+									<div class="faqs-section">
+										<div class="faqs-title">
+											<h3>What is FLASH?</h3>
+										</div>
+										<div class="faqs-desc-bg">
+											<h4 class="" >FLASH is a reinvention of Litecoin, built to scale for worldwide commerce and fast enough to handle everyday transactions. The flexible and easy to integrate core code allows exchanges and wallets to add FLASH to their platform within hours. With a settlement time of around 5 seconds and consensus within 2 minutes, anyone, anywhere can use the FLASH mobile wallet as easily as cash or credit card.</h4>
+										</div>
+									</div>
+									<div class="faqs-section">
+										<div class="faqs-title">
+											<h3>Why Was FLASH Created, What Problems does it Solve?</h3>
+										</div>
+										<div class="faqs-desc-bg">
+											<h4 class="" >FLASH is designed to be a decentralized, real world remittance platform, solving problems which BitCoin and Litecoin failed to address with respects to transaction volume, transaction speed, and transaction fees. It also solves the problems other coins have in regards to high electricity consumption and the mining 'arms race'.</h4>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="promo promo-center">
+										<a href="faq.html"><img src="images/_newsite/web_img/img-MoreButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-MoreButton" style="width:130px;"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					<!-- KPI ============================================= -->
 					<div id="kpi" class="kpi-section page-section">
 						<div class="container content-wrap" style="padding:10px 0px 40px">
@@ -848,5 +856,30 @@
 			<script src="js/key-indicator.js?ver=1.1"></script>
 			<script src="js/twitterFetcher_min.js"></script>
 			<script src="js/plugins.js"></script>
+			<script type="text/javascript">
+					var mySwiper = new Swiper('.home-roadmap__wrapper', {
+						slidesPerView: 5,
+						autoplay:true,
+						centeredSlides: true,
+						initialSlide:5,
+						navigation: {
+			        nextEl: '.swiper-button-next',
+			        prevEl: '.swiper-button-prev',
+			      },
+						breakpoints:{
+							992:{slidesPerView:3},
+							640:{slidesPerView:1}
+						},
+					});
+
+					function expandAchievementSection(event) {
+						if($(event).html() === 'More+') {
+							$(event).html('Less-');
+						} else {
+							$(event).html('More+');
+						}
+					}
+			</script>
+
 	</body>
 </html>
