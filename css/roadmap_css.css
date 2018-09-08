@@ -103,7 +103,8 @@
 	display: block;
 	content: "";
 	position: absolute;
-	background: url('../images/_newsite/roadmap.png') no-repeat center ;
+	background: url('../images/_newsite/roadmap_50_50.png') no-repeat center ;
+	background-size: 30px 30px;
 	width: 15px;
 	height: 15px;
 	transform: rotate(45deg) translateX(-50%);
@@ -113,7 +114,7 @@
 .home-roadmap__points {
 	position: relative;
 	width: 30px;
-	height: 50px;
+	height: 30px;
 	z-index: 1;
 	margin: 0 auto 25px
 }
@@ -124,14 +125,16 @@
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
-	top: -10px;
-	background: url('../images/_newsite/roadmap_1.png') no-repeat center ;
+	top: 0px;
+	background: url('../images/_newsite/roadmap-50x50.png') no-repeat center ;
 	color: #999;
-	transition: opacity .25s ease-in-out
+	transition: opacity .25s ease-in-out;
+	background-size: 30px 30px;
 }
 
 .home-roadmap__point._active {
-	background: url('../images/_newsite/roadmap.png') no-repeat center ;
+	background: url('../images/_newsite/roadmap-active-50x50.png') no-repeat center ;
+	background-size: 30px 30px;
 	opacity: 0
 }
 
