@@ -5,8 +5,12 @@
   border-radius: 6px;
   min-height: 265px;
 }
-#achievements .inner-section h2 , #achievements .inner-section h3 {
+#achievements .inner-section h2 {
   margin-bottom: 5px;
+  font-weight: normal;
+}
+#achievements .inner-section h3 {
+  margin-bottom: 0px;
   font-weight: normal;
 }
 #achievements .inner-section h5 {
@@ -21,17 +25,30 @@
   font-weight: normal;
   font-size: 16px;
 }
+#achievements .inner-section .sub-section {
+  margin-bottom: 10px;
+}
+#achievements .inner-section .sub-section div:first-child {
+  margin: auto;
+  margin-bottom: 0;
+}
+/*#achievements .inner-section .sub-section div.fill-in-block {
+  margin: auto;
+} */
+#achievements .inner-section .sub-section span.fill-in-text {
+  float: right;
+  font-size: 12px;
+}
 #achievements .inner-section .sub-section span.fill-in {
-  min-height: 6px;
-  /*background-color: #E0AE27;*/
+  height: 9px;
   color: #FFF;
-  text-align: center;
+  float: right;
   width: 100%;
   display: block;
-  border: 2px solid #E0AE27;
+  border: 1px solid #E0AE27;
   position:relative;
   background-color: #0A0A0A;
-  z-index: 1
+  z-index: 1;
 }
 #achievements .collapse.show {
   display: flex !important;
