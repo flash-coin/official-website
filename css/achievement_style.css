@@ -63,6 +63,14 @@
     z-index: -1;
     color:#0A0A0A;
 }
+#achievements .inner-section .starting-soon
+{
+  margin-bottom: 10px !important; 
+}
+#achievements .inner-section .q3-last-margin
+{
+  margin-bottom: 15px !important;
+}
 #achievements .inner-section .sub-section span.fill-in[data-width='100']:after {
   width: 100%;
 }
@@ -74,4 +82,16 @@
 }
 #achievements .inner-section .sub-section span.fill-in[data-width='15']:after {
   width: 15%;
+}
+#achievements .inner-section .sub-section span.fill-in[data-width='75']:after {
+  width: 75%;
+}
+#achievements .inner-section .sub-section span.fill-in[data-width='95']:after {
+  width: 95%;
+}
+#achievements .inner-section .sub-section span.fill-in[data-width='20']:after {
+  width: 20%;
+}
+#achievements .inner-section .sub-section span.fill-in[data-width='10']:after {
+  width: 10%;
 }
