@@ -65,7 +65,7 @@
 }
 #achievements .inner-section .starting-soon
 {
-  margin-bottom: 10px !important; 
+  margin-bottom: 10px !important;
 }
 #achievements .inner-section .q3-last-margin
 {
@@ -74,23 +74,29 @@
 #achievements .inner-section .sub-section span.fill-in[data-width='100']:after {
   width: 100%;
 }
+#achievements .inner-section .sub-section span.fill-in[data-width='95']:after {
+  width: 95%;
+}
+#achievements .inner-section .sub-section span.fill-in[data-width='80']:after {
+  width: 80%;
+}
 #achievements .inner-section .sub-section span.fill-in[data-width='70']:after {
   width: 70%;
 }
 #achievements .inner-section .sub-section span.fill-in[data-width='55']:after {
   width: 55%;
 }
-#achievements .inner-section .sub-section span.fill-in[data-width='15']:after {
-  width: 15%;
-}
 #achievements .inner-section .sub-section span.fill-in[data-width='75']:after {
   width: 75%;
 }
-#achievements .inner-section .sub-section span.fill-in[data-width='95']:after {
-  width: 95%;
+#achievements .inner-section .sub-section span.fill-in[data-width='30']:after {
+  width: 30%;
 }
 #achievements .inner-section .sub-section span.fill-in[data-width='20']:after {
   width: 20%;
+}
+#achievements .inner-section .sub-section span.fill-in[data-width='15']:after {
+  width: 15%;
 }
 #achievements .inner-section .sub-section span.fill-in[data-width='10']:after {
   width: 10%;
