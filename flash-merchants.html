@@ -38,8 +38,19 @@
     <script src="js/jquery.js"></script>
     <script type="text/javascript">
       $(document).ready(function(e) {
-          $('#header-wrap').load('header.html');
-          $('#footer-comman').load('footer.html');
+          var headerLoaded = false, footerLoaded = false;
+          $('#header-wrap').load('header.html', function() {
+              headerLoaded = true;
+              if(headerLoaded && footerLoaded) {
+                  documentOnReadyInitiaize();
+              }
+          });
+          $('#footer-comman').load('footer.html', function() {
+              footerLoaded = true;
+              if(headerLoaded && footerLoaded) {
+                  documentOnReadyInitiaize();
+              }
+          });
       });
     </script>
   </head>

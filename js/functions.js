@@ -3669,8 +3669,12 @@ var SEMICOLON = SEMICOLON || {};
 		$textRotaterEl = $('.text-rotater'),
 		$cookieNotification = $('#cookie-notification');
 
-	$(document).ready( SEMICOLON.documentOnReady.init );
+	//$(document).ready( SEMICOLON.documentOnReady.init );
 	$window.on( 'load', SEMICOLON.documentOnLoad.init );
 	$window.on( 'resize', SEMICOLON.documentOnResize.init );
 
 })(jQuery);
+
+function documentOnReadyInitiaize() {
+	SEMICOLON.documentOnReady.init();
+}

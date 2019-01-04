@@ -32,8 +32,19 @@
 		<script src="js/jquery.js"></script>
 		<script>
 			$(function() {
-				$('#header-wrap').load('header.html');
-				$('#footer-comman').load('footer.html');
+				var headerLoaded = false, footerLoaded = false;
+	            $('#header-wrap').load('header.html', function() {
+	                headerLoaded = true;
+	                if(headerLoaded && footerLoaded) {
+	                    documentOnReadyInitiaize();
+	                }
+	            });
+	            $('#footer-comman').load('footer.html', function() {
+	                footerLoaded = true;
+	                if(headerLoaded && footerLoaded) {
+	                    documentOnReadyInitiaize();
+	                }
+	            });
 			});
 		</script>
 	</head>
@@ -185,11 +196,11 @@
 								<div class="col-md-3 col-sm-3 bottommargin">
 									<div class="team">
 										<div class="team-image">
-											<img src="images/team/mr-db.png" alt="Mr DB">
+											<img src="images/team/mr-db.png" alt="DB">
 										</div>
 										<div class="team-desc team-desc-bg">
 											<div class="team-title">
-												<h4>Mr DB</h4><span>Project Manager | <a href="https://www.linkedin.com/in/deepak-b-085154b5/" target="_blank"><i class="fab fa-linkedin" style="font-size: 18px !important;"></i></a></span></div>
+												<h4>DB</h4><span>Project Manager | <a href="https://www.linkedin.com/in/deepak-b-085154b5/" target="_blank"><i class="fab fa-linkedin" style="font-size: 18px !important;"></i></a></span></div>
 										</div>
 									</div>
 								</div>

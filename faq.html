@@ -32,8 +32,19 @@
 		<script src="js/jquery.js"></script>
 		<script>
 			$(function() {
-				$('#header-wrap').load('header.html');
-				$('#footer-comman').load('footer.html');
+				var headerLoaded = false, footerLoaded = false;
+                $('#header-wrap').load('header.html', function() {
+                    headerLoaded = true;
+                    if(headerLoaded && footerLoaded) {
+                        documentOnReadyInitiaize();
+                    }
+                });
+                $('#footer-comman').load('footer.html', function() {
+                    footerLoaded = true;
+                    if(headerLoaded && footerLoaded) {
+                        documentOnReadyInitiaize();
+                    }
+                });
 			});
 		</script>
 	</head>
@@ -198,20 +209,20 @@
 										<h4 class="">Check out our FLASH Whitepaper <a target="_blank" href="https://www.flashcoin.io/index.html#whitepaper">Documentation</a>.</h4>
 									</div>
 								</div>
-								<div class="faqs-section">
+								<!--<div class="faqs-section">
 									<div class="faqs-title">
 										<h3>Who Are The Founders Of FLASH?</h3>
 									</div>
 									<div class="faqs-desc-bg">
 										<h4 class="">FLASH was founded by Chris Kitze (co-creator) and Jason King (co-creator). Check out our FLASH website <a target="_blank" href="https://www.flashcoin.io/our-team.htm">team page</a>.</h4>
 									</div>
-								</div>
+								</div>-->
 								<div class="faqs-section">
 									<div class="faqs-title">
 										<h3>Who Are The Developers Behind FLASH?</h3>
 									</div>
 									<div class="faqs-desc-bg">
-										<h4 class="">The FLASH development team is lead by Mr. Deepak Kumar. All other developers are listed on the FLASH website <a target="_blank" href="https://www.flashcoin.io/our-team.htm">team page</a>.</h4>
+										<h4 class="">The FLASH development team is lead by Deepak Kumar. All other developers are listed on the FLASH website <a target="_blank" href="https://www.flashcoin.io/our-team.html">team page</a>.</h4>
 									</div>
 								</div>
 								<div class="faqs-section">
@@ -267,7 +278,7 @@
 											<p class=""><b>Discord:</b> <a class="download-link" target="_blank" href="https://discord.gg/2nFmMqA">https://discord.gg/2nFmMqA</a></p>
 											<p class=""><b>Telegram:</b> <a class="download-link" target="_blank" href="https://t.me/joinchat/C5go9ExsGGNeVvForEgb6w">https://t.me/joinchat/C5go9ExsGGNeVvForEgb6w</a></p>
 											<p class=""><b>Reddit:</b> <a class="download-link" target="_blank" href="https://www.reddit.com/r/FlashCoins/">https://www.reddit.com/r/FlashCoins/</a></p>
-											<p class=""><b>Bitcoin Talk:</b> <a class="download-link" target="_blank" href="https://bitcointalk.org/index.php?topic=1605453.0">https://bitcointalk.org/index.php?topic=1605453.0</a></p>
+											<!--<p class=""><b>Bitcoin Talk:</b> <a class="download-link" target="_blank" href="https://bitcointalk.org/index.php?topic=1605453.0">https://bitcointalk.org/index.php?topic=1605453.0</a></p>-->
 											<p class=""><b>Twitter:</b> <a class="download-link" target="_blank" href="https://twitter.com/FlashCoins">https://twitter.com/FlashCoins</a></p>
 										</h4>
 									</div>
