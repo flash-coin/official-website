@@ -101,6 +101,9 @@
 #achievements .inner-section .sub-section span.fill-in[data-width='70']:after {
   width: 70%;
 }
+#achievements .inner-section .sub-section span.fill-in[data-width='60']:after {
+  width: 60%;
+}
 #achievements .inner-section .sub-section span.fill-in[data-width='55']:after {
   width: 55%;
 }
