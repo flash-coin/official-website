@@ -44,6 +44,15 @@
                     documentOnReadyInitiaize();
                 }
             });
+
+            $.getJSON('snapshot.json', function(data) {
+				$('#snapshot_download_link').attr('href', data.link);
+				$('#snapshot_text_link').attr('href', data.link);
+				$('#snapshot_text_link').html(data.link);
+				$('#snapshot_sha256_text').html('(SHA256: ' + data.SHA256 + ')');
+				$('#snapshot_sha512_text').html('(SHA512: ' + data.SHA512 + ')');
+				$('#snapshot_size').text(data.size);
+			});
 		});
 		</script>
 </head>
@@ -90,11 +99,11 @@
 									<li><i class="icon-play"></i> If your blockchain was crashed and you need get it back to normal fast</li>
 								</ul>
 								<h2>Step 1: Download flashcoin_blockchain_snapshot file:</h2>
-								<a href="https://flashcoin.io/downloads/flashcoin_blockchain_snapshot.02Apr2019.tar.gz" class="button button-3d bottommargin-sm">Download</a>
-								<p>(<a href="https://flashcoin.io/downloads/flashcoin_blockchain_snapshot.02Apr2019.tar.gz" class="download-link">https://flashcoin.io/downloads/flashcoin_blockchain_snapshot.02Apr2019.tar.gz</a>)<br>
-                          		(SHA256: b6ec021a900d54379006120cf1bea366e491dc08a1bf41f486cb91d631f4f67e)<br>
-                          		(SHA512: 143295dae755988ada6b819ddfd566514fc84cf480317c38a7ad9782bc861ca4080d3a4f731041a5e7c701fa84e820045fc838b4b78baf0db9e52ac0de197e64)</p>
-								<p>The blockchain file has size 1.1GB.</p>
+								<a id="snapshot_download_link" target="_blank" href="https://flashcoin.io/downloads/flashcoin_blockchain_snapshot.02Apr2019.tar.gz" class="button button-3d bottommargin-sm">Download</a>
+								<div>(<a id="snapshot_text_link" target="_blank" href="https://flashcoin.io/downloads/flashcoin_blockchain_snapshot.02Apr2019.tar.gz" class="download-link">https://flashcoin.io/downloads/flashcoin_blockchain_snapshot.02Apr2019.tar.gz</a>)</div>
+                          		<div id="snapshot_sha256_text">(SHA256: b6ec021a900d54379006120cf1bea366e491dc08a1bf41f486cb91d631f4f67e)</div>
+                          		<p id="snapshot_sha512_text">(SHA512: 143295dae755988ada6b819ddfd566514fc84cf480317c38a7ad9782bc861ca4080d3a4f731041a5e7c701fa84e820045fc838b4b78baf0db9e52ac0de197e64)</p>
+								<p>The blockchain file has size <i id="snapshot_size">1.1GB</i>.</p>
 
 								<h2>Step 2: Unzip the flashcoin_blockchain_snapshot_*.tar.gz contain:</h2>
 								<p>The file contain:<br>
