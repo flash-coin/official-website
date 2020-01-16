@@ -1,0 +1,122 @@
+{
+    "Decentralized Development Status" : 
+    [
+        {
+            "section": "Quarter 1 2020",
+            "size":"full",
+            "titles": 
+            [
+                {
+                    "text" : "",
+                    "subtitles" : 
+                    [
+						{
+                            "text" : "Community Web Portal",
+                            "devpercent" : "70",
+							"testpercent" : "20"
+                        },
+                        {
+                            "text" : "Delegate registration/unregistration from the QT wallet",
+                            "devpercent" : "70",
+							"testpercent" : "20"
+                        },
+                        {
+                            "text" : "Miner registration/unregistration from the QT wallet",
+                            "devpercent" : "70",
+							"testpercent" : "20"
+                        },
+                        {
+                            "text" : "Special Election Address (SEA) mechanism: Proof of burn",
+                            "devpercent" : "70",
+							"testpercent" : "20"
+                        },
+                        {
+                            "text" : "Special Voting Address (SVA) mechanism",
+                            "devpercent" : "70",
+							"testpercent" : "20"
+                        },
+						{
+                            "text" : "Voting for Delegates from the QT wallet",
+                            "devpercent" : "70",
+							"testpercent" : "20"
+                        },
+                        {
+                            "text" : "Miner Selection: Top 25 delegates willing to be a miner ",
+                            "devpercent" : "70",
+							"testpercent" : "20"
+                        },
+                        {
+                            "text" : "Publish election results by the centralized election nodes (EN)",
+                            "devpercent" : "70",
+							"testpercent" : "20"
+                        },
+                        {
+                            "text" : "Distribution of election results handling the edge cases",
+                            "devpercent" : "70",
+							"testpercent" : "20"
+                        },
+                        {
+                        	"text" : "Voting by the Delegates for the FIPs and FPPs",
+                            "devpercent" : "70",
+							"testpercent" : "20"
+                        },
+                        {
+                        	"text" : "Validation of blocks as per the Present Miners List (PML)",
+                             "devpercent" : "70",
+							"testpercent" : "20"
+                        },
+                        {
+                        	"text" : "Tx and Block validation rules",
+                            "devpercent" : "70",
+							"testpercent" : "20"
+                        },
+                        {
+                        	"text" : "Mining mechanism with 25 miners in a cycle and consensus height (CH)",
+                            "devpercent" : "70",
+							"testpercent" : "20"
+                        },
+                        {
+                        	"text" : "Mechanism to remove bad miners using the reliability parameter",
+                            "devpercent" : "70",
+							"testpercent" : "20"
+                        },
+						{
+                            "text" : "Launch of FLASH Decentralized Whitepaper v2",
+                            "devpercent" : "70",
+							"testpercent" : "N/A"
+                        }
+                    ]      
+                }
+            ]
+        },
+        {
+            "section": "Quarter 2 2020",
+            "size":"full",
+            "titles": 
+            [
+                {
+                    "text" : "",
+                    "subtitles" : 
+                    [
+                        {
+                            "text" : "Mechanism to distribute mining and community rewards daily at midnight",
+                            "devpercent" : "70",
+							"testpercent" : "20"
+                        },
+                        {
+                            "text" : "Mechanism to penalize the bad miners",
+                            "devpercent" : "70",
+							"testpercent" : "20"
+                        },
+						{
+                            "text" : "Launch of FLASH Decentralized Testnet v1 - Phase 2",
+                        },
+						{
+                            "text" : "Launch of FLASH Decentralized Mainnet v1",
+                        },
+                    ]      
+                }
+			]
+        }
+    ]
+}
