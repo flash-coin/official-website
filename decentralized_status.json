@@ -10,7 +10,7 @@
                     "text" : "",
                     "subtitles" : 
                     [
-						{
+			{
                             "text" : "Community Web Portal",
                             "devpercent" : "70",
 							"testpercent" : "20"
@@ -99,8 +99,8 @@
                     "subtitles" : 
                     [
                         {
-                            "text" : "Mechanism to distribute mining and community rewards daily at midnight",
-                            "devpercent" : "70",
+							"text" : "Mechanism to distribute mining and community rewards daily at midnight",
+							"devpercent" : "70",
 							"testpercent" : "20"
                         },
                         {
@@ -109,14 +109,14 @@
 							"testpercent" : "20"
                         },
 						{
-                            "text" : "Launch of FLASH Decentralized Testnet v1 - Phase 2",
+                            "text" : "Launch of FLASH Decentralized Testnet v1 - Phase 2"
                         },
 						{
-                            "text" : "Launch of FLASH Decentralized Mainnet v1",
+                            "text" : "Launch of FLASH Decentralized Mainnet v1"
                         },
                     ]      
                 }
-			]
+	    ]
         }
     ]
 }
