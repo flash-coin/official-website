@@ -68,10 +68,25 @@
   display: inline-grid !important;
   cursor: pointer;
 }
-#about .inner-section:hover , #kpi .inner-section:hover {
+#decentralized-updates .inner-section {
+  padding: 0px;
+  height: 12em;
+  width: 12em;
+  border: 2px solid #E0AE27;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-grid !important;
+  cursor: pointer;
+  background-color: #000;
+}
+#decentralized-updates .inner-section h3, #decentralized-updates .inner-section a{
+  font-weight: normal;
+  margin: auto;
+}
+#about .inner-section:hover , #kpi .inner-section:hover, #decentralized-updates .inner-section:hover {
   background-color: #E0AE27;
 }
-#about .inner-section:hover *  , #kpi .inner-section:hover * {
+#about .inner-section:hover *  , #kpi .inner-section:hover * , #decentralized-updates .inner-section:hover *  {
   color: #0A0A0A;
 }
 #about .inner-section h2 , #kpi .inner-section h2 {
