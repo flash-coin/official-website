@@ -4,7 +4,7 @@
     [
         {
             "title": "Release of Whitepaper V2",
-            "release_on":""
+            "release_on": "",    //"29 Feb 2020 21:00:00 PST" format should be this
         }
     ],
     "Decentralized Development Status" : 

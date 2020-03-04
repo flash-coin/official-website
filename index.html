@@ -32,8 +32,7 @@
 		<link rel="stylesheet" href="css/swiper.min.css" integrity="text/css">
 		<link rel="stylesheet" href="css/roadmap_css.css" type="text/css" />
 		<link rel="stylesheet" href="css/achievement_style.css?ver=Q12020" type="text/css" />
-		<!-- Document Title
-	============================================= -->
+		<!-- Document Title ============================================= -->
 		<title>Flashcoin | Home</title>
 		<script src="js/jquery.js"></script>
 		<script>
@@ -107,7 +106,7 @@
 			  element.setAttribute('src', 'images/_newsite/web_img/'+img);
 			}
 
-			</script>
+		</script>
 	</head>
 
 	<body class="stretched dark">
@@ -150,8 +149,16 @@
 							</div>
 						</div>
 						<div class="row clearfix">
-							<div class="col-lg-12 text-center bottom-section" style="">
-								<a href="javascript: void(0)" class="display-centrally WhitePaperButton"><img src="images/_newsite/web_img/img-WhitePaperButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-WhitePaperButton" style="width:150px" onclick="javascript: window.open('docs/FLASHWhitepaper.pdf?new')"></a>
+							<div class="col-lg-12 text-center bottom-section">
+								
+									<div id="decentralized-updates">
+										<div class="inner-section">
+											<a href="https://decentralized.flashcoin.io/" target="_blank" class="">
+												<h3>Decentralized<br>Updates</h3>
+											</a>
+										</div>
+									</div>									
+								
 								<a class="LearnMoreButton" href="#" data-scrollto="#about"><img src="images/_newsite/web_img/img-LearnMoreButton.png?ver=1.1" onmouseover="hover(this);" onmouseout="unhover(this);" data-imgname="img-LearnMoreButton" ></a>
 							</div>
 						</div>
@@ -944,9 +951,9 @@
 						centeredSlides: true,
 						initialSlide:5,
 						navigation: {
-			        nextEl: '.swiper-button-next',
-			        prevEl: '.swiper-button-prev',
-			      },
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+						},
 						breakpoints:{
 							992:{slidesPerView:3},
 							640:{slidesPerView:1}
@@ -960,6 +967,12 @@
 							$(event).html('More+');
 						}
 					}
+
+					$(function(){
+						setInterval(function() { 
+							$('#decentralized-updates .inner-section h3').fadeOut().fadeIn();
+						}, 1000);
+					})
 			</script>
 
 	</body>
