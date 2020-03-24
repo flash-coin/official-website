@@ -267,10 +267,14 @@
 	#primary-menu-trigger {
 		opacity: 1;
 		pointer-events: auto;
-		top: 25px;
+		top: 2px;
 		margin-top: 0;
 		left: 0;
 		z-index: 1;
+	}
+
+	.main-section-image img {
+		margin: 4px auto;
 	}
 
 	#primary-menu .container #primary-menu-trigger {
@@ -1505,6 +1509,10 @@
 	}
 
 	#primary-menu-trigger { left: 20px; }
+
+	.main-section-image img {
+		margin: 4px auto;
+	}
 
 	#top-cart { display: none; }
 

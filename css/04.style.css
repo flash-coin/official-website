@@ -111,9 +111,7 @@
 
 @media (min-width: 1200px) {
 	.container { max-width: 1170px; }
-  .about-flash-section .container , .kpi-section .container { max-width: 1400px; }
 }
-
 
 body,
 .dropdown-menu { font-size: 0.875rem; }
@@ -509,6 +507,22 @@ span.middot {
 	-moz-filter: brightness(100%) grayscale(0);
 	-o-filter: brightness(100%) grayscale(0);
 	-ms-filter: brightness(100%) grayscale(0);
+}
+
+.box-border {
+	border: 1px solid #E0AE27;
+	border-radius: 6px;
+}
+
+.box-to-circle {
+	background-color: #000;
+	border: 2px solid #E0AE27;
+	border-radius: 50%;
+	padding: 16% 0;
+}
+
+.box-to-circle:hover {
+	border-color: #fff;
 }
 
 /* MOVING BG -  TESTIMONIALS */
@@ -1030,6 +1044,9 @@ body.stretched #header.full-header .container {
 	border-bottom: none;
 }
 
+.font-dark {
+	color: #000 !important;
+}
 
 /* ----------------------------------------------------------------
 	Logo
@@ -7366,7 +7383,11 @@ body:not(.device-touch) .button.button-full strong {
 
 .promo.promo-center {
 	text-align: center;
-	padding: 30px 20px;
+	padding: 10px 10px 30px;
+}
+
+#merchants .promo.promo-center {
+	padding: 10px 10px 30px;
 }
 
 .promo.promo-center a.button {
@@ -7673,7 +7694,7 @@ body:not(.device-touch) .button.button-full strong {
 	position: relative;
 	width: 96px;
 	height: 96px;
-	margin: 0 auto 30px;
+	margin: 0 auto 16px;
 }
 
 .feature-box.fbox-center .fbox-icon i {
@@ -9513,6 +9534,10 @@ ul.tab-nav li a i {
 	-webkit-backface-visibility: hidden;
 }
 
+#merchants .clients-grid li {
+	padding: 10px 0;
+}
+
 .clients-grid.grid-2 li {
 	width: 50%;
 	padding: 25px 0;
@@ -9525,6 +9550,14 @@ ul.tab-nav li a i {
 .clients-grid.grid-6 li { width: 16.66%; }
 
 .clients-grid li a { opacity: 0.6; }
+#merchants .clients-grid li a { opacity: 1; }
+#merchants .clients-grid li a img { 
+	opacity: 0.6; 
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+#merchants .clients-grid li:hover a img { opacity: 1; }
 
 body:not(.device-touch) .clients-grid li a {
 	-webkit-transition: all .5s ease;
@@ -9537,7 +9570,7 @@ body:not(.device-touch) .clients-grid li a {
 .clients-grid li a,
 .clients-grid li img {
 	display: block;
-	width: 75%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -9557,7 +9590,6 @@ body:not(.device-touch) .clients-grid li a {
 	height: 100%;
 	top: 0;
 	left: -1px;
-	border-left: 1px dashed #DDD;
 }
 
 .clients-grid li:after,
@@ -9567,9 +9599,12 @@ body:not(.device-touch) .clients-grid li a {
 	top: auto;
 	left: 0;
 	bottom: -1px;
-	border-bottom: 1px dashed #DDD;
 }
 
+.clients-grid li.exchanges {
+	padding-left: 2%;
+	padding-right: 2%;
+}
 
 /* ----------------------------------------------------------------
 	Testimonials
@@ -9780,15 +9815,26 @@ body:not(.device-touch) .clients-grid li a {
 	float: none;
 }
 
+#flash-advantage .img-bg{
+	background: url('../images/_newsite/web_img/coin-advantage.png?126') no-repeat center right;
+	background-size: cover;
+}
 
 /* ----------------------------------------------------------------
 	Team
 -----------------------------------------------------------------*/
 
+#team .img-bg{
+	background: url('../images/_newsite/web_img/coin-team.png?126') no-repeat center right;
+	background-size: cover;
+}
 
 .team,
 .team-image { position: relative; }
 
+#merchants .team-image {
+	padding: 20px 40px 10px
+}
 .team-image > a,
 .team-image img {
 	display: block;
@@ -9799,7 +9845,7 @@ body:not(.device-touch) .clients-grid li a {
 
 .team-desc.team-desc-bg {
 	background-color: #FFF;
-	padding: 10px 0 30px;
+	padding: 0 0 10px;
 }
 
 .team .si-share {
@@ -13619,7 +13665,48 @@ marquee img
 }
 
 /* added on 6-6-2018*/
+.btn-primary {
+	background-color: transparent;
+	color: #fff;
+	border-color: #d4a525;
+}
+
+.btn.btn-bg-dark {
+    background-color: #000;
+}
+
+.btn-primary:hover, .btn-primary.selected {
+	background-color: #d4a525;
+	color: #000 !important;
+	border-color: #d4a525; 
+}
+
+#about .img-bg {
+	background: url('../images/_newsite/web_img/about-coin.png?126') no-repeat center right;
+    background-size: auto;
+}
+
+#about .inner-text {
+	padding: 20px;
+	font-size: 20px;
+}
+
+#exchanges .img-bg {
+	background: url('../images/_newsite/web_img/exchanges.png?126') no-repeat center right;
+    background-size: auto;
+}
+
 .exchanges-border:after
 {
     border-bottom: none !important;
+}
+
+#merchants .img-bg {
+	background: url('../images/_newsite/web_img/merchants.png?126') no-repeat center right;
+    background-size: auto;
+}
+
+#wallet .img-bg {
+  	background: url('../images/_newsite/web_img/wallet-sec-bg.png') no-repeat center right;
+  	background-size: auto; 
 }
