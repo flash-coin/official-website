@@ -6,19 +6,23 @@
   });
 
     function get_market_price(){
-        $.get('https://api.coinmarketcap.com/v1/ticker/flash/').then(function (data){
-            var btc_price_sat = data[0].price_btc * 100000000;
-            var price_usd = data[0].price_usd * 1;
+        //https://api.coinmarketcap.com/v1/ticker/flash/
+        $.get('https://api.coingecko.com/api/v3/coins/flash').then(function (data){
+            var price_usd = data.market_data.current_price.usd;
+            var price_btc = data.market_data.current_price.btc;
+            var btc_price_sat = price_btc * 100000000;
+            
             var market_price_btc = btc_price_sat.toFixed(0) + ' sat [~' + price_usd.toFixed(4) +' usd]';
             $('#market_price').html(market_price_btc);
-            $('#current_rate').html(data[0].rank);
-            var market_price_percent_sign = data[0].percent_change_24h > 0 ? '+':'';
-            var market_price_percent_str = '(' + market_price_percent_sign + data[0].percent_change_24h + '%)';
-            $('#market_price_percentage').val(market_price_percent_str);
-            var market_price_percent = data[0].percent_change_24h;
-            if (market_price_percent > 0) {
-              $('#market_price_percentage').css('color','green');
-            }
+            // $('#current_rate').html(data.market_cap_rank);
+            
+            // var market_price_percent_sign = data[0].percent_change_24h > 0 ? '+':'';
+            // var market_price_percent_str = '(' + market_price_percent_sign + data[0].percent_change_24h + '%)';
+            // $('#market_price_percentage').val(market_price_percent_str);
+            // var market_price_percent = data[0].percent_change_24h;
+            // if (market_price_percent > 0) {
+            //   $('#market_price_percentage').css('color','green');
+            // }
         }, function(err) {
             console.log(err);
         });
